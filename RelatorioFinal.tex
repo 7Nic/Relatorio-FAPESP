@@ -1,0 +1,158 @@
+\documentclass[10pt,a4paper,final,brazil,oneside,pdftex] {article}
+\usepackage{graphicx} %tabelas
+\usepackage{siunitx} %tabelas
+\usepackage{booktabs,tabularx}
+\usepackage[brazil]{babel}
+\usepackage{amsfonts}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc} % permite acentuação correta
+\usepackage{times}    % ??
+\usepackage{setspace} % ??
+\usepackage{xspace}   % ??
+\usepackage{float}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{verbatim}
+\usepackage{textfit}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{alltt}
+\usepackage[T1]{fontenc}
+\usepackage[top=10mm,bottom=20mm,left=20mm,right=20mm,pdftex,includeheadfoot]{geometry}
+\usepackage{ae}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{multicol}
+\usepackage{listings} % formata código-fonte inserido no documento
+\usepackage{subfigure}
+\usepackage{placeins} % auxilia no posicionamento de figuras
+\usepackage{url}
+\usepackage[%numbers,
+            authoryear,
+            sort&compress,]{natbib}
+
+\usepackage[pdftex]{hyperref}  % gera os hiperlinks no pdf
+ \hypersetup{colorlinks=true,debug=false,
+   linkcolor=black,%%%cor do tableofcontents,\ref,\footnote,etc
+   citecolor=black, %%% cor do \cite
+   urlcolor=black, %%% cor do \url e \href
+   pdftitle={Relatório Final},
+   pdfauthor={Autor},
+   pdfsubject={Titulo}}
+
+
+\newcommand{\reqmlcatalog}{\textit{ReqML-Catalog}\xspace}
+\newcommand{\mlearningpl}{\textit{MLearning-PL}\xspace}
+\newcommand{\crossword}{\textit{Crossword Learning}\xspace}
+
+\pdfcompresslevel=9
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.mps} % Para versao PDF
+
+%*****************************  Definições de estilo   ************************
+
+\let\chapter=\section
+\let\section=\subsection
+\let\subsection=\subsubsection
+
+\bibliographystyle{icmc2}
+
+\widowpenalty=10000
+\clubpenalty=10000
+\exhyphenpenalty=10000
+
+
+% comandos para definir espaço entre figuras, captions e texto
+\setlength{\abovecaptionskip}{0.2cm}
+\setlength\textfloatsep{12pt}
+\setlength\floatsep{12pt}
+
+\headheight 17.1pt
+
+\setcounter{secnumdepth} {3} % Ajusta o numero de capítulos para 3 níveis
+\setcounter{tocdepth} {3} % Faz com que os 3 níveis de capítulos apareçam no índice
+\definecolor{gray}{rgb}{0.7,0.7,0.7} % definição de cor cinza
+
+\usepackage{xspace}
+
+
+%*********************   Capa  ******************************************
+
+\begin{document}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\input{capa}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+%**************************  Índice ***********************************************
+
+\pagestyle{plain}
+\thispagestyle{plain}
+\renewcommand{\thepage}{\roman{page}}
+\setcounter{page}{1}
+
+\tableofcontents
+%\cleardoublepage
+%\listoffigures
+%\cleardoublepage
+%\listoftables
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\newpage
+\onehalfspace
+
+\pagestyle{plain}   % define estilo de página
+\fancyfoot[C]{\thepage}  % insere numero da pagina no rodapé
+\fancyhead[R]{\small\leftmark}
+\lhead{}            % define o cabeçalho do lado direito como sendo vazio
+\chead{}					  % define o cabeçalho do centro como sendo vazio
+%\let\cite=\citep    % define o formato/tipo de citações.
+
+%*******************************************************************************
+\newpage
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+
+%\renewcommand{\chaptermark}[1]{\markboth{\textit{ \chaptername \ \thechapter.\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+
+%**********************************************************************************************
+%********************** DOCUMENTO ************************************************************
+
+\input{Conteudo/Cap1_Introducao}
+\input{Conteudo/Cap2_Resumo_Atividades}
+\input{Conteudo/Cap3_Atividades_Desenvolvidas}
+\input{Conteudo/Cap4_Atividades_Futuras}
+\input{Conteudo/Cap5_Conclusao}
+
+%******************  Bibliografia  ********************************************
+\cleardoublepage
+\renewcommand{\bibname}{Referências}
+\bibliography{referencias, refs-1, refs-2}
+\addcontentsline{toc}{section}{\bibname}
+
+\vspace{400pt} %Espaçamento até as assinaturas
+%\vfill
+
+\sffamily
+\begin{minipage}[t]{0.4\linewidth}
+\begin{center}
+\hrulefill\\
+\vspace{6pt}
+Bolsista: Gabriel Santos Nicolau
+\end{center}
+\end{minipage} \hfill
+\begin{minipage}[t]{0.4\linewidth}
+\begin{center}
+\hrulefill\\
+\vspace{6pt}
+Orientadora: Ellen Francine Barbosa
+\end{center}
+\end{minipage}
+
+\end{document}
+
+
