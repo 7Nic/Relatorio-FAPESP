@@ -135,8 +135,22 @@ Crossword Quiz (\autoref{fig:crossQuiz}) é um aplicativo de palavras cruzadas c
     Fonte: Elaborada pelo autor
 \end{figure}
 
-\end{description}
+% inicio n deixe a vovó cair
 
+\item[Não deixe a vovó cair]\footnote{\url{https://play.google.com/store/apps/details?id=com.GazGames.SalveVovo&hl=pt_BR}} \hfill \\
+Não deixe a vovó cair (\autoref{fig:nDeixeVovoCair}) é um aplicativo que visa reduzir os riscos do ambiente domiciliar. Produzido pelo Centro de Telessaúde do Hospital das Clínicas – UFMG e pela Rede de Teleassistência de Minas Gerais, possui 4 níveis que representam áreas de uma casa: Banheiro, Quarto, Cozinha e Sala. Além disso, conta com a ajuda do cão Neca que representa o cachorro da dona e guia o usuário nos passos do jogo.
+\begin{figure}[H]
+\centering
+    \caption{Telas do aplicativo \textit{Crossword Quiz}}
+    \label{fig:nDeixeVovoCair}
+    \includegraphics[width=0.9\textwidth]{Figuras/nDeixeVovoCair.jpg}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+% fim
+
+\end{description}
 
 
 \begin{table}[!ht]
@@ -151,16 +165,15 @@ Engaging congress   & \begin{tabular}[c]{@{}l@{}}Vídeos educativos\\ Perguntas 
 Play PBS KIDS Games & \begin{tabular}[c]{@{}l@{}}Funcionamento offline\\ Gerenciamento de consumo de memória\\ Obtenção de detalhes de desenhos passados na TV PBS Kids\end{tabular}      \\ \midrule
 Human Anatomy Atlas & \begin{tabular}[c]{@{}l@{}}Interatividade com estruturas 3D\\ Mais de 1000 questões para testes\\ Realidade aumentada\\ Sete idiomas disponíveis\end{tabular}    \\ \midrule
 Bini Super ABC & \begin{tabular}[c]{@{}l@{}}Aprendizado das letras por sons\\ Reforço do material aprendido\\ Controle de responsáveis para jogos\end{tabular}                \\ \midrule
-Crossword Puzzle Free & \begin{tabular}[c]{@{}l@{}}Teclado próprio\\ Dica acima do teclado\\ Botão de dica para a palavra\end{tabular}                \\ \midrule
-Crossword Quiz & \begin{tabular}[c]{@{}l@{}}Não mostra o teclado todo, apenas algumas letras\\ Mostra imagens em vez de dicas em texto também\\ Tutorial inicial mostrando todos os passos antes de mesmo de permitir o jogador jogar uma partida sozinho\end{tabular}                \\ \midrule
+Crossword Puzzle Free & \begin{tabular}[c]{@{}l@{}}Teclado não nativo, utiliza um personalizado\\ Dica acima do teclado\\ Botão de dica para a palavra\end{tabular}                \\ \midrule
+Crossword Quiz & \begin{tabular}[c]{@{}l@{}}Não mostra o teclado todo, apenas algumas letras\\ Mostra imagens em vez de dicas em texto também\\ Tutorial inicial mostrando todos os passos antes da primeira partida\end{tabular}                \\ \midrule
+Não deixe a vovó cair & \begin{tabular}[c]{@{}l@{}}Tutorial inicial ensinando o uso do aplicativo\\ Dicas em meio ao jogo para aplicações reais \\ Marcação do tempo para desafiar o usuário a melhorar cada vez mais \end{tabular}                \\ \midrule
 \end{tabular}
 \label{tab:sprint}
 \end{table}
 
-
-
-\section{Estudo do algoritmo de geração das palavras cruzadas} 
-Nesta seção será abordado o algoritmo de geração das palavras cruzadas do aplicativo. Para melhor compreensão deste, é essencial a noção dos paradigmas clássicos da Ciência da Computação: Força Bruta e \textit{Backtracking}. Além disso, faz-se necessário uma pequena noção das Cadeias de Markov Absorventes para estipulação e análise do tempo de execução do algoritmo até que se encontre uma solução. Por fim, utilizando os conceitos anteriormente explanados, será possível compreender o motivo do algoritmo possuir um bom desempenho.
+\section{Estudo do primeiro algoritmo de geração das palavras cruzadas} 
+Nesta seção será abordado o primeiro algoritmo de geração das palavras cruzadas estudado. Para melhor compreensão deste, é essencial a noção dos paradigmas clássicos da Ciência da Computação: Força Bruta e \textit{Backtracking}. Além disso, faz-se necessário uma pequena noção das Cadeias de Markov Absorventes para estipulação e análise do tempo de execução do algoritmo até que se encontre uma solução.
 
 \subsection{Força Bruta e \textit{Backtracking}}
 A Força Bruta é um paradigma de programação em que o espaço de busca é vasculhado sistematicamente até que se encontre a solução desejada. Um exemplo clássico é a tentativa de descobrir uma senha numérica de 5 dígitos. A abordagem por Força Bruta faria a tentativa de todas as $10^{5}$ possibilidades ($00000 \rightarrow 00001 \rightarrow 00002 \rightarrow 00003$...) até que se encontre a combinação correta da senha. Em geral, as abordagens por força bruta não são eficientes em termos de complexidade de tempo, como se poderá constatar no algoritmo de geração de palavras cruzadas.
@@ -180,9 +193,9 @@ Antes da definição das Cadeias de Markov é necessário compreender o que são
 % Depois explicar como se calcula o tempo médio até a absorção (só colocar depois de acabar tudo)
 
 \subsection{Desenvolvimento do algoritmo}
-O algoritmo utilizado é intitulado \textit{Wizium} \citep{wizium}, a seguir serão expostos os passos que levaram a seu desenvolvimento, de acordo com o autor, e as análises matemáticas para a compreensão de sua efetividade.
+O algoritmo utilizado é intitulado \textit{Wizium} \citep{wizium}, a seguir serão expostos os passos que levaram seu desenvolvimento, de acordo com o autor, e as análises matemáticas para a compreensão de sua efetividade.
 
-A primeira abordagem para a solução do problema seria simplesmente utilizar o paradigma da Força Bruta. Para os exemplos serão utilizados tabuleiros que somente possuam palavras, a fim de simplificar a compreensão. Seja um tabuleiro $3x3$ com as seguintes palavras: \textbf{ASA}, \textbf{SAL}, \textbf{ALA} e \textbf{CEU}. Assim, basta escolher uma palavra das três listadas e colocá-la na primeira linha horizontal, escolher a próxima e colocá-la na segunda posição e depois na terceira. Dessa forma, é possível verificar se o tabuleiro totalmente preenchido é válido analisando as posições verticais. Se todas as palavras verticais estiverem no banco de palavras, o tabuleiro é válido, caso contrário, inválido. 
+A primeira abordagem para a solução do problema seria simplesmente utilizar o paradigma da Força Bruta. Seja um tabuleiro $3x3$ com as seguintes palavras: \textbf{ASA}, \textbf{SAL}, \textbf{ALA} e \textbf{CEU}. Assim, basta escolher uma palavra das três listadas e colocá-la na primeira linha horizontal, escolher a próxima e colocá-la na segunda posição e depois na terceira. Dessa forma, é possível verificar se o tabuleiro totalmente preenchido é válido analisando as posições verticais. Se todas as palavras verticais estiverem no banco de palavras, o tabuleiro é válido, caso contrário, inválido. 
 
 \begin{figure}[H]
 \centering
@@ -193,108 +206,7 @@ A primeira abordagem para a solução do problema seria simplesmente utilizar o 
     Fonte: Elaborada pelo autor
 \end{figure}
 
-Como pode-se perceber, a análise só é feita após o último passo. Algumas ramificações da árvore de tentativas poderiam ter sido ``podadas'' com uma análise prévia do tabuleiro antes que chegasse em seu estado completo, ou seja, diversas tentativas poderiam ter sido evitadas. 
-Para uma melhor noção da inviabilidade de tal abordagem é possível contar a quantidade de tabuleiros possíveis por meio de combinações e permutações.
-Se $B$ é o tamanho do tabuleiro e $A$ é a quantidade palavras de tamanho $B$ disponíveis no banco de palavras, a quantidade de tabuleiros possíveis pode ser calculada com a seguinte fórmula: 
-\begin{center}
-\Large{$N_{t} =$ $A \choose{B}$$*B!$} 
-\label{qtdtab}
-\end{center}
-
-Em que $A \choose{B}$ determina a quantidade de grupos de B palavras de tamanho B e $B!$ determina a quantidade de permutações dessas palavras no tabuleiro. Utilizando um banco de palavras da Língua Portuguesa obteve-se a seguinte distribuição de tamanhos:
-
-% https://online.visual-paradigm.com/app/diagrams/#proj=0&type=BarChart (site)
-\begin{figure}[H]
-\centering
-    \caption{Distribuição das palavras por tamanho}
-    \label{fig:distTam}
-    \includegraphics[width=0.9\textwidth]{Figuras/distribuicaoPorTamanho.png}
-    
-    Fonte: Elaborada pelo autor
-\end{figure}
-
-Além disso, pode-se analisar as probabilidades de um tabuleiro estar correto dado o tamanho e quantidade de palavras no banco. Primeiramente, será calculada a frequência das letras no banco de palavras como mostrado na Figura \ref{fig:freqPal}:
-
-\begin{figure}[H]
-\centering
-    \caption{Frequência das letras no banco de palavras}
-    \label{fig:freqPal}
-    \includegraphics[width=0.9\textwidth]{Figuras/frequenciaLetras.jpg}
-    
-    Fonte: Elaborada pelo autor
-\end{figure}
-
-Em seguido, será calculada a probabilidade de coincidência de duas letras ($p_{co}$), em que $l$ corresponde a $l^{esima}$ letra do alfabeto e $f(l)$ corresponde a frequência que a letra aparece em uma palavra qualquer:
-
-\begin{center}
-\Large{$p_{co} = \sum_{l=1}^{26}f(l)^{2}$}
-\label{pco}
-\end{center}
-
-% A princípio não trataremos as probabilidades para o caso de força bruta. Caso se queira usar, utilize a seguinte tabela comentaeda no lugar da atual
-% \begin{table}[!ht]
-% \caption{\textit{Tabuleiros gerados por Força Bruta}}
-% \centering
-% \footnotesize
-% \begin{tabular}{|c|c|c|c|}
-% \toprule
-% \textbf{A} & \textbf{B} & \textbf{Número de tabuleiros} & \textbf{Probabilidade de um tabuleiro estar correto} \\ \hline
-% 11140      & 5          & 1,7e+20 & pg                      \\ \hline
-% 20172      & 6          & 6,7e+25 & pg                      \\ \hline
-% 29051      & 7          & 1,7e+31 & pg                      \\ \hline
-% 36722      & 8          & 3,3e+36 & pg                      \\ \hline
-% 40547      & 9          & 2,9e+41 & pg                      \\ \hline
-% \end{tabular}
-% \label{tab:tabForBru}
-% \end{table}
-
-% Só fale das formulas no plural se realmente for usar a de probabilidade
-Assim, é possível obter probabilidade de coincidência de uma letra $p_{co}$ valendo \textbf{7,6\%}. Uma vez calculado $p_{co}$, será calculada a probabilidade $p_{v}$ de uma palavra vertical de tamanho $B$ ser favorável, dado que existem $A$ palavras de tamanho $B$ no banco de palavras. 
-
-\begin{center}
-    \Large{$p_{v} = 1 - (1 - p_{co}^{B})^{A}$}
-\end{center}
-
-E assim calcula-se a probabilidade $p_{g}$ de todo o tabuleiro ser favorável.
-
-\begin{center}
-    \Large{$p_{g} = p_{v}^{B}$}
-\end{center}
-
-Logo, utilizando as fórmulas acima descritas, é possível obter a seguinte tabela:
-
-% \begin{table}[!ht]
-% \caption{\textit{Tabuleiros gerados por Força Bruta}}
-% \centering
-% \footnotesize
-% \begin{tabular}{|c|c|c|}
-% \toprule
-% \textbf{A} & \textbf{B} & \textbf{Número de tabuleiros} \\ \hline
-% 11140      & 5          & 1,7e+20  \\ \hline
-% 20172      & 6          & 6,7e+25  \\ \hline
-% 29051      & 7          & 1,7e+31  \\ \hline
-% 36722      & 8          & 3,3e+36  \\ \hline
-% 40547      & 9          & 2,9e+41  \\ \hline
-% \end{tabular}
-% \label{tab:tabForBru}
-% \end{table}
-
-\begin{table}[!ht]
-\caption{\textit{Tabuleiros gerados por Força Bruta}}
-\centering
-\footnotesize
-\begin{tabular}{|c|c|c|c|}
-\toprule
-\textbf{A} & \textbf{B} & \textbf{Número de tabuleiros ($N_{t}$)} & \textbf{Probabilidade de um tabuleiro estar correto ($p_{g}$)} \\ \hline
-11140      & 5          & 1,7e+20 & $1,7*10^{-8}$                      \\ \hline
-20172      & 6          & 6,7e+25 & $3,4*10^{-15}$                      \\ \hline
-29051      & 7          & 1,7e+31 & aproximadamente 0                      \\ \hline
-36722      & 8          & 3,3e+36 & aproximadamente 0                      
-\end{tabular}
-\label{tab:tabForBru}
-\end{table}
-
-% Se der tempo, colocar aqui a análise das fórmulas de probabilidade com o quadro de tempo, mas a principio nao faremos isso para a força bruta, como escrito acima
+Como pode-se perceber, a análise só é feita após o último passo. Algumas ramificações da árvore de tentativas poderiam ter sido ``podadas'' com uma análise prévia do tabuleiro antes que chegasse em seu estado completo.   
 
 Portanto, faz-se necessária uma abordagem mais elaborada a fim de obter um melhor desempenho evitando comparações inúteis. Em uma primeira tentativa é possível tentar um \textbf{entrelaçamento}, colocando-se palavras na horizontal de cima para baixo e na vertical da esquerda para a direita. Ao se tentar incluir no tabuleiro, deverá ser feita uma verificação a fim de encontrar uma palavra com o prefixo determinado pela linha ou coluna, como se pode observar na Figura \ref{fig:entrelacamento}. 
 
@@ -376,9 +288,42 @@ Logo, a probabilidade de uma palavra poder ser inserida na horizontal na linha $
     \Large{$p_{h_{i}} = N*(p_{co_{i}})^{S}$}
 \end{center}
 
-% Já decidiu se vai colocar isso mesmo?
-% Dessa forma, é possível criar uma nova tabela com a quantidade de passos necessários para preencher o tabuleiro com uma solução.
+\section{Estudo do segundo algoritmo de geração de palavras cruzadas}
+Nesta seção será abordado o segundo algoritmo de geração de palavras cruzadas, o qual será utilizado no projeto do aplicativo. Uma lista de palavras é dada para que se gere uma palavra cruzada formada somente por estas. Portanto, a abordagem se torna diferente do primeiro algoritmo analisado, o qual utiliza um grande banco de palavras para gerar o tabuleiro.
 
-% Não seria uma tabela com a quantidade de grids que conseguiríamos formar??? acho q sim ein, confere aí depois
+O usuário pode escolher o tamanho do tabuleiro, caso uma palavra seja grande demais e não consiga ser inserida, ela é eliminada da lista e não segue para os próximoas passos.
 
-% Fazer as contas e preencher a tabela
+O algoritmo inicia gerando uma tabela com o mesmo número de colunas e linhas. Essa quantidade é definida multiplicando-se o tamanho da maior palavra por um fator definido como 3. Caso a maior palavra tenha 7 letras e o fator seja 3, será gerada uma tabela 14x14. Isso ocorre para aumentar a probabilidade de interseção entre palavras. 
+
+Após, é iniciado o procedimento de inserção. É feita a tentativa de inserção para cada uma das palavras fornecidas em todas as posições possíveis do tabuleiro iniciando-se com a disposição horizontal e após a vertical. Caso ocorra algum conflito da palavra inserida com outra que já esteja no tabuleiro, a posição será ignorada. Uma vez que se termina a tentativa de inserção de uma palavra em todas as posições, é feita a análise de pontuação entre elas. Apenas a posição que possuir a maior pontuação permanecerá. Para isso, são computados quatro tipos de pontuações, como mostrado na \autoref{fig:codeScores}. As avaliações possuem os seguintes pesos percentuais:
+
+\begin{itemize}
+    \item Número de conexões - 70\%
+    \item Distância do centro do tabuleiro - 15\%
+    \item Tamanho da palavra - 5\%
+    \item Vertical vs Horizontal - 10\%
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+    \caption{Funções de avaliação de pontuações do tabuleiro}
+    \label{fig:codeScores}
+    \includegraphics[width=0.9\textwidth]{Figuras/codeScores.png}
+    
+    Fonte: \href{https://github.com/MichaelWehar/Crossword-Layout-Generator}{Crossword Layout Generator}
+\end{figure}
+
+O último fator tenta equilibrar a quantidade de palavras na horizontal e na vertical. Caso mais da metade das palavras já inseridas estiver na horizontal e a palavra que está sendo analisada no momento estiver na vertical, ela é melhor avaliada.
+
+Uma vez que a palavra é inserida armazena-se sua posição no tabuleiro, bem como sua orientação vertical ou horizontal e seu tamanho.
+
+Esse processo é feito com todas as palavras da lista. Todavia, pode ocorrer o caso de uma palavra fica isolada sem interseções. Assim, todas essas são eliminadas. É importante lembrar, que o tabuleiro está em um tamanho maior do que o desejado pelo usuário, pois no início ocorreu uma expansão das linhas e colunas ao multiplicá-las por um fator que havia sido definido como 3. Dessa maneira, restam colunas e linhas que estão vazias e podem ser eliminadas. Logo, o tabuleiro é reduzido para seu tamanho ideal respeitando o desejado pelo usuário.
+
+\section{Pesquisa sobre recomendações da WCAG 2.1}
+A WCAG \href{https://www.w3.org/TR/WCAG21/#no-keyboard-trap}{\textit{Web Content Accessibility Guidelines}} é um conjunto de recomendações criadas pela \href{https://www.w3.org/}{W3C} com o objetivo de tornar o conteúdo da Web mais acessível para pessoas com deficiências tais como: cegueira ou baixa visão, surdez ou indivíduos com perda de audição, pessoas com limitações a movimentação, deficiências de fala, fotossensibilidade e limitações cognitivas. As recomendações abrangem \textit{desktops}, \textit{notebooks}, \textit{tablets} e dispositivos móveis, os quais são o foco desse projeto. É importante destacar que a versão 2.1 foi construída respeitando a versão 2.0, publicada em dezembro de 2008. O documento foi revisado pelos membros da W3C, desenvolvedores de software e por outros grupos interessados, os quais foram julgados capazes pela própria W3C. Os 4 princípios utilizados para a acessibilidade na Web são: perceptível, operável, compreensível e robusto.
+\begin{itemize}
+    \item Perceptível - Informações e componentes de interface do usuário precisam ser apresentadas de maneira que ele perceba
+    \item Operável - Componentes da interface do usuário e navegação precisam ser operáveis
+    \item Compreensível - Informações e as operações da interface do usuário devem ser compreensíveis
+    \item Robusto - O conteúdo deverá ser robusto o suficiente para ser interpretado por uma variedade de agentes de uso, incluindo tecnologias de assistência
+\end{itemize}
