@@ -2,10 +2,28 @@
 Nesta seção, é apresentada, em detalhes, cada uma das principais atividades realizadas para a condução deste projeto.
 
 \section{Estudos sobre usabilidade e acessibilidade}\label{sec:estudos_usab_acess} 
-blablabla
+
+% O que é acessibilidade em termos gerais 
+% Em termos digitais (Towards a unified definition of web accessibility. the 12th Web for all Conference, ACM, 2015, p. 35.)
+
+% Falar que alguns softwares e aplicativos impossibilitam o uso de um certo público
+
+% Falar da wcag como uma forma de combater isso
+ Segundo a Lei 10.098, de 19 de dezembro de 2000 da Legislação Brasileira, a acessibilidade é a possibilidade e condição de alcance para utilização, com segurança e autonomia, dos
+espaços, mobiliários e equipamentos urbanos, das
+edificações, dos transportes e dos sistemas e meios de comunicação por pessoa portadora de deficiência ou com mobilidade reduzida. \cite{torres2002acessibilidade} diz que acessibilidade é um processo dinâmico, associado não só ao desenvolvimento tecnológico, mas principalmente ao desenvolvimento da sociedade. Em geral, está associada a pessoas com deficiências físicas ou psicológicas, idosos ou grupos excluídos; este último mais bem relacionado com o termo \textit{inclusão}. Embora a acessibilidade não se restrinja ao meio digital, é essencial que esteja presente no mesmo. Corroborando com essa ideia, \cite{leew3c} afirma a importância da Web ser utilizável por qualquer um, independente de capacidades individuais ou deficiências. No atual panorama isso também se aplica ao uso de aplicativos em dispositivos móveis. 
+
+Atrelada à acessibilidade deve estar a usabilidade, que segundo \cite{nielsenPrioritizingWebUsability}
+é o atributo relacionado a quão fácil é usar algo. Mais especificamente, refere-se a quão rápido pessoas podem aprender a usar algo, quão eficientes são enquanto o utilizam, quão memorável é, quão propenso a erros e o quanto as pessoas gostam de utilizar. Deve-se tornar a utilização fluida, a frase ''não me faça pensar`` deve ser aplicada ao usuário.
+Ademais, é essencial analisar fatores como capacidade de aprendizagem, a fim de que não seja necessário um aprendizado extra por parte do usuário para utilizar o sistema em questão. Isso seria um problema pois escaparia do objetivo principal do projeto.
+
+% Falar que o problema se aplica a idosos no final da seção
+No contexto em que se insere esse projeto isso se torna ainda mais essencial, uma vez que o público idoso sofre bastante com a usabilidade em \textit{smartphones} \citep{dificuldadesIdosos}.  
 
 \section{Estudo sobre Aprendizagem móvel}\label{sec:estudos_ap_movel} 
-\subsection{nome}
+Nesta seção serão abordados o conceito de aprendizagem móvel bem como uma pesquisa das principais funcionalidades presentes em aplicativos relacionados ao ensino, de palavras cruzadas e relacionados ao idoso.
+
+\subsection{Panorama}
 Existem várias definições de \textit{m-learning}. Ao longo dos anos, pesquisadores se dispuseram a estudar o assunto e tentaram achar uma definição. De acordo com \cite{Quinn2000}, \textit{m-learning} é um modelo de aprendizagem eletrônica (\textit{e-learning}) que utiliza equipamentos computadorizados: \textit{Palmtops}, dispositivos que rodam Windows Embedded Compact e até um telefone celular.
 Em 2011, \cite{hwang2011research} disseram que uma definição amplamente aceita de \textit{m-learning} é simplesmente ``usar tecnologias móveis para facilitar o aprendizado''. Dentre outras definições, a adotada para esse projeto foi a seguinte: qualquer fornecimento educacional onde a tecnologia dominante é portátil ou dispositivos \textit{palmtop} \citep{traxler2005defining}.
 
@@ -15,8 +33,7 @@ De acordo com \cite{RICHAMEHTA2016}, destacam-se as seguintes desvantagens: (i) 
 
 Devido ao processo de envelhecimento, limitações e desafios podem ser potencializadas no caso de usuários idosos, visto que podem ocorrer mudanças para o idoso durante esse processo. Além disso, é necessário que as aplicações educacionais móveis levem em consideração propostas pedagógicas adequadas e específicas para esse público. Desse modo, é indispensável que o desenvolvimento dessas aplicações seja realizado de maneira clara e objetiva, possibilitando melhor aprendizagem por parte do idoso.
 
-\subsection{Pesquisa sobre as principais funcionalidades de aplicativos de aprendizagem móvel} 
-% Será movido para dentro da 3.2 (estudos sobre aprendizagem móvel)
+\subsection{Pesquisa sobre as principais funcionalidades de aplicativos de aprendizagem móvel}
 Diversos são os aplicativos que possuem o objetivo de apoiar o processo de ensino e aprendizagem do usuário; seja por meio de jogos, vídeos ou outros materiais. Dessa maneira, alguns aplicativos (para diferentes públicos) foram analisados, a fim de verificar suas funcionalidades e propostas de aprendizagem e acessibilidade, de maneira que essas pudessem ser adaptadas ou utilizadas para aplicações com foco no idoso.
 
 \begin{description}
@@ -137,10 +154,10 @@ Não deixe a vovó cair & \begin{tabular}[c]{@{}l@{}}Tutorial inicial ensinando 
 blabla
 
 \section{Estudo sobre os artefatos}
-blabla
+Nesta seção, será abordado o estudo feito de artefatos que auxiliam o desenvolvimento de aplicações educacionais móveis: as diretrizes de acessibilidade WCAG 2.1 e os padrões pedagógicos do ReqML-Catalog \citep{soad2017reqml}.
 
 \subsection{Pesquisa sobre recomendações da WCAG 2.1}
-A WCAG \href{https://www.w3.org/TR/WCAG21/#no-keyboard-trap}{\textit{Web Content Accessibility Guidelines}} é um conjunto de recomendações criadas pela \href{https://www.w3.org/}{W3C} com o objetivo de tornar o conteúdo da Web mais acessível para pessoas com deficiências tais como: cegueira ou baixa visão, surdez ou indivíduos com perda de audição, pessoas com limitações a movimentação, deficiências de fala, fotossensibilidade e limitações cognitivas. As recomendações abrangem \textit{desktops}, \textit{notebooks}, \textit{tablets} e dispositivos móveis, os quais são o foco desse projeto. É importante destacar que a versão 2.1 foi construída respeitando a versão 2.0, publicada em dezembro de 2008. O documento foi revisado pelos membros da W3C, desenvolvedores de software e por outros grupos interessados, os quais foram julgados capazes pela própria W3C. Os 4 princípios utilizados para a acessibilidade na Web são: perceptível, operável, compreensível e robusto.
+A \textit{Web Content Accessibility Guidelines} \citep{wcag} é um conjunto de recomendações criadas pela \href{https://www.w3.org/}{W3C} com o objetivo de tornar o conteúdo da Web mais acessível para pessoas com deficiências tais como: cegueira ou baixa visão, surdez ou indivíduos com perda de audição, pessoas com limitações de movimentação, deficiências de fala, fotossensibilidade e limitações cognitivas. As recomendações abrangem \textit{desktops}, \textit{notebooks}, \textit{tablets} e dispositivos móveis, os quais são o foco desse projeto. É importante destacar que a versão 2.1 foi construída respeitando a versão 2.0, publicada em dezembro de 2008. O documento foi revisado pelos membros da W3C, desenvolvedores de software e por outros grupos interessados, os quais foram julgados capazes pela própria W3C. Os 4 princípios utilizados para a acessibilidade na Web são: perceptível, operável, compreensível e robusto.
 \begin{itemize}
     \item Perceptível - Informações e componentes de interface do usuário precisam ser apresentadas de maneira que ele perceba
     \item Operável - Componentes da interface do usuário e navegação precisam ser operáveis
@@ -148,8 +165,37 @@ A WCAG \href{https://www.w3.org/TR/WCAG21/#no-keyboard-trap}{\textit{Web Content
     \item Robusto - O conteúdo deverá ser robusto o suficiente para ser interpretado por uma variedade de agentes de uso, incluindo tecnologias de assistência
 \end{itemize}
 
-\subsection{Req ML Catalog}
-blabla
+O WCAG possui três níveis de conformidade:
+\begin{enumerate}
+    \item Nível A: Pouco impacto no design
+    \item Nível AA: Médio impacto no design
+    \item Nível AAA: Muito impacto no design
+\end{enumerate}
+
+Embora a documentação oficial restrinja a aplicação dos níveis de conforidade a páginas web, ela ainda se mostrou importante para basear o impacto no design das telas do aplicativo. 
+Serão destacados os critérios que mais influenciaram o desenvolvimento do aplicativo:
+
+\begin{itemize}
+    \item 1.2.2 Legendas (Nível A): Será disponibilizada a transcrição dos áudios e vídeos utilizados pelo aplicativo.
+    \item 1.2.8 Mídias alternativas (Nível AAA): Além de ser disponibilizado o conteúdo em texto, também será oferecida a possibilidade de consumir o conteúdo em áudio ou vídeo.
+    \item 1.4.3 Contraste mínimo (Nível AA): Serão respeitados os limites de contraste mínimo entre cores de 4.5:1.
+\end{itemize}
+
+
+\subsection{ReqML-Catalog}
+O \textit{ReqML-Catalog} \citep{soad2017reqml} se trata de um catálogo de requisitos para Aplicações Educacionais Móveis. Ele foi proposto com o objetivo de propiciar um maior apoio na formulação de requisitos para aplicativos de educação, visto que muitos ainda possuem problemas e desafios a serem resolvidos. Além disso, de acordo com a pesquisa feita pelos autores, não havia um conjunto de requisitos completos e bem definidos para Aplicações Educacionais Móveis. É importante destacar que a última versão é uma evolução de outras anteriormente produzidas, as quais foram desenvolvidas a partir de literatura sistemática, revisões, e baseadas no conhecimento de especialistas do assunto. 
+O \textit{ReqML-Catalog} possui uma estrutura hierárquica de três níveis: \textbf{Pedagógico}, \textbf{Social} e \textbf{Técnico}, como se pode ver na Figura \ref{fig:reqML}.
+
+\begin{figure}[H]
+\centering
+    \caption{ReqML-Catalog}
+    \label{fig:reqML}
+    \includegraphics[width=0.9\textwidth]{Figuras/reqML-catalog.png}
+    
+    Fonte: \cite{soad2017reqml}
+\end{figure}
+
+As áreas que mais aproveitadas foram a Técnica e Social. Houve um maior destaque da área Pedagógica por dois motivos principais: forneceu um panorama mais aprofundado de elementos essenciais para a educação obtidos de especialistas e literaturas especializadas; uma vez que o foco do projeto é auxiliar a educação, mais atenção foi dada a esta área.
 
 \section{Levantamento e estudo dos conceitos e tecnologias para desenvolvimento de aplicações móveis}
 
@@ -200,26 +246,17 @@ Portanto, tendo em mente os motivos acima citados, foi realizado um minicurso so
 blabla
 
 \subsection{Estudo do primeiro algoritmo de geração das palavras cruzadas} 
-Nesta subseção será abordado o primeiro algoritmo de geração das palavras cruzadas estudado. Para melhor compreensão deste, é essencial a noção dos paradigmas clássicos da Ciência da Computação: Força Bruta e \textit{Backtracking}. Além disso, é interessante uma pequena noção das Cadeias de Markov Absorventes.
+Nesta subseção será abordado o primeiro algoritmo de geração das palavras cruzadas estudado, o qual necessita de um grande banco de palavras para ser executado corretamente. Para melhor compreensão deste, é essencial a noção dos paradigmas clássicos da Ciência da Computação: Força Bruta e \textit{Backtracking}. Além disso, é interessante uma pequena noção das Cadeias de Markov Absorventes.
 
-A Força Bruta é um paradigma de programação em que o espaço de busca é vasculhado sistematicamente até que se encontre a solução desejada. Um exemplo clássico é a tentativa de descobrir uma senha numérica de 5 dígitos. A abordagem por Força Bruta faria a tentativa de todas as $10^{5}$ possibilidades ($00000 \rightarrow 00001 \rightarrow 00002 \rightarrow 00003$...) até que se encontre a combinação correta da senha. Em geral, as abordagens por força bruta não são eficientes em termos de complexidade de tempo, como se poderá constatar no algoritmo de geração de palavras cruzadas.
+A Força Bruta é um paradigma de programação em que o espaço de busca é vasculhado sistematicamente até que se encontre a solução desejada.
 
-Já o \textit{Backtracking} é também um paradigma de programação largamente estudado nos cursos de Ciência da Computação. Segundo \cite{nilsson1980principles}, o \textit{Backtracking} é um método de resolução de problemas de Ciência da Computação em que se estende incrementalmente uma solução parcial que especifica valores consistentes para uma das variáveis, em direção a uma solução completa, ao repetidamente escolher um valor para outra variável consistente com os valores da atual solução parcial. Pode-se dizer que \textit{Backtracking} é uma extensão da busca por Força Bruta, em que há restrições que devem ser satisfeitas. Estas, podem ser avaliadas antes que todas as soluções tenham sido geradas e dessa maneira possíveis soluções podem ser descartadas antes de finalizadas. Ao se fazer a árvore de possibilidades com o algoritmo de Força Bruta, o \textit{Backtracking} seria responsável pela ``poda'' dos ramos da árvore em que não há possibilidade de solução.
+Já o \textit{Backtracking} é também um paradigma de programação largamente estudado nos cursos de Ciência da Computação. Segundo \cite{nilsson1980principles}, o \textit{Backtracking} é um método de resolução de problemas de Ciência da Computação em que se estende incrementalmente uma solução parcial que especifica valores consistentes para uma das variáveis, em direção a uma solução completa, ao repetidamente escolher um valor para outra variável consistente com os valores da atual solução parcial.
 
-% Se der tempo, colocar um exemplo de backtracking com figuras e com a arvore
+Define-se Cadeias de Markov como um Processo de Markov com a seguinte propriedade: qualquer comportamento futuro do processo, quando seu estado atual é conhecido com exatidão, não é alterado por nenhum conhecimento adicional em relação aos comportamentos passados \citep{howard1998introduction}. Caso a cadeia possua no mínimo um estado final de absorção em que seja possível chegar, é chamada Cadeia de Markov Absorvente.
 
-Antes da definição das Cadeias de Markov é necessário compreender o que são Modelos Estocásticos. De acordo com \cite{howard1998introduction}, um modelo matemático é uma descrição quantitativa de um fenômeno natural. Assim, é possível definir um modelo determinístico como aquele que prediz um único resultado de um conjunto de circunstâncias. Já um modelo estocástico, prediz um conjunto de possíveis resultados ponderados por suas probabilidades ou possibilidades \citep{howard1998introduction}. Assim, define-se Cadeias de Markov como um Processo de Markov com a seguinte propriedade: qualquer comportamento futuro do processo, quando seu estado atual é conhecido com exatidão, não é alterado por nenhum conhecimento adicional em relação aos comportamentos passados \citep{howard1998introduction}. Caso a cadeia possua no mínimo um estado final de absorção em que seja possível chegar, é chamada Cadeia de Markov Absorvente; uma vez que se entra em um estado de absorção não é mais possível sair. 
+O algoritmo utilizado é intitulado \textit{Wizium} \citep{wizium}.
 
-% Colocar uma figura
-
-% Explicar primeiro processos deterministicos e processos estocasticos
-% Depois cadeias de markov, depois com absorção
-% Depois as matrizes de transição (só colocar depois de acabar tudo)
-% Depois explicar como se calcula o tempo médio até a absorção (só colocar depois de acabar tudo)
-
-O algoritmo utilizado é intitulado \textit{Wizium} \citep{wizium}, a seguir serão expostos os passos que levaram seu desenvolvimento, de acordo com o autor, e as análises matemáticas para a compreensão de sua efetividade.
-
-A primeira abordagem para a solução do problema seria simplesmente utilizar o paradigma da Força Bruta. Seja um tabuleiro $3x3$ com as seguintes palavras: \textbf{ASA}, \textbf{SAL}, \textbf{ALA} e \textbf{CEU}. Assim, basta escolher uma palavra das três listadas e colocá-la na primeira linha horizontal, escolher a próxima e colocá-la na segunda posição e depois na terceira. Dessa forma, é possível verificar se o tabuleiro totalmente preenchido é válido analisando as posições verticais. Se todas as palavras verticais estiverem no banco de palavras, o tabuleiro é válido, caso contrário, inválido. 
+A primeira abordagem para a solução do problema seria simplesmente utilizar o paradigma da Força Bruta.
 
 \begin{figure}[H]
 \centering
@@ -232,7 +269,7 @@ A primeira abordagem para a solução do problema seria simplesmente utilizar o 
 
 Como pode-se perceber, a análise só é feita após o último passo. Algumas ramificações da árvore de tentativas poderiam ter sido ``podadas'' com uma análise prévia do tabuleiro antes que chegasse em seu estado completo.   
 
-Portanto, faz-se necessária uma abordagem mais elaborada a fim de obter um melhor desempenho evitando comparações inúteis. Em uma primeira tentativa é possível tentar um \textbf{entrelaçamento}, colocando-se palavras na horizontal de cima para baixo e na vertical da esquerda para a direita. Ao se tentar incluir no tabuleiro, deverá ser feita uma verificação a fim de encontrar uma palavra com o prefixo determinado pela linha ou coluna, como se pode observar na Figura \ref{fig:entrelacamento}. 
+Portanto, faz-se necessária uma abordagem mais elaborada utilizando-se o \textbf{entrelaçamento}, como se pode observar na Figura \ref{fig:entrelacamento}. 
 
 \begin{figure}[H] 
 \centering
@@ -243,12 +280,13 @@ Portanto, faz-se necessária uma abordagem mais elaborada a fim de obter um melh
     Fonte: Elaborada pelo autor
 \end{figure}
 
-Dessa maneira, será possível eliminar o quanto antes ramificações que não poderão gerar uma solução para o problema, assim que tal evento ocorrer bastará voltar um passo (\textit{Backtracking}) e tentar outra palavra. No exemplo dado, não há palavras de 5 letras com prefixo \textbf{IDR}.
+Dessa maneira, será possível eliminar o quanto antes ramificações que não poderão gerar uma solução para o problema.
 
+Será a feita a modelagem do problema como um Processo Estocástico. Como está sendo utilizada a aproximação da probabilidade de coincidência de letras para palavras quaisquer,
+% ($p_{co}$ \ref{pco})
+é conveniente aproximar cada estado do Processo como a tentativa de inserção de uma palavra na horizontal ou vertical. Haverão as possibilidades de sucesso ou falha do processo; caso seja possível inserir uma palavra ocorrerá o avanço, caso contrário, o retrocesso ao estado anterior utilizando-se o \textit{Bactracking}. 
 
-Utilizando os conhecimentos das Cadeias de Markov explanados anteriormente, será a feita a modelagem do problema como um Processo Estocástico. Como está sendo utilizada a aproximação da probabilidade de coincidência de letras para palavras quaisquer ($p_{co}$ \ref{pco}), é conveniente aproximar cada estado do Processo como a tentativa de inserção de uma palavra na horizontal ou vertical. Haverão as possibilidades de sucesso ou falha do processo; caso seja possível inserir uma palavra ocorrerá o avanço, caso contrário, o retrocesso ao estado anterior utilizando-se o \textit{Bactracking}. 
-
-Seja N a quantidade de palavras de tamanho S no banco de palavras, $wh_{i}$ e $wv_{i}$ as S células horizontais e verticais, respectivamente. A probabilidade de que seja possível a inserção em uma palavra na posição $i$ é dada por:
+Sem perdas de generalidade, seja N a quantidade de palavras de tamanho S no banco de palavras, $wh_{i}$ e $wv_{i}$ as S células horizontais e verticais, respectivamente. A probabilidade de que seja possível a inserção em uma palavra na posição $i$ é dada por:
 
 \begin{center}
     \Large{$p_{hi} = 1 - (1 - p_{co}^{i})^{N}$}
@@ -296,9 +334,6 @@ Logo, verificar a possibilidade de inserir palavras na vertical nas S posições
     Fonte: Elaborada pelo autor
 \end{figure}
 
-No exemplo acima, \textbf{adega} não pode ser inserida pois não existe uma palavra de 5 letras iniciada por \textbf{ADD}.
-Ainda, uma vez que só serão inseridas palavras na horizontal e não na vertical, a Cadeia de Markov do Processo terá metade de seu tamanho, já que a quantidade de inserções muda de $2S$ para $S$.
-
 % Obs.: Em vez de retornar o número médio de palavras de tam S com prefixo i; eu nao deveria retornar o quantidade total de palavras com tamanho maior ou igual a i?
 Seja $M(S,i)$ a função que retorna o número médio de palavras de tamanho $S$ que possuem prefixo de tamanho $i$. Portanto, é possível definir a probabilidade de existir uma palavra que possa ser inserida na vertical ao se colocar uma letra na posição $i$; só é necessário verificar a última letra pois as $i-1$ letras anteriores já foram testadas previamente.
 
@@ -311,6 +346,8 @@ Logo, a probabilidade de uma palavra poder ser inserida na horizontal na linha $
 \begin{center}
     \Large{$p_{h_{i}} = N*(p_{co_{i}})^{S}$}
 \end{center}
+
+Como comentado anteriormente, o algoritmo necessita de um grande banco de palavras para ser executado da maneira esperada. Dessa maneira, possíveis aplicações futuras poderão surgir; todavia, para o período coberto por este relatório o foco de desenvolvimento foi dado ao segundo algoritmo, que será elucidado na subseção seguinte.
 
 \subsection{Estudo do segundo algoritmo de geração de palavras cruzadas}
 Nesta seção será abordado o segundo algoritmo de geração de palavras cruzadas, o qual será utilizado no projeto do aplicativo. Uma lista de palavras é dada para que se gere uma palavra cruzada formada somente por estas. Portanto, a abordagem se torna diferente do primeiro algoritmo analisado, o qual utiliza um grande banco de palavras para gerar o tabuleiro.
@@ -332,9 +369,9 @@ Após estas etapas, é iniciado o procedimento de inserção. É feita a tentati
 \centering
     \caption{Funções de avaliação de pontuações do tabuleiro}
     \label{fig:codeScores}
-    \includegraphics[width=0.9\textwidth]{Figuras/codeScores.png}
+    \includegraphics[width=0.9\textwidth]{Figuras/codeComponentScores.png}
     
-    Fonte: \href{https://github.com/MichaelWehar/Crossword-Layout-Generator}{Crossword Layout Generator}
+    Fonte: \cite{layoutGenerator}
 \end{figure}
 
 O último fator tenta equilibrar a quantidade de palavras na horizontal e na vertical. Caso mais da metade das palavras já inseridas estiver na horizontal e a palavra que está sendo analisada no momento estiver na vertical, ela é melhor avaliada.
@@ -344,4 +381,46 @@ Uma vez que a palavra é inserida armazena-se sua posição no tabuleiro, bem co
 Esse processo é feito com todas as palavras da lista. Todavia, pode ocorrer o caso de uma palavra fica isolada sem interseções. Assim, todas essas são eliminadas. É importante lembrar que o tabuleiro está em um tamanho maior do que o desejado pelo usuário, pois no início ocorreu uma expansão das linhas e colunas ao multiplicá-las por um fator que havia sido definido como 3. Dessa maneira, restam colunas e linhas que estão vazias e podem ser eliminadas. Logo, o último passo é reduzir o tabuleiro para seu tamanho ideal respeitando o desejado pelo usuário. O algoritmo exporta um arquivo JSON contendo as palavras, suas orientações, posições e tamanho.
 
 \subsection{Desenvolvimento do MVP}
-blabla
+% Escrever o que foi feito em termos de desenvolvimento técnico {
+%     - Colocar algumas linhas de código
+%     - Falar de alguns desafios do React Native
+%     - Explicar a arquitetura do React Native do app
+% }
+Nesta subseção será abordado o processo de elaboração do MVP em termos técnicos bem como a arquitetura básica dos softwares utilizados.
+O desenvolvimento se deu utilizando o   \textit{\href{https://reactnative.dev/}{React Native}}, que permite a construção de aplicativos para Android e iOS.
+
+Duas telas foram utilizadas para o teste interligadas por uma navegação em \textit{Stack}. A primeira possibilita a escolha do tamanho do tabuleiro bem como o tema de cores. Já a segunda é a própria tela do jogo de palavras cruzadas, em que se encontra o tabuleiro, o teclado personalizado e a dica das palavras.
+
+Decidiu-se para a construção do MVP de teste utilizar apenas um conjunto de palavras para construção das palavras cruzadas, a fim de focar nas questões de usabilidade e acessibilidade.
+
+A tela de jogo foi desenvolvida da seguinte maneira: uma \textit{tag} \textit{<View>} comporta quatro \textit{tags} principais nativas do \textit{React Native}:
+
+\begin{itemize}
+    \item \textit{<FlatList>}, responsável por renderizar as células do tabuleiro
+    \item \textit{<View>}, responsável por encapsular as também nativas \textit{tags} \textit{TouchableOpacity}. Em conjunto se tornam a seção que mostra a dica da resposta para a palavra selecionada 
+    \item \textit{<View>}, que encapsula o componente customizado \textit{<Keyboard>}, o qual renderiza o teclado personalizado
+    \item \textit{<Modal>}, que fica invisível até que o usuário decida expandir o texto da dica
+\end{itemize}
+
+O teclado personalizado foi introduzido por termos de acessibilidade, botões maiores permitem uma melhor experiência para o usuário idoso. É importante destacar que ele é formado pelas letras que compõem a palavra a ser preenchida acrescida de letras aleatórias.
+
+Para algumas mudanças de informação na tela de jogo, decidiu-se utilizar a \textbf{Manipulação Direta} (\href{https://reactnative.dev/docs/direct-manipulation}{\textit{Direct Manipulation}} de acordo com a documentação oficial) pois evita-se a renderização de toda a tela para pequenas mudanças, o que poderia acarretar problemas de desempenho. Dessa maneira, o estado dos componentes é modificado por meio de referência, acarretando em um melhor desempenho. Os componentes que recebem a Manipulação Direta são \textit{<Tiles>}, que são os componentes customizados os quais renderizam as células do tabuleiro. Ocorrem duas Manipulaçoes Diretas com esses componentes: alteração do foco e substituição da letra exibida.
+
+Na Figura \ref{fig:codeDirectManipulation} podemos ver a função \textit{inputLetter}, que recebe como argumento uma letra. O trecho do código promove uma mudança do valor de uma propriedade no componente em que se faz a referência. Cada célula do tabuleiro está armazenada em uma matriz, para acessá-la utiliza-se \textit{this.ref[posicaoI][posicaoJ]}. Nas linhas 208, 209 e 210 ocorre a mudança da propriedade \textit{text}, seu novo valor passará a ser o armazenado na variável \textit{letter}, a qual é recebida diretamente do teclado personalizado.
+
+\begin{figure}[H]
+\centering
+    \caption{Método que utiliza manipulação direta}
+    \label{fig:codeDirectManipulation}
+    \includegraphics[width=0.9\textwidth]{Figuras/codeDirectManipulation.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+As mudanças de estado que que ocorrem na tela de jogo são:
+
+\begin{itemize}
+    % informal por enquanto
+    \item substituição de letra no tabuleiro
+    \item mudança de cor para a célula que possui o foco
+\end{itemize}
