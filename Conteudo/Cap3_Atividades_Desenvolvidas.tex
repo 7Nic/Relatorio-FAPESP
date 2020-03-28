@@ -15,7 +15,7 @@ O detalhamento se encontra a seguir:
 % Falar da wcag como uma forma de combater isso
 Primeiramente, foram abordados os aspectos relacionados ao conceito de usabilidade bem como a definição de acessibilidade. 
 
-Dessa maneira, pode-se afirmar que segundo a Lei 10.098, de 19 de dezembro de 2000 da Legislação Brasileira, a acessibilidade é a possibilidade e condição de alcance para utilização, com segurança e autonomia, dos
+Assim, segundo a Lei 10.098, de 19 de dezembro de 2000 da Legislação Brasileira, a acessibilidade é a possibilidade e condição de alcance para utilização, com segurança e autonomia, dos
 espaços, mobiliários e equipamentos urbanos, das
 edificações, dos transportes e dos sistemas e meios de comunicação por pessoa portadora de deficiência ou com mobilidade reduzida. Além disso, \cite{torres2002acessibilidade} diz que acessibilidade é um processo dinâmico, associado não só ao desenvolvimento tecnológico, mas principalmente ao desenvolvimento da sociedade. Em geral, está associada a pessoas com deficiências físicas ou psicológicas, idosos ou grupos excluídos; este último mais bem relacionado com o termo \textit{inclusão}. Embora a acessibilidade não se restrinja ao meio digital, é essencial que esteja presente no mesmo. Corroborando com essa ideia, \cite{leew3c} afirma a importância da Web ser utilizável por qualquer um, independente de capacidades individuais ou deficiências. No atual panorama, isso também se aplica ao uso de aplicativos em dispositivos móveis. 
 
@@ -42,8 +42,6 @@ Todavia, independente da definição tomada, torna-se necessário analisar vanta
     \item É mais fácil acomodar dispositivos móveis em uma sala se comparado à computadores de mesa;
     \item Dispositivos móveis podem ser usados em qualquer lugar e em qualquer momento, como em trens, em casa, em hotéis; e isto tem um valor inestimável para a educação \citep{CarmaMaia2008}.
 \end{itemize}
-
-% (i) PDAs ou tablets com anotações e e-books são mais leves e menos volumosos que mochilas cheias de papéis, livros e até laptops; (ii) É mais fácil acomodar dispositivos móveis em uma sala se comparado à computadores de mesa; (iii) Dispositivos móveis podem ser usados em qualquer lugar e em qualquer momento, como em trens, em casa, em hotéis. Isto tem um valor inestimável para a educação \citep{CarmaMaia2008}.
 
 Porém, de acordo com \cite{RICHAMEHTA2016}, as seguintes desvantagens devem ser destacadas: 
 
@@ -171,6 +169,7 @@ Crossword Quiz & \begin{tabular}[c]{@{}l@{}}Não mostra o teclado todo, apenas a
 Não deixe a vovó cair & \begin{tabular}[c]{@{}l@{}}Tutorial inicial ensinando o uso do aplicativo\\ Dicas em meio ao jogo para aplicações reais \\ Marcação do tempo para desafiar o usuário a melhorar cada vez mais \end{tabular}                \\ \midrule
 \end{tabular}
 \label{tab:sprint}
+Fonte: Elaborada pelo autor
 \end{table}
 
 
@@ -326,10 +325,17 @@ As áreas que mais aproveitadas foram a Técnica e Social. Houve um maior destaq
 
 \section{Levantamento e estudo dos conceitos e tecnologias para desenvolvimento de aplicações móveis}
 
-Nesta seção serão abordados os principais conceitos relacionados ao desenvolvimento de aplicações móveis. Desse modo, os principais temas foram: (i) estudo sobre Scrum e Requisitos que trata sobre a metodologia de desenvolvimento adotada neste projeto; (ii) estudos sobre React Native que contempla o levantamento e pesquisa da tecnologia adotada para concepção do sistema; (iii) por fim, estudos sobre UI/UX que discute o conhecimento relacionado a interface e experiência do usuário.
+Com o objetivo de desenvolver um aplicativo que possibilite o ensino a idosos, foi necessário compreender conceitos de Engenharia de Software (Requisitos), bem como a aprendizagem de tecnologias que permitissem a construção do código do mesmo. Dessa forma, serão investigados os principais conceitos relacionados ao desenvolvimento de aplicações móveis: 
+
+\begin{itemize}
+    \item Scrum, que trata sobre a metodologia de desenvolvimento adotada neste projeto;
+    \item Requisitos;
+    \item React Native, o qual contempla o levantamento e pesquisa da tecnologia adotada para concepção do sistema;
+    \item UI/UX, que discute o conhecimento relacionado a interface e experiência do usuário.
+\end{itemize}
 
 \subsubsection{Estudos sobre Scrum e Requisitos} 
-Em 2001, um grupo de 17 pessoas se reuniu para discutir a respeito de desenvolvimentos mais leves de software, pois acreditavam que os modelos em voga eram lentos e burocráticos. O resultado foi o Manifesto Ágil \citep{agileManifesto}, em que os participantes propuseram princípios a serem seguidos. Segundo os criadores, deveria haver a valorização de: (i) Indivíduos e interações mais que processos e ferramentas; (ii) Software em funcionamento mais que documentação abrangente; (iii) Colaboração com o cliente mais que negociação de contratos; (iv) Responder a mudanças mais que seguir um plano.
+Para este projeto, decidiu-se adotar a metodologia de desenvolvimento ágil de software denominada \textit{Scrum}, uma vez que o produto final poderia sofrer com mudanças de requisitos por parte dos usuários. Essa metodologia foi concebida em 2001, com um grupo de 17 pessoas que se reuniu para discutir a respeito de desenvolvimentos mais leves de software, pois acreditavam que os modelos em voga eram lentos e burocráticos. O resultado foi o Manifesto Ágil \citep{agileManifesto}, em que os participantes propuseram princípios a serem seguidos. Segundo os criadores, deveria haver a valorização de: (i) Indivíduos e interações mais que processos e ferramentas; (ii) Software em funcionamento mais que documentação abrangente; (iii) Colaboração com o cliente mais que negociação de contratos; (iv) Responder a mudanças mais que seguir um plano.
 
 Dentre os artefatos do \textit{Scrum}, devem ser citados o \textit{Product Backlog} e o \textit{Sprint Backlog}. O \textit{Product Backlog} possui todas as funcionalidades necessárias para o funcionamento do produto, as quais são ordenadas por prioridade. Já o \textit{Sprint Backlog} reúne as funcionalidades que serão desenvolvidas na atual \textit{Sprint} em execução.
 
@@ -353,44 +359,79 @@ Três são os principais tipos de requisitos \citep{Sommervile2010}:
 
 
 \subsection{Estudos sobre React Native} 
-Há diversas as maneiras de desenvolver um aplicativo móvel. A maneira convencional é utilizar a linguagem nativa: Java (Android) e Swift/Object-C (iOS), todavia isso causa o empecilho de se disponibilizar o aplicativo apenas para uma plataforma. Ainda, é possível usar \textit{frameworks} híbridos que recorrem ao uso de \textit{web-views} para renderizar a aplicação e disponibilizar para os dois sistemas operacionais, pode-se citar Ionic, Titanium, e PhoneGap. Entretanto, o desempenho de aplicativos construídos com tais tecnologias é precário. Pensando no problema, durante a conferência do React.js em 2015, o Facebook introduziu seu novo \textit{framework} React Native, o qual prometia revolucionar a maneira de desenvolver aplicativos móveis. A premissa era simples, possibilitar o desenvolvimento \textit{mobile} sem a necessidade de programação diferente para os dois sistemas operacionais líderes.
+Há diversas maneiras de desenvolver um aplicativo móvel. O modo convencional é utilizar a linguagem nativa: Java (Android) e Swift/Object-C (iOS), todavia isso causa o empecilho de se disponibilizar o aplicativo apenas para uma plataforma. Ainda, é possível usar \textit{frameworks} híbridos que recorrem ao uso de \textit{web-views} para renderizar a aplicação e disponibilizar para os dois sistemas operacionais, pode-se citar Ionic, Titanium, e PhoneGap. Entretanto, o desempenho de aplicativos construídos com tais tecnologias é precário. Pensando no problema, durante a conferência do React.js em 2015, o Facebook introduziu seu novo \textit{framework} React Native, o qual prometia revolucionar a maneira de desenvolver aplicativos móveis. A premissa era simples, possibilitar o desenvolvimento \textit{mobile} sem a necessidade de programação diferente para os dois sistemas operacionais líderes.
+
+Levando isso em conta, as principais vantagens e desvantagens do \textit{framework} serão listadas a seguir na Tabela \ref{tab:vanDesvRN}:
 
 % Vantagens e desvantagens
-As principais vantagens do uso do React Native, de acordo com \cite{danielsson2016}, são: (i) O desenvolvimento ocorre em uma única linguagem, sendo possível utilizar o aplicativo em iOS ou Android; (ii) A documentação oficial dá grande suporte de ajuda; (iii) O React Native não possui nenhum efeito negativo na experiência do usuário, pois a diferença de desempenho é imperceptível para a grande maioria dos usuários.
+\begin{table}[!ht]
+\centering
+\caption{\textit{Vantagens e desvantagens do React Native}}
+\centering
+\footnotesize
+\begin{tabular}{p{7cm} p{7cm}}
+\toprule
+\textbf{Vantagens} \citep{danielsson2016} & \textbf{Desvantagens}                          
+\\ \midrule
+O desenvolvimento ocorre em uma única linguagem, sendo possível utilizar o aplicativo em iOS ou Android.
+& 
+Incerteza da possibilidade de executar frequentes tarefas em segundo plano quando o aplicativo já está sendo executado em segundo plano \citep{sodebergJohansson}.
+\\ \midrule
 
-Dentre as desvantagens, é importante destacar: (i) Incerteza da possibilidade de executar frequentes tarefas em segundo plano quando o aplicativo já está sendo executado em segundo plano \citep{sodebergJohansson}; (ii) Testes concluem que a frequência GPU, carregamento de CPU, uso de memória e consumo de energia são levemente inferiores ao desenvolvimento nativo \citep{danielsson2016}.
+A documentação oficial dá grande suporte e ajuda.
+& 
+Testes concluem que a frequência GPU, carregamento de CPU, uso de memória e consumo de energia são levemente inferiores ao desenvolvimento nativo \citep{danielsson2016}.
+\\ \midrule
 
-Entretanto, embora existam algumas desvantagens do uso do React Native, em termos gerais é uma excelente alternativa para o projeto, pois não compromete de maneira significante a performance do aplicativo e possibilita o uso nas plataformas iOS e Android, alcançando assim, um número maior de usuários.
+O \textit{React Native} não possui nenhum efeito negativo na experiência do usuário, pois a diferença de desempenho é imperceptível para a grande maioria dos usuários.
+& 
+
+\\ \midrule
+
+\end{tabular}
+\label{tab:vanDesvRN}
+
+Fonte: Elaborada pelo autor
+\end{table}
+
+Embora existam algumas desvantagens do uso do React Native, em termos gerais é uma excelente alternativa para o projeto, pois não compromete de maneira significante a performance do aplicativo. Além disso possibilita o uso nas plataformas iOS e Android, alcançando assim, um número maior de usuários.
 
 \subsection{Estudos sobre UI/UX}
-A Interface de Usuário (UI) se refere a um sistema e um usuário interagindo um com outro por meio de comandos para operar o sistema, inserir dados, e usar o conteúdo \citep{joo2015}. Já a Experiência de Usuário (UX), segundo \cite{marc2008}, é uma perspectiva distinta da qualidade de tecnologia interativa. O autor ainda define UX como uma avaliação momentânea e primária da sensação (bom-ruim) enquanto interage com o produto ou serviço. Dessa forma, UX troca a atenção dos produtos e materiais para as sensações humanas - o lado subjetivo do uso do produto. Ainda, de acordo com \cite{castilla2017}, a UX representa uma mudança do próprio conceito de usabilidade, pois o objetivo não se reduz a melhorar a sensação do usuário na eficácia, eficiência e facilidade de aprendizagem, mas sim tentar resolver o problema estratégico da utilidade do produto para o usuário. 
+Visando corroborar as boas práticas de desenvolvimento de aplicações móveis, é essencial a compreensão dos conceitos de Interface de Usuário bem como Experiência do Usuário. Sobretudo no desenvolvimento deste projeto, o qual possui o foco em usuários idosos.
+
+Assim, pode-se dizer que a Interface de Usuário (UI) se refere a um sistema e um usuário interagindo um com outro por meio de comandos para operar o sistema, inserir dados, e usar o conteúdo \citep{joo2015}. Já a Experiência de Usuário (UX), segundo \cite{marc2008}, é uma perspectiva distinta da qualidade de tecnologia interativa. O autor ainda define UX como uma avaliação momentânea e primária da sensação (bom-ruim) enquanto interage com o produto ou serviço. Dessa forma, UX troca a atenção dos produtos e materiais para as sensações humanas - o lado subjetivo do uso do produto. Ainda, de acordo com \cite{castilla2017}, a UX representa uma mudança do próprio conceito de usabilidade, pois o objetivo não se reduz a melhorar a sensação do usuário na eficácia, eficiência e facilidade de aprendizagem, mas sim tentar resolver o problema estratégico da utilidade do produto para o usuário. 
 
 Dessa maneira, pode-se concluir que a interface e experiência do usuário cumprem papéis essenciais no desenvolvimento de um produto, sendo indispensável seu planejamento. Ainda, tendo em vista o público alvo do atual projeto, usuários idosos, torna-se necessária a atenção e cuidado no assunto a fim de alcançar os objetivos finais.
 
-Portanto, tendo em mente os motivos acima citados, foi realizado um minicurso sobre a Experiência de usuário e Interface de usuário com uma especialista da área UI/UX cujo título era ``Como incluir UX e UI Design nos seus projetos''. A realização se deu na 22ª Semana da Computação da Universidade de São Paulo, campus de São Carlos, no dia 03/10. O minicurso se mostrou de grande importância, uma vez que possibilitou a expansão do conhecimento do assunto em termos práticos, sendo possível sua aplicação no projeto.
+Portanto, tendo em mente os motivos acima citados, foi realizado um minicurso sobre a Experiência de usuário e Interface de usuário com uma especialista da área UI/UX cujo título era ``Como incluir UX e UI Design nos seus projetos''. \textbf{\textit{A realização se deu na 22ª Semana da Computação da Universidade de São Paulo, campus de São Carlos, no dia 03/10/2019}}. O minicurso se mostrou de grande importância, uma vez que possibilitou a expansão do conhecimento do assunto em termos práticos, sendo possível sua aplicação no projeto.
 
 \section{Desenvolvimento}
-% Precisa de algo aqui?
+Nesta seção, são abordados os aspectos relativos ao desenvolvimento do aplicativo móvel. Partindo de um protótipo inicial, analisando-se o algoritmo de geração de palavras cruzadas e finalmente sendo discutido o Produto Mínimo Viável (\textit{MVP}).
 
 \subsection{Protótipo inicial}
-O trabalho realizado anteriormente \citep{oliveira2018crossword} se trata um protótipo do aplicativo \textit{Crossword Learning}. Ele é classificado como uma aplicação educacional móvel, cuja estrutura foi baseada nos perfis de usuários idosos. O objetivo é apoiar o ensino dos usuários sobre diversos assuntos com o suporte de palavras cruzadas.
+% Ficou claro que esse prototipo e do doutorado de outra pessoa e estou continuando?
 
-A validação da interface do aplicativo, cujo foco foi acessibilidade e usabilidade, foi feita com dez participantes e está servindo de base para a elaboração de requisitos. É importante destacar que a elicitação terá também como base padrões pedagógicos em conjunto com diretrizes pedagógicas e de acessibilidade.
+Este projeto tomou como base o trabalho realizado por \cite{oliveira2018crossword}. O referido trabalho desenvolveu, dentre outros resultados, um protótipo do aplicativo \textit{Crossword Learning}, o qual é classificado como uma aplicação educacional móvel e possui estrutura baseada nos perfis de usuários idosos. O objetivo era apoiar o ensino dos usuários sobre diversos assuntos com o suporte de palavras cruzadas.
+
+É importante destacar que para a construção do protótipo foi realizada uma pesquisa, cujos dados foram coletados e analisados e serviram como base.
+Utilizando-se um questionário com o objetivo de verificar o interesse dos idosos em aplicações educacionais móveis, 28 participantes com idade entre 50 e 81 anos colaboraram. Ainda, foi feita uma entrevista com dois especialistas no ensino desse público.
+
+A validação da interface do aplicativo, cujo foco foi acessibilidade e usabilidade, foi feita com dez participantes e está servindo de base para a elaboração de requisitos. 
 
 \subsection{Estudo do algoritmo de geração de palavras cruzadas}
-Nesta seção será abordado o segundo algoritmo de geração de palavras cruzadas, o qual será utilizado no projeto do aplicativo. Uma lista de palavras é dada para que se gere uma palavra cruzada formada somente por estas. Portanto, a abordagem se torna diferente do primeiro algoritmo analisado, o qual utiliza um grande banco de palavras para gerar o tabuleiro.
+Uma vez que o protótipo inicial só contemplava uma interface, o próximo passo era a determinação de um algoritmo que pudesse gerar um tabuleiro de palavras cruzadas. 
 
-O usuário pode escolher o tamanho do tabuleiro, caso uma palavra seja grande demais e não consiga ser inserida, ela é eliminada da lista e não segue para os próximoas passos.
+Assim, foi tomado como base o algoritmo feito em \textit{javascript} por \cite{layoutGenerator}, o qual foi modificado para atender as necessidades deste projeto. Ele funciona a partir de uma lista de palavras que serão usadas para construir um tabuleiro. Além disso, permite que o usuário escolha o tamanho do tabuleiro, e caso uma palavra seja grande demais e não consiga ser inserida, ela é eliminada da lista e não segue para os próximos passos. A seguir serão explicitados os detalhes do algoritmo.
 
-O algoritmo inicia gerando uma tabela com o mesmo número de colunas e linhas. Essa quantidade é definida multiplicando-se o tamanho da maior palavra por um fator definido como 3. Por exemplo, caso a maior palavra tenha 7 letras e o fator seja 3, será gerada uma tabela 14x14. Isso ocorre para aumentar a probabilidade de interseção entre palavras. 
+O procedimento inicia gerando uma tabela com o mesmo número de colunas e linhas. Essa quantidade é definida multiplicando-se o tamanho da maior palavra por um fator definido como 3. Por exemplo, caso a maior palavra tenha 7 letras e o fator seja o mesmo 3, será gerada uma tabela 14x14. Isso ocorre para aumentar a probabilidade de interseção entre palavras. 
 
-Após estas etapas, é iniciado o procedimento de inserção. É feita a tentativa de inserção para cada uma das palavras fornecidas em todas as posições possíveis do tabuleiro iniciando-se com a disposição horizontal e após a vertical. Caso ocorra algum conflito da palavra inserida com outra que já esteja no tabuleiro, a posição será ignorada. Uma terminada a tentativa de inserção de uma palavra em todas as posições, é feita a análise de pontuação entre elas. Apenas a posição que possuir a maior pontuação permanecerá. Para isso, são computados quatro tipos de pontuações, como mostrado na (\autoref{fig:codeScores}). As avaliações possuem os seguintes pesos percentuais:
+Após estas etapas, é iniciado o procedimento de inserção. É feita a tentativa de inserção para cada uma das palavras fornecidas em todas as posições possíveis do tabuleiro iniciando-se com a disposição horizontal e após a vertical. Caso ocorra algum conflito da palavra inserida com outra que já esteja no tabuleiro, a posição será ignorada. Uma vez terminada a tentativa de inserção de uma palavra em todas as posições, é feita a análise de pontuação entre elas. Apenas a posição que possuir a maior pontuação permanecerá. Para isso, são computados quatro tipos de pontuações, como mostrado na (\autoref{fig:codeScores}). As avaliações possuem os seguintes pesos percentuais:
 
 \begin{itemize}
     \item Número de conexões - 70\%
     \item Distância do centro do tabuleiro - 15\%
-    \item Tamanho da palavra - 5\%
     \item Vertical vs Horizontal - 10\%
+    \item Tamanho da palavra - 5\%
 \end{itemize}
 
 \begin{figure}[H]
@@ -402,24 +443,30 @@ Após estas etapas, é iniciado o procedimento de inserção. É feita a tentati
     Fonte: \cite{layoutGenerator}
 \end{figure}
 
-O último fator tenta equilibrar a quantidade de palavras na horizontal e na vertical. Caso mais da metade das palavras já inseridas estiver na horizontal e a palavra que está sendo analisada no momento estiver na vertical, ela é melhor avaliada.
+O fator Vertical vs Horizontal tenta equilibrar a quantidade de palavras na horizontal e na vertical. Caso ocorra o caso de mais da metade das palavras já estar inseridas na horizontal e a palavra que está sendo analisada no momento estiver na vertical, ela é melhor avaliada.
 
 Uma vez que a palavra é inserida armazena-se sua posição no tabuleiro, bem como sua orientação vertical ou horizontal e seu tamanho.
 
-Esse processo é feito com todas as palavras da lista. Todavia, pode ocorrer o caso de uma palavra fica isolada sem interseções. Assim, todas essas são eliminadas. É importante lembrar que o tabuleiro está em um tamanho maior do que o desejado pelo usuário, pois no início ocorreu uma expansão das linhas e colunas ao multiplicá-las por um fator que havia sido definido como 3. Dessa maneira, restam colunas e linhas que estão vazias e podem ser eliminadas. Logo, o último passo é reduzir o tabuleiro para seu tamanho ideal respeitando o desejado pelo usuário. O algoritmo exporta um arquivo JSON contendo as palavras, suas orientações, posições e tamanho.
+Esse processo é feito com todas as palavras da lista. Todavia, pode ocorrer o caso de uma palavra ficar isolada sem interseções, e portanto será eliminada. É importante lembrar que o tabuleiro está em um tamanho maior do que o desejado pelo usuário, pois no início ocorreu uma expansão das linhas e colunas ao multiplicá-las por um fator que havia sido definido como 3. Dessa maneira, restam colunas e linhas que estão vazias e podem ser eliminadas. Logo, o último passo é reduzir o tabuleiro para seu tamanho ideal respeitando o desejado pelo usuário. 
 
-\subsection{Desenvolvimento do MVP}
+Como resultado final, o algoritmo exporta um arquivo \textit{JSON} (Figura \ref{fig:json}) contendo o tabuleiro de palavras cruzadas, nele há as palavras, suas orientações e as coordenadas de suas posições no tabuleiro.
+
+\begin{figure}[H]
+\centering
+    \caption{Arquivo \textit{JSON} gerado como resultado final}
+    \label{fig:json}
+    \includegraphics[width=0.9\textwidth]{Figuras/codeJSONresult.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+\subsection{Desenvolvimento do Produto Mínimo Viável (\textit{MVP})}
 % Escrever o que foi feito em termos de desenvolvimento técnico {
 %     - Colocar algumas linhas de código
 %     - Falar de alguns desafios do React Native
 %     - Explicar a arquitetura do React Native do app
 % }
-Nesta subseção será abordado o processo de elaboração do MVP em termos técnicos bem como a arquitetura básica dos softwares utilizados.
-O desenvolvimento se deu utilizando o  \cite{RN}, que permite a construção de aplicativos para Android e iOS.
-
-% Duas telas foram utilizadas para o teste interligadas por uma navegação em \textit{Stack}. A primeira possibilita a escolha do tamanho do tabuleiro bem como o tema de cores. Já a segunda é a própria tela do jogo de palavras cruzadas, em que se encontra o tabuleiro, o teclado personalizado e a dica das palavras.
-
-Decidiu-se para a construção do MVP de teste utilizar apenas um conjunto de palavras para construção das palavras cruzadas, a fim de focar nas questões de usabilidade e acessibilidade.
+Com o algoritmo descrito acima funcionando corretamente, foi possível construir um \textit{MVP}. Já que o desenvolvimento se deu utilizando o \cite{RN}, que permite a construção de aplicativos para Android e iOS, o processo se tornou ainda mais fácil pois a implementação do algoritmo supracitado foi feita em \textit{javascript}, a qual é a linguagem de programação também utilizada no \cite{RN}. Dessa maneira, a arquitetura do \textit{framework} se encarrega do processo que permite que o algoritmo seja executado no dispositivo móvel.
 
 A tela de jogo foi desenvolvida da seguinte maneira: uma \textit{tag} \textit{<View>} comporta quatro \textit{tags} principais nativas do \textit{React Native}:
 
@@ -427,23 +474,35 @@ A tela de jogo foi desenvolvida da seguinte maneira: uma \textit{tag} \textit{<V
     \item \textit{<FlatList>}, responsável por renderizar as células do tabuleiro
     \item \textit{<View>}, responsável por encapsular as também nativas \textit{tags} \textit{TouchableOpacity}. Em conjunto se tornam a seção que mostra a dica da resposta para a palavra selecionada 
     \item \textit{<View>}, que encapsula o componente customizado \textit{<Keyboard>}, o qual renderiza o teclado personalizado
-    \item \textit{<Modal>}, que fica invisível até que o usuário decida expandir o texto da dica
+    \item \textit{<Modal>}, que fica encarregada de expandir o texto quando o usuário realiza o toque na dica
 \end{itemize}
+
+A Figura \ref{fig:keyboard} mostra o componente \textit{<Keyboard>}. A linha 286 passa o um vetor contendo todas as letras pertencentes ao teclado personalizado para o componente. As linhas 287 e 288 passam as funções de inserção de letra e a função que faz a mudança de célula quando a letra é inserida. 
+
+\begin{figure}[H]
+\centering
+    \caption{Trecho do código da \textit{<View>} que encapsula \textit{<Keyboard>}}
+    \label{fig:keyboard}
+    \includegraphics[width=1.0\textwidth]{Figuras/codeKeyboard.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
 
 O teclado personalizado foi introduzido por termos de acessibilidade, botões maiores permitem uma melhor experiência para o usuário idoso. É importante destacar que ele é formado pelas letras que compõem a palavra a ser preenchida acrescida de letras aleatórias.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Telas do MVP}
-%     \label{fig:scrum}
-%     \includegraphics[width=1.0\textwidth]{Figuras/mvp.png}
+\begin{figure}[H]
+\centering
+    \caption{Telas do MVP}
+    \label{fig:mvp}
+    \includegraphics[width=1.0\textwidth]{Figuras/mvp.png}
     
-%     Fonte: Elaborada pelo autor
-% \end{figure}
+    Fonte: Elaborada pelo autor
+\end{figure}
 
-Para algumas mudanças de informação na tela de jogo, decidiu-se utilizar a \textbf{Manipulação Direta} (\href{https://reactnative.dev/docs/direct-manipulation}{\textit{Direct Manipulation}} de acordo com a documentação oficial) pois evita-se a renderização de toda a tela para pequenas mudanças, o que poderia acarretar problemas de desempenho. Dessa maneira, o estado dos componentes é modificado por meio de referência, acarretando em um melhor desempenho. Os componentes que recebem a Manipulação Direta são \textit{<Tiles>}, que são os componentes customizados os quais renderizam as células do tabuleiro. Ocorrem duas Manipulaçoes Diretas com esses componentes: alteração do foco e substituição da letra exibida.
+Para algumas mudanças de informação na tela de jogo, decidiu-se utilizar a \textbf{Manipulação Direta} pois evita-se a renderização de toda a tela para pequenas mudanças, o que poderia acarretar problemas de desempenho. Dessa maneira, o estado dos componentes é modificado por meio de referência, acarretando em uma maior fluidez. Os elementos que recebem a Manipulação Direta são \textit{<Tiles>}, que são componentes customizados que renderizam as células do tabuleiro. 
+% Ocorrem duas Manipulaçoes Diretas com esses componentes: alteração do foco e substituição da letra exibida.
 
-Na Figura \ref{fig:codeDirectManipulation} podemos ver a função \textit{inputLetter}, que recebe como argumento uma letra. O trecho do código promove uma mudança do valor de uma propriedade no componente em que se faz a referência. Cada célula do tabuleiro está armazenada em uma matriz, para acessá-la utiliza-se \textit{this.ref[posicaoI][posicaoJ]}. Nas linhas 208, 209 e 210 ocorre a mudança da propriedade \textit{text}, seu novo valor passará a ser o armazenado na variável \textit{letter}, a qual é recebida diretamente do teclado personalizado.
+Na Figura \ref{fig:codeDirectManipulation} pode-se observar uma função que faz uso da Manipulação Direta. \textit{inputLetter} recebe como argumento uma letra e promove a mudança do valor de uma propriedade no componente em que se faz a referência. Como cada célula do tabuleiro está armazenada em uma matriz, para acessá-la utiliza-se \textit{this.ref[posicaoI][posicaoJ]}. Nas linhas 208, 209 e 210 ocorre a mudança da propriedade \textit{text} usando a referência (\textit{.ref}) junto com o método \textit{setNativeProps}. Seu novo valor passará a ser o armazenado na variável \textit{letter}, a qual é recebida diretamente do teclado personalizado.
 
 \begin{figure}[H]
 \centering
@@ -454,10 +513,10 @@ Na Figura \ref{fig:codeDirectManipulation} podemos ver a função \textit{inputL
     Fonte: Elaborada pelo autor
 \end{figure}
 
-As mudanças de estado que que ocorrem na tela de jogo são:
+% As mudanças de estado que ocorrem na tela de jogo são:
 
-\begin{itemize}
-    % informal por enquanto
-    \item substituição de letra no tabuleiro
-    \item mudança de cor para a célula que possui o foco
-\end{itemize}
+% \begin{itemize}
+%     % informal por enquanto
+%     \item substituição de letra no tabuleiro
+%     \item mudança de cor para a célula que possui o foco
+% \end{itemize}
