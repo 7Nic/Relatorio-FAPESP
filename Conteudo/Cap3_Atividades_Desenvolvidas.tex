@@ -255,7 +255,7 @@ tempo de transição e esforços.
 Fonte: \cite{Oliveira2019_quali}
 \end{table}
 
-As principais dificuldades sofridas pelo público idoso são \citep{euromed}:
+Para uma compreensão mais abrangente de todo o contexto de ensino voltado ao idoso, é importante á análise concomitante entre as questões supracitadas e as principais dificuldades sofridas pelo público em questão \citep{euromed}:
 
 \begin{itemize}
     \item Problemas em absorver novas informações
@@ -268,15 +268,16 @@ As principais dificuldades sofridas pelo público idoso são \citep{euromed}:
 
 Tendo em vista tais dificuldades, faz-se necessária sua consideração no desenvolvimento do aplicativo, objetivando uma maior efetividade na compreensão do conteúdo pedagógico por parte do usuário idoso.
 
-Ademais, é imprescindível citar a interferência das emoções no processo de aprendizado. A impaciência, relacionada a negatividade emocional associada a usuários os quais possuem dificuldades de aprender novas habilidades, é um fator que torna seu aprendizado ainda mais dificultoso \citep{Edukacja}. Portanto, proporcionar um ambiente emocionalmente saudável bem como sensações emocionais positivas motivantes, torna-se imperioso para possibilitar um melhor rendimento por parte do usuário idoso que estuda o assunto.
+Ademais, é imprescindível citar outro problema: a interferência das emoções no processo de aprendizado. A impaciência, relacionada à negatividade emocional associada a usuários os quais possuem dificuldades de aprender novas habilidades, é um fator que torna seu aprendizado ainda mais dificultoso \citep{Edukacja}. Portanto, proporcionar um ambiente emocionalmente saudável bem como sensações emocionais positivas motivantes, torna-se imperioso para possibilitar um melhor rendimento por parte do usuário idoso que estuda o assunto.
 
 Outro fator importante a ser considerado no ensino ao público idoso é a perda de memória. A informação adquirida por meio da visão é mais facilmente esquecida que a ouvida; por consequência,  faz-se necessária a adoção de conteúdo auditivo nos métodos de ensino. Concomitantemente ao material auditivo, é recomendada a repetição frequente do conteúdo a fim de reduzir a taxa de esquecimento e elevar o nível de retenção do usuário idoso \citep{euromed}.
 
-Segundo \cite{Edukacja}, trabalhar em pequenos grupos é a maneira mais efetiva quando se trata de atividades educacionais para idosos. Isso ocorre pois há uma rejeição aos métodos tradicionais de trabalho, pois esperam um tipo de educação baseada em relações pessoais, a qual é mais fácil de ser aplicada em pequenos grupos. Assim, é recomendado o uso do aplicativo desenvolvido em grupos de alunos idosos, uma vez que elevariam a proximidade entre os usuários, beneficiando o aprendizado.
+Segundo \cite{Edukacja}, trabalhar em pequenos grupos é a maneira mais efetiva quando se trata de atividades educacionais para idosos. Como citado na Tabela \ref{tab:questoesAprIdosos}, isso ocorre pois há uma rejeição aos métodos tradicionais de trabalho, pois esperam um tipo de educação baseada em relações pessoais, a qual é mais fácil de ser aplicada em pequenos grupos. Assim, é recomendado o uso do aplicativo desenvolvido em grupos de alunos idosos, uma vez que elevariam a proximidade entre os usuários, beneficiando o aprendizado.
 
 Nesta seção puderam ser analisados diversos aspectos os quais devem ser observados no processo de ensino aos idosos. Desde incentivos indiretos para a motivação, até a preocupação direta com a repetição de conteúdo a fim de diminuir a taxa de esquecimento. 
 
 \section{Estudo sobre os artefatos}
+\label{subsec:artefatos}
 Com o intuito de auxiliar a elicitação de requisitos para o desenvolvimento do aplicativo, mostrou-se necessário o estudo de artefatos.
 Assim, tal estudo será tratado com maiores detalhes sobre as diretrizes de acessibilidade WCAG 2.1 e os padrões pedagógicos do ReqML-Catalog \citep{soad2017reqml}.
 
@@ -297,8 +298,8 @@ O WCAG possui três níveis de conformidade:
     \item Nível AAA: Muito impacto no design
 \end{enumerate}
 
-Embora a documentação oficial restrinja a aplicação dos níveis de conforidade a páginas web, ela ainda se mostrou importante para basear o impacto no design das telas do aplicativo. 
-Serão destacados os critérios que mais influenciaram o desenvolvimento do aplicativo:
+Embora a documentação oficial restrinja a aplicação dos níveis de conformidade a páginas web, ela ainda se mostrou importante para basear o impacto no design das telas do aplicativo. 
+Serão destacados os critérios que mais influenciarão no desenvolvimento do aplicativo:
 
 \begin{itemize}
     \item 1.2.2 Legendas (Nível A): Será disponibilizada a transcrição dos áudios e vídeos utilizados pelo aplicativo.
@@ -308,7 +309,7 @@ Serão destacados os critérios que mais influenciaram o desenvolvimento do apli
 
 
 \subsection{ReqML-Catalog}
-Concomitantemente à WCAG 2.1, foi considerado o \textit{ReqML-Catalog}
+Paralelamente à WCAG 2.1, foi considerado o \textit{ReqML-Catalog}
 \citep{soad2017reqml}, o qual se trata de um catálogo de requisitos para Aplicações Educacionais Móveis. Ele foi proposto com o objetivo de propiciar um maior apoio na formulação de requisitos para aplicativos de educação, visto que muitos ainda possuem problemas e desafios a serem resolvidos. Além disso, de acordo com a pesquisa feita pelos autores, não havia um conjunto de requisitos completos e bem definidos para Aplicações Educacionais Móveis. É importante destacar que a última versão é uma evolução de outras anteriormente produzidas, as quais foram desenvolvidas a partir de literatura sistemática, revisões, e baseadas no conhecimento de especialistas do assunto. 
 O \textit{ReqML-Catalog} possui uma estrutura hierárquica de três níveis: \textbf{Pedagógico}, \textbf{Social} e \textbf{Técnico}, como se pode ver na Figura \ref{fig:reqML}.
 
@@ -322,6 +323,98 @@ O \textit{ReqML-Catalog} possui uma estrutura hierárquica de três níveis: \te
 \end{figure}
 
 As áreas que mais aproveitadas foram a Técnica e Social. Houve um maior destaque da área Pedagógica por dois motivos principais: (i) forneceu um panorama mais aprofundado de elementos essenciais para a educação obtidos de especialistas e literaturas especializadas; (ii) uma vez que o foco do projeto é auxiliar a educação, mais atenção precisou ser voltada à esta área.
+
+\section{Elicitação de requisitos}
+A fim de estruturar o desenvolvimento do projeto, faz-se necessária a elicitação de requisitos. 
+Esses, tiveram suas origens nos artefatos anteriormente discutidos na seção \ref{subsec:artefatos} (Estudo sobre artefatos) bem como no protótipo inicial abordado na subseção \ref{subsec:prototipoInicial} (Protótipo inicial).
+
+Os requisitos foram elicitados contendo os seguintes campos:
+
+\begin{itemize}
+    \item \textbf{Prioridade}: Alta, média ou baixa
+    \item \textbf{Tipo de requisito}: Requisito funcional, não funcional ou de domínio
+    \item \textbf{Versão Resumida}: Que condensa o objetivo do requisito em poucas palavras
+    \item \textbf{História}: História do usuário, que conta com mais detalhes o objetivo que se deseja obter com o requisito
+    \item \textbf{Origem}: Se foi originado dos artefatos WCAG 2.1, do catálogo ReqML-Catalog ou se veio do protótipo juntamente com as pesquisas realizadas com ele 
+    \item \textbf{Padrão/Categoria/Diretriz}: Se aplicando apenas aos artefatos WCAG 2.1 e ReqML-Catalog, determina de qual seção do artefato o requisito pertence 
+\end{itemize}
+
+\begin{table}[!ht]
+\centering
+\caption{\textit{Questões que podem ser consideradas para o ensino-aprendizagem de idosos}}
+\centering
+\footnotesize
+\begin{tabular}{p{2cm} p{2cm} p{6cm} p{2.5cm} p{2.5cm}}
+\toprule
+\textbf{Quanto às
+motivações para aprender} & \textbf{Quanto ao
+desenho curricular} & \textbf{Quanto à
+sala de aula}        
+&
+Je 
+&
+suis
+&
+amoureux
+\\ \midrule
+
+Eventos específicos de mudanças de
+vida (casamento, divórcio, aposentadoria, dentre outros) fazem com que
+os adultos busquem experiências de
+aprendizagem.
+& 
+Alunos adultos e idosos tendem a
+preferir cursos práticos a cursos teóricos e conceituais.
+&
+Aulas expositivas e longas aumentam a taxa de irritação.
+\\ \midrule
+
+Quanto maior o número de eventos
+de mudanças de vida, mais probabilidade de buscar esta experiência.
+& 
+Informações conflitantes àquelas
+consideradas verdadeiras pelos adultos e idosos são integradas de maneira mais lenta.
+&
+Idosos trazem uma grande experiência de vida para a sala de aula e
+esta vantagem deve ser reconhecida,
+extraída e usada.
+\\ \midrule
+
+Os adultos (e idosos) acreditam que
+terão uso do conhecimento ou habilidade adquirida, de maneira que
+buscam aplicar e seguir aquilo que
+aprenderam.
+& 
+Tarefas de passos rápidos, complexas e incomuns interferem na aprendizagem e entendimento.
+&
+Novos conhecimentos devem ser integrados aos conhecimentos prévios
+do aluno.
+\\ \midrule
+
+O aumento ou manutenção da autoestima e prazer também são consideradas motivações para o ato de
+aprender.
+& 
+Por serem mais lentos em algumas
+tarefas de aprendizagem psicomotoras procuram não realizar tentativas e evitam errar, tendendo a uma
+maior precisão nas tarefas.
+&
+O instrutor deve saber equilibrar os
+conteúdos com as experiências relevantes dos alunos e o tempo de aula.
+\\ \midrule
+& 
+É necessário que o desenho curricular seja baseado em conceitos e
+ideias que estejam em concordância
+com os educandos.
+&
+Integração de novos conhecimentos
+e habilidades requerem um maior
+tempo de transição e esforços.
+\\ \midrule
+\end{tabular}
+\label{tab:questoesAprIdosos}
+
+Fonte: \cite{Oliveira2019_quali}
+\end{table}
 
 \section{Levantamento e estudo dos conceitos e tecnologias para desenvolvimento de aplicações móveis}
 
@@ -409,14 +502,15 @@ Portanto, tendo em mente os motivos acima citados, foi realizado um minicurso so
 Nesta seção, são abordados os aspectos relativos ao desenvolvimento do aplicativo móvel. Partindo de um protótipo inicial, analisando-se o algoritmo de geração de palavras cruzadas e finalmente sendo discutido o Produto Mínimo Viável (\textit{MVP}).
 
 \subsection{Protótipo inicial}
-% Ficou claro que esse prototipo e do doutorado de outra pessoa e estou continuando?
-
-Este projeto tomou como base o trabalho realizado por \cite{oliveira2018crossword}. O referido trabalho desenvolveu, dentre outros resultados, um protótipo do aplicativo \textit{Crossword Learning}, o qual é classificado como uma aplicação educacional móvel e possui estrutura baseada nos perfis de usuários idosos. O objetivo era apoiar o ensino dos usuários sobre diversos assuntos com o suporte de palavras cruzadas.
+\label{subsec:prototipoInicial}
+Este projeto  de iniciação científica tomou como base o trabalho realizado por \cite{oliveira2018crossword}. O referido trabalho desenvolveu, dentre outros resultados, um protótipo do aplicativo \textit{Crossword Learning}.
 
 É importante destacar que para a construção do protótipo foi realizada uma pesquisa, cujos dados foram coletados e analisados e serviram como base.
-Utilizando-se um questionário com o objetivo de verificar o interesse dos idosos em aplicações educacionais móveis, 28 participantes com idade entre 50 e 81 anos colaboraram. Ainda, foi feita uma entrevista com dois especialistas no ensino desse público.
+Utilizando-se um questionário para verificar o interesse dos idosos em aplicações educacionais móveis, 28 participantes com idade entre 50 e 81 anos colaboraram. Ainda, foi feita uma entrevista com dois especialistas no ensino desse público.
 
 A validação da interface do aplicativo, cujo foco foi acessibilidade e usabilidade, foi feita com dez participantes e está servindo de base para a elaboração de requisitos. 
+
+Dessa forma, levando em conta as informações supracitadas do protótipo, foi iniciado o desenvolvimento do aplicativo deste projeto.
 
 \subsection{Estudo do algoritmo de geração de palavras cruzadas}
 Uma vez que o protótipo inicial só contemplava uma interface, o próximo passo era a determinação de um algoritmo que pudesse gerar um tabuleiro de palavras cruzadas. 
