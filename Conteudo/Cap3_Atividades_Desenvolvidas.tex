@@ -1,7 +1,7 @@
 \chapter{Atividades Desenvolvidas}\label{sec:ativ_desenvolvidas}
 Nesta seção, é apresentada, em detalhes, cada uma das principais atividades realizadas para a condução deste projeto.
 
-Ênfase foi dada ao estudo teórico que pudesse embasar o desenvolvimento do aplicativo em si; conceitos como Aprendizagem móvel, Acessibilidade e Usabilidade foram abordados. Além desses, cita-se o estudo teórico das tecnologias utilizadas para a construção do código do aplicativo.
+Ênfase foi dada ao estudo teórico que pudesse embasar o desenvolvimento do aplicativo em si; conceitos como aprendizagem móvel, acessibilidade e usabilidade foram abordados. Além desses, cita-se o estudo teórico das tecnologias utilizadas para a construção do código do aplicativo.
 
 O detalhamento se encontra a seguir:
 
@@ -28,7 +28,7 @@ No contexto em que se insere esse projeto isso se torna ainda mais essencial, um
 
 Pelo exposto acima, foi decidido seguir recomendações de usabilidade e acessibilidade no desenvolvimento do projeto. É importante ressaltar que o objetivo principal do projeto é auxiliar nos processos de ensino, portanto esse tipo de ação possibilitará que o usuário foque no conteúdo do aplicativo, e não desvie sua atenção por dificuldades de uso.
 
-\section{Estudo sobre Aprendizagem móvel}\label{sec:estudos_ap_movel} 
+\section{Estudo sobre aprendizagem móvel}\label{sec:estudos_ap_movel} 
 Outra atividade realizada, foi a abordagem do conceito de aprendizagem móvel bem como uma pesquisa das principais funcionalidades presentes em aplicativos relacionados ao ensino, de palavras cruzadas e relacionados ao idoso.
 
 \subsection{Panorama}
@@ -279,7 +279,7 @@ Nesta seção puderam ser analisados diversos aspectos os quais devem ser observ
 \section{Estudo sobre os artefatos}
 \label{subsec:artefatos}
 Com o intuito de auxiliar a elicitação de requisitos para o desenvolvimento do aplicativo, mostrou-se necessário o estudo de artefatos.
-Assim, tal estudo será tratado com maiores detalhes sobre as diretrizes de acessibilidade WCAG 2.1 e os padrões pedagógicos do ReqML-Catalog \citep{soad2017reqml}.
+Assim, tal estudo será tratado com maiores detalhes sobre as diretrizes de acessibilidade WCAG 2.1 (\textit{Web Content Accessibility Guidelines}) e os padrões pedagógicos do ReqML-Catalog \citep{soad2017reqml}.
 
 \subsection{Pesquisa sobre recomendações da WCAG 2.1}
 A fim de proporcionar uma experiência de uso do aplicativo respeitando as limitações do usuário, foram analisadas as diretrizes de acessibilidade contidas na \textit{Web Content Accessibility Guidelines} \citep{wcag}. Ela é um conjunto de recomendações criadas pela
@@ -325,7 +325,7 @@ O \textit{ReqML-Catalog} possui uma estrutura hierárquica de três níveis: \te
 As áreas que mais aproveitadas foram a Técnica e Social. Houve um maior destaque da área Pedagógica por dois motivos principais: (i) forneceu um panorama mais aprofundado de elementos essenciais para a educação obtidos de especialistas e literaturas especializadas; (ii) uma vez que o foco do projeto é auxiliar a educação, mais atenção precisou ser voltada à esta área.
 
 \section{Elicitação de requisitos}
-A fim de estruturar o desenvolvimento do projeto, faz-se necessária a elicitação de requisitos. 
+A fim de estruturar o desenvolvimento do projeto, fez-se necessária a elicitação de requisitos. 
 Esses, tiveram suas origens nos artefatos anteriormente discutidos na seção \ref{subsec:artefatos} (Estudo sobre artefatos) bem como no protótipo inicial abordado na subseção \ref{subsec:prototipoInicial} (Protótipo inicial).
 
 Os requisitos foram elicitados contendo os seguintes campos:
@@ -339,81 +339,103 @@ Os requisitos foram elicitados contendo os seguintes campos:
     \item \textbf{Padrão/Categoria/Diretriz}: Se aplicando apenas aos artefatos WCAG 2.1 e ReqML-Catalog, determina de qual seção do artefato o requisito pertence 
 \end{itemize}
 
+A seguir, serão exibidos na Tabela \ref{tab:requisitos} alguns requisitos extraídos.
+
 \begin{table}[!ht]
 \centering
-\caption{\textit{Questões que podem ser consideradas para o ensino-aprendizagem de idosos}}
+\caption{\textit{Requisitos elicitados}}
 \centering
 \footnotesize
-\begin{tabular}{p{2cm} p{2cm} p{6cm} p{2.5cm} p{2.5cm}}
+\begin{tabular}{p{2cm} p{2cm} p{2cm} p{4.6cm} p{2cm} p{2.7cm}}
 \toprule
-\textbf{Quanto às
-motivações para aprender} & \textbf{Quanto ao
-desenho curricular} & \textbf{Quanto à
-sala de aula}        
+\textbf{Prioridade} & \textbf{Tipo de requisito} & \textbf{Versão resumida}        
 &
-Je 
+\textbf{História}
 &
-suis
+\textbf{Origem}
 &
-amoureux
+\textbf{Categoria/Diretriz}
 \\ \midrule
 
-Eventos específicos de mudanças de
-vida (casamento, divórcio, aposentadoria, dentre outros) fazem com que
-os adultos busquem experiências de
-aprendizagem.
+Alta
 & 
-Alunos adultos e idosos tendem a
-preferir cursos práticos a cursos teóricos e conceituais.
+Não funcional
 &
-Aulas expositivas e longas aumentam a taxa de irritação.
+Encriptação da senha
+& 
+Gostaria que minha senha fosse encriptada e que nem os desenvolvedores que tivessem acesso ao banco de dados pudessem obter a minha senha
+& 
+Protótipo
 \\ \midrule
 
-Quanto maior o número de eventos
-de mudanças de vida, mais probabilidade de buscar esta experiência.
+Média
 & 
-Informações conflitantes àquelas
-consideradas verdadeiras pelos adultos e idosos são integradas de maneira mais lenta.
+Funcional
 &
-Idosos trazem uma grande experiência de vida para a sala de aula e
-esta vantagem deve ser reconhecida,
-extraída e usada.
+Sair e salvar
+&
+Gostaria de poder sair de uma partida de palavras-cruzadas a qualquer momento, mesmo que não concluídas todas as palavras e pudesse retornar após ao mesmo estado em que parei
+& 
+Protótipo
 \\ \midrule
 
-Os adultos (e idosos) acreditam que
-terão uso do conhecimento ou habilidade adquirida, de maneira que
-buscam aplicar e seguir aquilo que
-aprenderam.
+Alta
 & 
-Tarefas de passos rápidos, complexas e incomuns interferem na aprendizagem e entendimento.
+Não funcional
 &
-Novos conhecimentos devem ser integrados aos conhecimentos prévios
-do aluno.
+Motivação
+&
+Gostaria que o aplicativo me motivasse a continuar aprendendo por meio de notificações, rankings com amigos e barras de progresso que mostrassem o quanto estou evoluindo ao longo do tempo
+&
+ReqML-Catalog
+&
+Pedagógico - Aprendizado
 \\ \midrule
 
-O aumento ou manutenção da autoestima e prazer também são consideradas motivações para o ato de
-aprender.
-& 
-Por serem mais lentos em algumas
-tarefas de aprendizagem psicomotoras procuram não realizar tentativas e evitam errar, tendendo a uma
-maior precisão nas tarefas.
+Alta
 &
-O instrutor deve saber equilibrar os
-conteúdos com as experiências relevantes dos alunos e o tempo de aula.
-\\ \midrule
-& 
-É necessário que o desenho curricular seja baseado em conceitos e
-ideias que estejam em concordância
-com os educandos.
+Não funcional
 &
-Integração de novos conhecimentos
-e habilidades requerem um maior
-tempo de transição e esforços.
+Conteúdo da tela
+&
+Gostaria que a tela fosse o mais enxuta possível, contendo apenas o conteúdo necessário, para evitar a minha confusão por não ter uma grande familiaridade com aplicativos móveis
+&
+ReqML-Catalog
+&
+Técnico - Usabilidade \& Acessibilidade
 \\ \midrule
+
+Alta
+&
+Funcional
+&
+Alto contraste
+&
+Gostaria que o aplicativo tivesse uma diferença clara entre as cores com um alto contraste, pois possuo problemas relacionados à visão e preciso de um conteúdo muito claro
+&
+WCAG
+&
+1.4.3
+
+\\ \midrule
+
+Média
+&
+Funcional
+&
+Transcrição dos áudios
+&
+Gostaria que houvesse a opção de ler a transcrição do áudio ao mesmo tempo que o ouço. Isso facilitaria a minha compreensão e absorção do conteúdo
+&
+WCAG
+&
+1.2.2
+\\ \bottomrule
+
 \end{tabular}
-\label{tab:questoesAprIdosos}
+\label{tab:requisitos}
 
-Fonte: \cite{Oliveira2019_quali}
+Fonte: Elaborada pelo próprio autor
 \end{table}
 
 \section{Levantamento e estudo dos conceitos e tecnologias para desenvolvimento de aplicações móveis}
@@ -426,6 +448,8 @@ Com o objetivo de desenvolver um aplicativo que possibilite o ensino a idosos, f
     \item React Native, o qual contempla o levantamento e pesquisa da tecnologia adotada para concepção do sistema;
     \item UI/UX, que discute o conhecimento relacionado a interface e experiência do usuário.
 \end{itemize}
+
+Dessa forma, foi possível organizar o desenvolvimento técnico do projeto de maneira mais clara, permitindo um planejamento com mais clareza.
 
 \subsubsection{Estudos sobre Scrum e Requisitos} 
 Para este projeto, decidiu-se adotar a metodologia de desenvolvimento ágil de software denominada \textit{Scrum}, uma vez que o produto final poderia sofrer com mudanças de requisitos por parte dos usuários. Essa metodologia foi concebida em 2001, com um grupo de 17 pessoas que se reuniu para discutir a respeito de desenvolvimentos mais leves de software, pois acreditavam que os modelos em voga eram lentos e burocráticos. O resultado foi o Manifesto Ágil \citep{agileManifesto}, em que os participantes propuseram princípios a serem seguidos. Segundo os criadores, deveria haver a valorização de: (i) Indivíduos e interações mais que processos e ferramentas; (ii) Software em funcionamento mais que documentação abrangente; (iii) Colaboração com o cliente mais que negociação de contratos; (iv) Responder a mudanças mais que seguir um plano.
@@ -560,7 +584,7 @@ Como resultado final, o algoritmo exporta um arquivo \textit{JSON} (Figura \ref{
 %     - Falar de alguns desafios do React Native
 %     - Explicar a arquitetura do React Native do app
 % }
-Com o algoritmo descrito acima funcionando corretamente, foi possível construir um \textit{MVP}. Já que o desenvolvimento se deu utilizando o \cite{RN}, que permite a construção de aplicativos para Android e iOS, o processo se tornou ainda mais fácil pois a implementação do algoritmo supracitado foi feita em \textit{javascript}, a qual é a linguagem de programação também utilizada no \cite{RN}. Dessa maneira, a arquitetura do \textit{framework} se encarrega do processo que permite que o algoritmo seja executado no dispositivo móvel.
+Com o algoritmo descrito acima funcionando corretamente, foi possível construir um \textit{MVP}. Já que o desenvolvimento se deu utilizando o \cite{RN}, que permite a construção de aplicativos para Android e iOS, o processo se tornou ainda mais fácil, pois a implementação do algoritmo supracitado foi feita em \textit{javascript}, a qual é a linguagem de programação também utilizada no \cite{RN}. Dessa maneira, a arquitetura do \textit{framework} se encarrega do processo que permite que o algoritmo seja executado no dispositivo móvel.
 
 A tela de jogo foi desenvolvida da seguinte maneira: uma \textit{tag} \textit{<View>} comporta quatro \textit{tags} principais nativas do \textit{React Native}:
 
