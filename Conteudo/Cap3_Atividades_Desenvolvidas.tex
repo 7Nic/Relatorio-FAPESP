@@ -12,20 +12,22 @@ espaços, mobiliários e equipamentos urbanos, das edificações, dos transporte
 
 De modo complementar, \cite{torres2002acessibilidade} diz que acessibilidade é um processo dinâmico, associado não só ao desenvolvimento tecnológico, mas principalmente ao desenvolvimento da sociedade. Em geral, está associada a pessoas com deficiências físicas ou psicológicas, idosos ou grupos excluídos; este último mais bem relacionado com o termo \textit{inclusão}. 
 
-Embora a acessibilidade não se restrinja ao meio digital, é essencial que esteja presente no mesmo. Corroborando com essa ideia, \cite{leew3c} afirma a importância da Web ser utilizável por qualquer um, independente de capacidades individuais ou deficiências. No cenário atual, isso também se aplica ao uso de aplicativos em dispositivos móveis. 
+Embora a acessibilidade não se restrinja ao meio digital, é essencial que esteja presente no mesmo. Corroborando com essa ideia, \cite{leew3c} afirma a importância da Web ser utilizável por qualquer um, independente de capacidades individuais ou deficiências. No cenário atual, isso também se aplica ao uso de aplicativos em dispositivos móveis.
+
+Apesar da elicitação da acessibilidade no campo jurídico, social e meio digital, faz-se necessário um foco adicional ao campo educacional. De acordo com \cite{Bine2018DigitalIT}, a educação inclusiva se tornou uma das questões mais desafiadoras dos sistemas educacionais atuais. Isso ocorre em parte pela falta de preparo de professores e deficiễncia de material.
 
 Atrelada à acessibilidade deve estar a usabilidade que, segundo \cite{nielsenPrioritizingWebUsability},
-é o atributo relacionado a quão fácil é usar algo. Mais especificamente, refere-se a quão rápido pessoas podem aprender a usar algo, quão eficientes são enquanto o utilizam, quão memorável é, quão propenso a erros e o quanto as pessoas gostam de utilizar; deve-se tornar a utilização fluida. É interessante destacar que existe uma frase entre desenvolvedores que diz: ''não faça o usuário pensar``, com o objetivo de tornar o processo intuitivo o suficiente a ponto de ser considerado natural.
+é o atributo relacionado a quão fácil é usar algo. Mais especificamente, refere-se a quão rápido pessoas podem aprender a usar algo, quão eficientes são enquanto o utilizam, quão memorável é, quão propenso a erros e o quanto as pessoas gostam de utilizar; deve-se tornar a utilização fluida. É interessante destacar que existe uma frase entre desenvolvedores que diz: ''não faça o usuário pensar`` baseada no livro \textit{Don't make me think} \citep{steveDont2005}. O objetivo é tornar o processo intuitivo o suficiente a ponto de ser considerado natural.
 Ainda, é essencial analisar fatores como capacidade de aprendizagem, a fim de que não seja necessário um aprendizado extra por parte do usuário para utilizar o sistema em questão.
 
-No contexto em que se insere este trabalho isso se torna ainda mais essencial, uma vez que o público idoso enfrenta vários problemas relacionados à usabilidade em \textit{smartphones} \citep{dificuldadesIdosos}. %Isso ocorre, principalmente, pois investidores da área de tecnologia consideram um grau de incerteza no que tange oportunidades de negócios relacionadas à área quando se trata de usuários idosos \citep{NBCelderly}.
+No contexto em que se insere este trabalho isso se torna ainda mais essencial, uma vez que o público idoso enfrenta vários problemas relacionados à usabilidade em \textit{smartphones} \citep{dificuldadesIdosos} e principalmente à acessibilidade. %Isso ocorre, principalmente, pois investidores da área de tecnologia consideram um grau de incerteza no que tange oportunidades de negócios relacionadas à área quando se trata de usuários idosos \citep{NBCelderly}.
 
 %Pelo exposto acima, foi decidido seguir recomendações de usabilidade e acessibilidade no desenvolvimento do projeto. 
 
 Ressalta-se que o objetivo principal do projeto é auxiliar o processo de ensino-aprendizagem de usuários idosos. Portanto, é importante que recomendações de usabilidade e acessibilidade sejam consideradas, de modo a possibilitar que o usuário foque no conteúdo do aplicativo, e não desvie sua atenção por dificuldades de uso.
 
 \section{Estudo sobre aprendizagem móvel}\label{sec:estudos_ap_movel} 
-Outra atividade realizada foi o estudo do conceito de aprendizagem móvel bem como uma pesquisa sobre as principais funcionalidades presentes em aplicativos relacionados ao ensino de palavras cruzadas, tendo como público-alvo o usuário idoso.
+Outra atividade realizada foi o estudo do conceito de aprendizagem móvel, bem como uma pesquisa sobre as principais funcionalidades presentes em aplicativos relacionados ao ensino de palavras-cruzadas, tendo como público-alvo o usuário idoso.
 
 \subsection{Visão geral}
 Existem várias definições de \textit{m-learning}. %Assim, ao longo dos anos, pesquisadores se dispuseram a estudar o assunto e tentaram achar uma definição. 
@@ -280,10 +282,10 @@ Segundo \cite{Edukacja}, trabalhar em pequenos grupos é a maneira mais efetiva 
 
 Nesta seção foram analisados diversos aspectos os quais devem ser observados no processo de ensino aos idosos. Desde incentivos indiretos para a motivação, até a preocupação direta com a repetição de conteúdo a fim de diminuir a taxa de esquecimento. 
 
-\section{Estudo sobre artefatos}
+\section{Artefatos e requisitos}
 \label{subsec:artefatos}
-Com o intuito de auxiliar a elicitação de requisitos para o desenvolvimento do aplicativo, mostrou-se necessário o estudo de artefatos associados.
-Assim, tal estudo teve como foco as diretrizes de acessibilidade WCAG 2.1 (\textit{Web Content Accessibility Guidelines}) e os padrões pedagógicos do ReqML-Catalog \citep{soad2017reqml}.
+Com o intuito de auxiliar a elicitação de requisitos e desenvolvimento do projeto, mostrou-se necessário o uso de artefatos associados.
+Assim, foram utilizadas as diretrizes de acessibilidade WCAG 2.1 (\textit{Web Content Accessibility Guidelines}), o catálogo ReqML-Catalog e a Linguagem de Padrões MLearning-PL.
 
 \subsection{WCAG 2.1}
 A fim de proporcionar uma experiência de uso do aplicativo respeitando as limitações do usuário, foram analisadas as diretrizes de acessibilidade contidas na \textit{Web Content Accessibility Guidelines} \citep{wcag}. Ela é um conjunto de recomendações criadas pela
@@ -314,9 +316,9 @@ Embora a documentação oficial restrinja a aplicação dos níveis de conformid
 \end{itemize}
 
 
-\subsection{ReqML-Catalog}
+\subsection{Requisitos}
 Paralelamente ao estudo da WCAG 2.1, também foi analisado o \textit{ReqML-Catalog}
-\citep{soad2017reqml} -- um catálogo de requisitos para aplicações educacionais móveis. Ele foi proposto com o objetivo de propiciar um maior apoio na formulação de requisitos para aplicativos de educação, visto que muitos ainda possuem problemas e desafios a serem resolvidos. Além disso, de acordo com a pesquisa feita pelos autores, não havia um conjunto de requisitos completos e bem definidos para aplicações educacionais móveis. É importante destacar que a última versão é uma evolução de outras anteriormente produzidas, as quais foram desenvolvidas a partir de revisões sistemáticas de literatura, e baseadas no conhecimento de especialistas do assunto. 
+\citep{soad2017reqml} - um catálogo de requisitos para aplicações educacionais móveis. Ele foi proposto com o objetivo de propiciar um maior apoio na formulação de requisitos para aplicativos de educação, visto que muitos ainda possuem problemas e desafios a serem resolvidos. Além disso, de acordo com a pesquisa feita pelos autores, não havia um conjunto de requisitos completos e bem definidos para aplicações educacionais móveis. É importante destacar que a última versão é uma evolução de outras anteriormente produzidas, as quais foram desenvolvidas a partir de revisões sistemáticas de literatura, e baseadas no conhecimento de especialistas do assunto. 
 
 O \textit{ReqML-Catalog} possui uma estrutura hierárquica de três níveis: \textbf{Pedagógico}, \textbf{Social} e \textbf{Técnico}, como se pode ver na Figura \ref{fig:reqML}.
 
@@ -329,123 +331,180 @@ O \textit{ReqML-Catalog} possui uma estrutura hierárquica de três níveis: \te
     Fonte: \cite{soad2017reqml}
 \end{figure}
 
-As áreas que mais aproveitadas foram a Técnica e Social. Houve um maior destaque da área Pedagógica por dois motivos principais: (i) forneceu um panorama mais aprofundado de elementos essenciais para a educação obtidos de especialistas e literaturas especializadas; (ii) uma vez que o foco do projeto é auxiliar a educação, mais atenção precisou ser voltada à esta área.
+Ademais, para embasar a elicitação de requisitos, foi utilizada uma Linguagem de padrões pedagógicos. Padrões são um mecanismo para capturar a experiência e o conhecimento de um domínio para replicá-lo em situações futuras, enquanto que Linguagens de Padrões agrupam diversos padrões de um domínio. Assim, Linguagens de padrões são reconhecidas como método para descrever o conhecimento tácito e podem ser usadas como mecanismo de apoio na fase de elicitação de requisitos
+\citep{Pressman2014}. A Linguagem de Padrões utilizada neste projeto foi MLearning-PL \citep{Fioravanti2017_plop}, composta por 14 padrões \ref{fig:ml-pl}.
 
-\begin{comment}
-\section{Elicitação de requisitos}
-A fim de estruturar o desenvolvimento do projeto, fez-se necessária a elicitação de requisitos. 
-Esses, tiveram suas origens nos artefatos anteriormente discutidos na seção \ref{subsec:artefatos} (Estudo sobre artefatos) bem como no protótipo inicial abordado na subseção \ref{subsec:prototipoInicial} (Protótipo inicial).
+\begin{figure}[H]
+\centering
+    \caption{MLearning-PL}
+    \label{fig:ml-pl}
+    \includegraphics[width=0.9\textwidth]{Figuras/mlearning-pl.png}
+    
+    Fonte: \cite{Fioravanti2017_plop}
+\end{figure}
 
-Os requisitos foram elicitados contendo os seguintes campos:
-
-\begin{itemize}
-    \item \textbf{Prioridade}: Alta, média ou baixa;
-    \item \textbf{Tipo de requisito}: Requisito funcional, não funcional ou de domínio;
-    \item \textbf{Versão Resumida}: Que condensa o objetivo do requisito em poucas palavras;
-    \item \textbf{História}: História do usuário, que conta com mais detalhes o objetivo que se deseja obter com o requisito;
-    \item \textbf{Origem}: Se foi originado dos artefatos WCAG 2.1, do catálogo ReqML-Catalog ou se veio do protótipo juntamente com as pesquisas realizadas com ele;
-    \item \textbf{Padrão/Categoria/Diretriz}: Se aplicando apenas aos artefatos WCAG 2.1 e ReqML-Catalog, determina de qual seção do artefato o requisito pertence.
-\end{itemize}
-
-A seguir, serão exibidos na Tabela \ref{tab:requisitos} alguns dos requisitos extraídos tidos como importantes para o projeto.
+Utilizando-se o catálogo de requisitos ReqML-Catalog \ref{fig:reqML} e a Linguagem de padrões MLearning-PL \ref{fig:ml-pl}, as doutorandas (é assim msm?) Fioravanti e Oliveira (como citar só a pessoa) realizaram a elicitação dos requisitos necessários para o desenvolvimento do aplicativo publicando, assim,  um artigo entitulado xxx (ref). Alguns dos requisitos podem ser visualizados na tabela xxx.
 
 \begin{table}[!ht]
 \centering
-\caption{\textit{Requisitos elicitados}}
+\caption{\textit{Questões que podem ser consideradas para o ensino-aprendizagem de idosos}}
 \centering
 \footnotesize
-\begin{tabular}{p{2cm} p{2cm} p{2cm} p{4.6cm} p{2cm} p{2.7cm}}
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
 \toprule
-\textbf{Prioridade} & \textbf{Tipo de requisito} & \textbf{Versão resumida}        
-&
-\textbf{História}
-&
-\textbf{Origem}
-&
-\textbf{Categoria/Diretriz}
+\textbf{História do usuário} & \textbf{Rationale} & \textbf{Problemas relacionados}                                   
 \\ \midrule
+Como usuário, gostaria que os tópicos fossem o menor possível para que possa terminá-los rápido, proceder para o próximo e para ajudar com minha memória.
+& 
+Omitted Pattern Language: Little by Little;
 
-Alta
-& 
-Não funcional
+MLGE: Objective Content; Omitted Cata-
+log: Content complexity and Content Man-
+agement.
 &
-Encriptação da senha
-& 
-Gostaria que minha senha fosse encriptada e que nem os desenvolvedores que tivessem acesso ao banco de dados pudessem obter a minha senha
-& 
-Protótipo
+Habilidade cognitiva (Processamento de informação, dificuldade de concentração, facilidade de distração e memória).
 \\ \midrule
-
-Média
+Como usuário, gostaria de me sentir confortável com o tema ou assunto abordado e assim avançar com meu conhecimento.
 & 
-Funcional
+MLGE: User-friendly content; Omitted Cat-
+alog: Knowledge effectiveness, Motivation
+
+and Learning style.
 &
-Sair e salvar
-&
-Gostaria de poder sair de uma partida de palavras-cruzadas a qualquer momento, mesmo que não concluídas todas as palavras e pudesse retornar após ao mesmo estado em que parei
+Habilidade cognitiva (Processamento de informação, linguagem, comunicação e memória).
+\\ \midrule
+Como usuário, gostaria que os conteúdos e as aulas fossem tradicionais, gradualmente envolvendo atividades ou conteúdos desafiadores e diferenciados para me fazer sentir mais confortável.
 & 
-Protótipo
+MLGE: Traditionalism and Innovation;
+Omitted Catalog: Omitted Catalog: Content
+management and Complexity Content.
+&
+Habilidade cognitiva (Processamento de informação, dificuldade de concentração, facilidade de distração, linguagem, comunicação e memória).
 \\ \midrule
-
-Alta
-& 
-Não funcional
-&
-Motivação
-&
-Gostaria que o aplicativo me motivasse a continuar aprendendo por meio de notificações, rankings com amigos e barras de progresso que mostrassem o quanto estou evoluindo ao longo do tempo
-&
-ReqML-Catalog
-&
-Pedagógico - Aprendizado
-\\ \midrule
-
-Alta
-&
-Não funcional
-&
-Conteúdo da tela
-&
-Gostaria que a tela fosse o mais enxuta possível, contendo apenas o conteúdo necessário, para evitar a minha confusão por não ter uma grande familiaridade com aplicativos móveis
-&
-ReqML-Catalog
-&
-Técnico - Usabilidade \& Acessibilidade
-\\ \midrule
-
-Alta
-&
-Funcional
-&
-Alto contraste
-&
-Gostaria que o aplicativo tivesse uma diferença clara entre as cores com um alto contraste, pois possuo problemas relacionados à visão e preciso de um conteúdo muito claro
-&
-WCAG
-&
-1.4.3
-
-\\ \midrule
-
-Média
-&
-Funcional
-&
-Transcrição dos áudios
-&
-Gostaria que houvesse a opção de ler a transcrição do áudio ao mesmo tempo que o ouço. Isso facilitaria a minha compreensão e absorção do conteúdo
-&
-WCAG
-&
-1.2.2
-\\ \bottomrule
 
 \end{tabular}
-\label{tab:requisitos}
+\label{tab:questoesAprIdosos}
 
-Fonte: Elaborada pelo próprio autor
+Fonte: \cite{zemke198430}
 \end{table}
-\end{comment}
+
+% As áreas que mais aproveitadas foram a Técnica e Social. Houve um maior destaque da área Pedagógica por dois motivos principais: (i) forneceu um panorama mais aprofundado de elementos essenciais para a educação obtidos de especialistas e literaturas especializadas; (ii) uma vez que o foco do projeto é auxiliar a educação, mais atenção precisou ser voltada à esta área.
+
+
+% \section{Elicitação de requisitos}
+% A fim de estruturar o desenvolvimento do projeto, fez-se necessária a elicitação de requisitos. 
+% Esses, tiveram suas origens nos artefatos anteriormente discutidos na seção \ref{subsec:artefatos} (Estudo sobre artefatos) bem como no protótipo inicial abordado na subseção \ref{subsec:prototipoInicial} (Protótipo inicial).
+
+% Os requisitos foram elicitados contendo os seguintes campos:
+
+% \begin{itemize}
+%     \item \textbf{Prioridade}: Alta, média ou baixa;
+%     \item \textbf{Tipo de requisito}: Requisito funcional, não funcional ou de domínio;
+%     \item \textbf{Versão Resumida}: Que condensa o objetivo do requisito em poucas palavras;
+%     \item \textbf{História}: História do usuário, que conta com mais detalhes o objetivo que se deseja obter com o requisito;
+%     \item \textbf{Origem}: Se foi originado dos artefatos WCAG 2.1, do catálogo ReqML-Catalog ou se veio do protótipo juntamente com as pesquisas realizadas com ele;
+%     \item \textbf{Padrão/Categoria/Diretriz}: Se aplicando apenas aos artefatos WCAG 2.1 e ReqML-Catalog, determina de qual seção do artefato o requisito pertence.
+% \end{itemize}
+
+% A seguir, serão exibidos na Tabela \ref{tab:requisitos} alguns dos requisitos extraídos tidos como importantes para o projeto.
+
+% \begin{table}[!ht]
+% \centering
+% \caption{\textit{Requisitos elicitados}}
+% \centering
+% \footnotesize
+% \begin{tabular}{p{2cm} p{2cm} p{2cm} p{4.6cm} p{2cm} p{2.7cm}}
+% \toprule
+% \textbf{Prioridade} & \textbf{Tipo de requisito} & \textbf{Versão resumida}        
+% &
+% \textbf{História}
+% &
+% \textbf{Origem}
+% &
+% \textbf{Categoria/Diretriz}
+% \\ \midrule
+
+% Alta
+% & 
+% Não funcional
+% &
+% Encriptação da senha
+% & 
+% Gostaria que minha senha fosse encriptada e que nem os desenvolvedores que tivessem acesso ao banco de dados pudessem obter a minha senha
+% & 
+% Protótipo
+% \\ \midrule
+
+% Média
+% & 
+% Funcional
+% &
+% Sair e salvar
+% &
+% Gostaria de poder sair de uma partida de palavras-cruzadas a qualquer momento, mesmo que não concluídas todas as palavras e pudesse retornar após ao mesmo estado em que parei
+% & 
+% Protótipo
+% \\ \midrule
+
+% Alta
+% & 
+% Não funcional
+% &
+% Motivação
+% &
+% Gostaria que o aplicativo me motivasse a continuar aprendendo por meio de notificações, rankings com amigos e barras de progresso que mostrassem o quanto estou evoluindo ao longo do tempo
+% &
+% ReqML-Catalog
+% &
+% Pedagógico - Aprendizado
+% \\ \midrule
+
+% Alta
+% &
+% Não funcional
+% &
+% Conteúdo da tela
+% &
+% Gostaria que a tela fosse o mais enxuta possível, contendo apenas o conteúdo necessário, para evitar a minha confusão por não ter uma grande familiaridade com aplicativos móveis
+% &
+% ReqML-Catalog
+% &
+% Técnico - Usabilidade \& Acessibilidade
+% \\ \midrule
+
+% Alta
+% &
+% Funcional
+% &
+% Alto contraste
+% &
+% Gostaria que o aplicativo tivesse uma diferença clara entre as cores com um alto contraste, pois possuo problemas relacionados à visão e preciso de um conteúdo muito claro
+% &
+% WCAG
+% &
+% 1.4.3
+
+% \\ \midrule
+
+% Média
+% &
+% Funcional
+% &
+% Transcrição dos áudios
+% &
+% Gostaria que houvesse a opção de ler a transcrição do áudio ao mesmo tempo que o ouço. Isso facilitaria a minha compreensão e absorção do conteúdo
+% &
+% WCAG
+% &
+% 1.2.2
+% \\ \bottomrule
+
+% \end{tabular}
+% \label{tab:requisitos}
+
+% Fonte: Elaborada pelo próprio autor
+% \end{table}
+
 
 \section{Levantamento e estudo de métodos e tecnologias para o desenvolvimento de aplicações móveis}
 
@@ -457,7 +516,7 @@ Esta atividade consistiu no estudo de métodos e tecnologias relacionadas ao des
 
     \item Scrum: refere-se à metodologia de desenvolvimento adotada neste projeto.
   
-    \item React Native: o qual contempla o levantamento e pesquisa da tecnologia adotada para concepção do sistema.
+    \item React Native: \textit{framework} que possibilita o desenvolvimento de aplicativos móveis para as plataformas Android e iOS.
     
     \item UI/UX: refere-se aos conceitos relacionados à interface e experiência do usuário.
     
@@ -547,8 +606,6 @@ Visando corroborar as boas práticas de desenvolvimento de aplicações móveis,
 Interface de Usuário (UI) refere-se a um sistema e um usuário interagindo um com outro por meio de comandos para operar o sistema, inserir dados, e usar o conteúdo \citep{joo2015}. Já a Experiência de Usuário (UX), segundo \cite{marc2008}, é uma perspectiva distinta da qualidade de tecnologia interativa. O autor ainda define UX como uma avaliação momentânea e primária da sensação (bom-ruim) enquanto interage com o produto ou serviço. Dessa forma, UX troca a atenção dos produtos e materiais para as sensações humanas, ou seja, o lado subjetivo do uso do produto. Ainda, de acordo com \cite{castilla2017}, a UX representa uma mudança do próprio conceito de usabilidade, pois o objetivo não se reduz a melhorar a sensação do usuário na eficácia, eficiência e facilidade de aprendizagem, mas sim tentar resolver o problema estratégico da utilidade do produto para o usuário. 
 
 Dessa maneira, pode-se concluir que a interface e experiência do usuário cumprem papéis essenciais no desenvolvimento de um produto, sendo indispensável seu planejamento. Ainda, tendo em vista o público alvo deste projeto, usuários idosos, torna-se necessária a atenção e cuidado no assunto a fim de alcançar os objetivos finais.
-
-%Nesse sentido, ressalta-se que o aluno realizou um minicurso sobre UI/UX, com o título ``\textit{Como incluir UX e UI Design nos seus projetos}'', ocorrido na 22ª Semana da Computação da Universidade de São Paulo, campus de São Carlos, no dia 03/10/2019. O minicurso se mostrou de grande importância, uma vez que possibilitou a expansão do conhecimento do assunto em termos práticos, sendo possível sua aplicação no projeto.
 
 \section{Projeto e Desenvolvimento da \textit{Crossword Learning}}
 Nesta seção são abordados os aspectos relativos ao desenvolvimento do aplicativo móvel \textit{Crossword Learning}. Partindo de um protótipo inicial, foi selecionado um algoritmo de geração de palavras cruzadas e desenvolvido o \textit{MVP} referente ao aplicativo.
