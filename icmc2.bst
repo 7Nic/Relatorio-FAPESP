@@ -351,7 +351,7 @@ MACRO {tcs} {"Theoretical Computer Science"}
 FUNCTION {write.url}
 { url empty$
     { skip$ }
-    { "\newline Dispon�vel em \url{" url * "}" * write$ 
+    { "\newline Disponível em \url{" url * "}" * write$ 
       lastaccess empty$
          { "Last access date missing in " cite$ * warning$ }
 	 {" (Acessado em " lastaccess * ")" * write$ }
