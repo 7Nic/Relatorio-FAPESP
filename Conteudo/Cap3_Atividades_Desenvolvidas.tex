@@ -707,7 +707,26 @@ Abaixo, são exibidos na Figura \ref{fig:verdevermelho} dois exemplos do element
 
 
 \subsection{Teste piloto}
-Após concluir o desenvolvimento do \textit{MVP}, foi possível realizar um teste inicial com usuários idosos para confirmar ou refutar as hipóteses iniciais relacionadas à interface, usabilidade e acessibilidade.
+Antes de explanar detalhes dos testes, é importante explicar a base que foi tomada para definir a quantidade de testes a serem feitos. De acordo com \cite{nielsenUsabilityMath}, não é necessário fazer testes muito complexos, o ideal é fazer uma série de pequenos testes com poucos usuários. Foi provado que o número de problemas de usabilidade achados em um teste com $n$ usuários segue a equação $y = 1-(1-L)^n$ em que $y$ é a porcentagem de erros achados, $n$ a quantidade de usuários e $L$ a proporção de problemas relacionados a usabilidade encontrados com um único usuário. Segundo os autores, a média encontrada para $L$ após uma grande quantidade de projetos estudados é $31\%$. Dessa maneira, é possível plotar o gráfico (Figura \ref{fig:graphnielsen}):
+
+\begin{figure}[H]
+\centering
+    \caption{Gráfico de problemas encontrados por número de testes realizados}
+    \label{fig:graphnielsen}
+    \includegraphics[width=0.9\textwidth]{Figuras/graphNielsen.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+Portanto, o testes desse projeto foram definidos usando essa lógica. Foi decidido fazer três testes:
+
+\begin{enumerate}
+    \item Teste piloto: Teste feito apenas com o MVP contendo a tela do jogo de palavras cruzadas. O objetivo principal é obter \textit{feedback} sobre aspectos básicos.
+    \item Teste de usabilidade: Realizado com especialistas; pretende-se refinar todas as telas do aplicativo com um olhar mais detalhado em relação à heurísticas.
+    \item Teste final: Feito por uma especialista na área de usabilidade para idosos com o objetivo de ratificar as mudanças feitas.
+\end{enumerate}
+
+Concluída a definição das estruturas dos testes, foi possível realizar um teste inicial com usuários idosos para confirmar ou refutar as hipóteses iniciais relacionadas à interface, usabilidade e acessibilidade do MVP.
 
 Para facilitar o uso da interface de palavras-cruzadas, foi feito um tutorial que mostrava o passo a passo de como utilizá-la (Figura \ref{fig:tutorial}). 
 
@@ -779,7 +798,7 @@ nas atividades principais do aplicativo, corrigir todos os erros com outros test
 e entregar um produto com menos funcionalidades que
 funcionasse da melhor maneira possível para o usuário final, cumprindo seu objetivo.
 
-De forma complementar, é importante salientar que as conclusões relacionadas à usabilidade e acessibilidade não foram finais, pois seriam dadas por especialistas por meio do teste de avaliação heurística, como descrito na seção x.
+De forma complementar, é importante salientar que as conclusões relacionadas à usabilidade e acessibilidade não foram finais, pois seriam dadas por especialistas por meio do teste de avaliação heurística, como descrito na seção \ref{sec:avaliacao-heuristica}.
 
 \subsection{Desenvolvimento do aplicativo completo}
 Uma vez concluídos o desenvolvimento da tela de palavras-cruzadas e feito o teste piloto, iniciou-se a construção da infraestrutura do aplicativo.
@@ -794,9 +813,9 @@ Seria necessário:
 \end{itemize}
 
 
-O funcionamento básico ocorre da seguinte maneira (Figura x):
+O funcionamento básico ocorre da seguinte maneira (Figura \ref{fig:arquitetura}):
 \begin{enumerate}
-    \item O aplicativo faz uma requisição para o servidor, que por sua vez processa o que é é necessário.
+    \item O aplicativo faz uma requisição para o servidor, que por sua vez processa o que é necessário.
     
     \item O servidor faz uma requisição para o banco de dados, as quais podem ser de leitura, escrita, edição ou deleção.
     
@@ -805,9 +824,14 @@ O funcionamento básico ocorre da seguinte maneira (Figura x):
     \item O servidor retorna uma resposta para a requisição inicial do aplicativo, a qual depende do tipo de pedido. Por exemplo, se a requisição inicial for de Login, a resposta recebida será se o Login está correto ou não.
 \end{enumerate}
 
-% Fazer uma ilustração com o app mandando 
-% reqs pro back que manda pro BD
-% MONGO <=> NODEJS <=> REACTNATIVE
+\begin{figure}[H]
+\centering
+    \caption{Arquitetura da Crossword Learning}
+    \label{fig:arquitetura}
+    \includegraphics[width=0.9\textwidth]{Figuras/crossword-archictecture.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
 
 Vale destacar duas importantes funções de segurança exercidas pelo servidor:
 \begin{itemize}
@@ -815,6 +839,8 @@ Vale destacar duas importantes funções de segurança exercidas pelo servidor:
     
     \item Proteção de rotas com \textit{JSON Web Token}: Para isolamento da API que se comunica com o banco de dados, foi adicionada uma camada de proteção. Assim, toda requisição sensível e que modifica ou acessa o banco de dados necessitará de um \textit{token}, cujo tempo de expiração é limitado.
 \end{itemize}
+
+A API criada é de extrema importância pois trabalhos futuros futuros serão nela baseados, como será visto na Seção \ref{sec:atividades_futuras}. Assim, foi necessário escrever uma documentação com as rotas das requisições, seus tipos e o \textit{payload} esperado. O objetivo é a integração da aplicação e seu \textit{backend} com outras plataformas.
 
 Além da infraestrutura, foram adicionadas telas ao aplicativo. O primeiro conjunto de adições foi relacionado às telas de seleção de disciplina e escolha de aulas, que mostra quais aulas já foram feitas. O usuário deveria ter a opção de escolher o assunto a que tenha interesse de aprender (História - Capitanias Hereditárias).
 É possível observá-las na Figura \ref{fig:telas-selecao}.
@@ -863,10 +889,10 @@ A tela de conteúdo por áudio é também simplificada. O \textit{player} de áu
 Já a tela de vídeo, possui um botão extra, usado para expandir o texto para o modo de tela cheia, além do botão de próxima página. 
 
 \subsection{Avaliação heurística}
+\label{sec:avaliacao-heuristica}
 A etapa de avaliação é uma das mais importantes do projeto. É nela que são identificados equívocos do produto para serem corrigidos e finalmente uma versão final seja disponibilizada para o público-alvo. Nesse projeto, foi usada a Avaliação Heurística, a fim de avaliar pricípios de usabilidade \citep{nielsen1994inspection}.
 
-Nessa avaliação, foram convidados três especialistas em Interação Humano-Computador.
-Eles fizeram uma sequência de tarefas passando pelas interfaces do aplicativo, avaliando as funcionalidades e fazendo a comparação com a lista de princípios de usabilidade de Nielsen \citep{nielsen1994usability}.
+Nessa avaliação, foram convidados quatro especialistas que fizeram uma sequência de tarefas passando pelas interfaces do aplicativo, avaliando as funcionalidades e fazendo a comparação com a lista de princípios de usabilidade de Nielsen \citep{nielsen1994usability}.
 
 Abaixo, estão listados os parâmetros usados na avaliação.
 
@@ -898,12 +924,12 @@ Abaixo, estão listados os parâmetros usados na avaliação.
 
 Ao terminar a avaliação, cada um dos especialistas preencheu uma tabela indicando os problemas encontrados com: (i) a Heurística de Nielsen, (ii) Grau de severidade, (iii) tela em que ocorreu o problema, (iv) descrição do problema. O compilado das anotações pode ser visto na Tabela \ref{tab:avaliacaonielsen}.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{\textit{Problemas encontrados na avaliação heurística}}
 \centering
 \footnotesize
-\begin{tabular}{p{4cm} p{4cm} p{4cm} p{4cm}}
+\begin{tabular}{p{1.5cm} p{2cm} p{4cm} p{8.5cm}}
 \toprule
 \textbf{Heurística} & \textbf{Grau de severidade} & \textbf{Tela(s)} & \textbf{Descrição do problema}       
 \\ \midrule
@@ -940,6 +966,46 @@ Login
 &
 Não há \textit{feedback} para a ação efetuada
 \\ \midrule
+9
+& 
+2
+&
+Login
+&
+A mensagem de erro não é precisa, se os campos estiverem em branco, a mensagem indica email incorreto.
+\\ \midrule
+2
+& 
+2
+&
+Perfil
+&
+O ícone do nome é pouco usual.
+\\ \midrule
+2, 4
+& 
+1
+&
+Perfil
+&
+Se há apenas uma aula concluída, a escrita continua no plural.
+\\ \midrule
+4, 8
+& 
+1
+&
+Perfil
+&
+Ícone e texto de nome estão desalinhados do restante dos dados.
+\\ \midrule
+8
+& 
+1
+&
+Conteúdo textual
+&
+O texto apresentado não está justificado.
+\\ \midrule
 4
 & 
 1
@@ -954,7 +1020,7 @@ Seria interessante ter uma tamanho máximo e mínimo para a fonte do texto.
 &
 Conteúdo em áudio
 &
-Há dois botões para controle de execução, usuário podem ficar confusos.
+Há dois botões para controle de execução, usuários podem ficar confusos.
 \\ \midrule
 4
 & 
@@ -970,7 +1036,7 @@ O botão de próxima tela deveria ficar em uma posição fixa.
 &
 Conteúdo em áudio
 &
-Os botões << e >> não tem finalidade.
+Os botões de avançar e retroceder não tem finalidade.
 \\ \midrule
 4
 & 
@@ -980,6 +1046,14 @@ Conteúdo em vídeo
 &
 O vídeo continua sendo reproduzido após o botão de próxima tela ser clicado.
 \\ \midrule
+8
+& 
+3
+&
+Conteúdo em vídeo
+&
+Há dois botões para reprodução em tela cheia, usuários podem ficar confusos.
+\\ \midrule
 10
 & 
 3
@@ -988,13 +1062,45 @@ Tutorial
 &
 Fica confuso se o que está sendo exibido é um tutorial ou se o jogo já iniciou. Seria interessante deixar explícito em todo o tempo de que se trata de um tutorial.
 \\ \midrule
+4
+& 
+2
+&
+Tutorial
+&
+A fonte utilizada não é a mesma da etapas anteriores.
+\\ \midrule
 6
 & 
 4
 &
 Palavra cruzada
 &
-O mecanismo de preenchimento é confuso: não há botões para apagar e letras já preenchidas precisam ser redigitadas.
+O mecanismo de preenchimento é confuso: não há botões para apagar.
+\\ \midrule
+6
+& 
+4
+&
+Palavra cruzada
+&
+Letras pertencentes a palavras já preenchidas corretamente em "cruzamentos" precisam ser redigitadas.
+\\ \midrule
+3, 7
+& 
+4
+&
+Palavra cruzada
+&
+Quando o celular fica na horizontal, não é possível preencher as palavras cruzadas.
+\\ \midrule
+3
+& 
+4
+&
+Palavra cruzada
+&
+Não há botão para retornar, é necessário terminar o jogo para sair da tela de palavra cruzada.
 \\ \midrule
 7
 & 
@@ -1009,7 +1115,87 @@ As sombras dos botões de teclado virtual podem deixar a vista do usuário cansa
 \label{tab:avaliacaonielsen}
 \end{table}
 
-\subsection{Evolução da Crossword Learning}
-asdkfjasdkljfasldkfçlsad
+Com a agregação dos problemas encontrados pelos especialistas, foi possível diagnosticar as fraquezas da aplicação. O gráfico em barras exibido na Figura \ref{fig:barra-media-heuristica} mostra a média do grau de severidade por heurística.
 
-% Colocar alguns exemplos de antes e depois
+Como se pode observar, os pontos fracos da aplicação são as heurísticas 3 e 6, as quais atingiram a média máxima para severidade. Elas representam respectivamente: Liberdade de controle fácil para o usuário e Reconhecimento em vez de memorização. Além disso, todas as ocorrências dessas heurísticas foram da tela do jogo de Palavra Cruzada. Uma hipótese para o motivo desse padrão, é a falta de experiência na elaboração de interfaces complexas, que possuem muitas funcionalidades e botões. Ainda, o fato da avaliação ter sido feita visando o público idoso agravou mais a severidade desses aspectos. 
+
+Já a heurística 2 foi a menos significativamente violada, com uma média de 1.5 no grau de severidade.
+
+Em suma, pode-se concluir que o teste avaliativo foi bem sucedido. Diversos equívocos foram identificados antes da distribuição ao público alvo. Dessa maneira, como se pode observar na seção seguinte, foi possível corrigir os erros a fim de obter um produto com uma versão final mais eficiente quanto aos seus objetivos de educar o público idoso.
+
+\begin{figure}[H]
+\centering
+    \caption{Gráfico em barras: média de severidade por heurística}
+    \label{fig:barra-media-heuristica}
+    \includegraphics[width=0.9\textwidth]{Figuras/severidade-heuristica.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+\subsection{Evolução da \textit{Crossword Learning}}
+Uma vez concluída a avaliação heurística com a ajuda dos especialistas, foi necessário corrigir os problemas identificados. Todos os erros listados foram retificados e alguns deles serão melhor explanados abaixo.
+
+O problema com a maior complexidade necessária ao reparo é relacionado à tela de Palavra Cruzada. As letras preenchidas que estivessem em uma palavra já escrita corretamente precisavam ser redigitadas. A lógica de preenchimento no código da aplicação trocava o foco para a próxima posição sem verificar se a posição era de uma palavra já completa. Foi necessário criar a função \textit{nextCellPositions()} para retornar a posição (i, j) no tabuleiro da próxima célula e após verificar com a função \textit{isCellFromCompletedWord()} se a célula era pertencente a uma palavra já completa pelo usuário. Na Figura \ref{fig:nextcell} é possível observar a função \textit{nextCell()}. Primeiramente, na linha 316 é obtida a posição das próximas células, na linha 322 ocorre finalmente a verificação se a letra está em outra palavra completa. Caso isso ocorra, a próxima é verificada usando-se a mesma lógica nas linhas 323 a 325. Esse \textit{while loop} ocorre até que se encontre uma posição válida ou o limite de \textit{loops} determinado seja alcançado.
+
+\begin{figure}[H]
+\centering
+    \caption{Função nextCell()}
+    \label{fig:nextcell}
+    \includegraphics[width=0.9\textwidth]{Figuras/codeNextCell.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+
+% Mostrar códigos (antes e depois é no proximo problema)
+
+Superado o tópico do problema mais complexo, é importante esclarecer o de maior impacto, também relacionado à escrita no jogo de palavras cruzadas.
+Um dos avaliadores escreveu: ``Achei confuso o mecanismo de preenchimento da palavra cruzada". Isso acontecia pois não havia a possibilidade de correção de uma letra errada. Uma vez digitada, a única maneira de trocá-la seria a sobrescrevendo quando o cursor retornasse para aquela posição. Outra possibilidade seria o usuário clicar diretamente na célula do tabuleiro que desejasse corrigir e digitar outra letra. Escolhendo-se uma ou outra, o usuário deveria percorrer uma série de ações não intuitivas para reparar a letra anteriormente digitada. A simples solução foi inserir um botão que permitisse apagar uma letra e executasse a função \textit{backspace()} (Figura \ref{fig:backspace}). Há três possibilidades de ocorrência com ações diferentes para cada uma, dependendo da situação do cursor:
+\begin{enumerate}
+    \item Linhas 255 e 256: É a primeira posição da palavra, apaga a primeira letra e o cursor não muda de local.
+    \item Linhas 257 e 258: Se há uma letra no foco, apaga a letra e o cursor não muda de posição.
+    \item Linhas 259 a 268: Se não há letra no cursor, apaga a anterior e volta uma posição.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+    \caption{Função backspace()}
+    \label{fig:backspace}
+    \includegraphics[width=0.9\textwidth]{Figuras/codeBackspace.png}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+A maior diferença se dá em questão da usabilidade. Usuários agora podem utilizar o teclado personalizado do aplicativo com funções semelhantes aos que estão acostumados a usar. Assim, exercem os mesmos comportamentos de escrever e apagar de um teclado comum, tópico apresentado na segunda heurística de Nielsen (Correspondência entre o sistema e o mundo real).
+Além disso, foi adicionado um botão que permitisse o usuário retornar à tela de perfil mesmo não terminando o jogo, pois antes isso só ocorreria ao concluir todas as palavras. Na Figura \ref{fig:cross-old-new} é possível observar a diferença entre as telas.
+
+\begin{figure}[H]
+\centering
+    \caption{Novos botões de apagar e retornar à tela de perfil}
+    \label{fig:cross-old-new}
+    \includegraphics[width=0.6\textwidth]{Figuras/cross-old-new.jpg}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+A tela de Login também sofreu algumas modificações. A fonte das letras se tornou maior, possibilitando que usuários com possíveis problemas de visão pudessem ler o conteúdo. Outra diferença é o \textit{feedback} após o botão de Login ser pressionado. Depois de clicar no botão a tela permanecia estática, esperando a resposta do servidor para exibir a mensagem de erro ou levar o usuário à tela de Perfil. Se o servidor demorasse a responder o usuário poderia achar que o aplicativo travou por mau funcionamento. Na Figura \ref{fig:login-old-new} é possível observar o ícone de carregamento na tela de Login, bem como a mudança no tamanho da fonte e do logo.
+
+\begin{figure}[H]
+\centering
+    \caption{Aumento da fonte e ícone de carregamento}
+    \label{fig:login-old-new}
+    \includegraphics[width=0.55\textwidth]{Figuras/login-old-new.jpg}
+    
+    Fonte: Elaborada pelo autor
+\end{figure}
+
+Por fim, achou-se necessário incluir um tutorial em vídeo, o qual foi criado com auxílio da plataforma Typito\footnote{\url{https://typito.com/}}. Assim, foi inserido na tela de perfil um botão que levasse o usuário aos tutoriais a fim de que pudesse revisitá-los sempre que achasse necessário.
+
+% Figura da tela de escolha entre tutorial em vídeo ou escrito. Acho q n precisa, a tela é quase vazia msm
+
+As outras mudanças foram menos impactantes e outras com diferenças não visuais. Em suma, o aplicativo foi corrigido com sucesso para uma última avaliação com uma especialista em usabilidade voltada para o público idoso.
+
+% Colocar alguns exemplos de antes e depois, e junto explicar o pq de ter ficado melhor, em termos de usabilidade e tals...
+
+\subsection{Avaliação final}
+Colocar a avaliação da Camila com o esquema parecido da heurística, uma tabela, prints de antes e depois.
