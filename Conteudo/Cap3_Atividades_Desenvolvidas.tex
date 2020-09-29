@@ -600,7 +600,7 @@ A validação da interface do protótipo construído foi realizada com dez parti
 %Dessa forma, levando em conta as informações supracitadas do protótipo, foi iniciado o desenvolvimento do aplicativo deste projeto.
 
 \subsection{Estudo do algoritmo de geração de palavras cruzadas}
-Uma vez que o protótipo inicial contemplava apenas uma interface, o próximo passo era a determinação de um algoritmo que pudesse gerar um tabuleiro de palavras cruzadas. 
+Visando a construção de uma futura plataforma em que professores poderão incluir palavras cruzadas, foi estudado um algoritmo para facilitar essa criação, gerando tabuleiros de palavras-cruzadas a partir de uma lista de palavras.
 
 Assim, foi tomado como base o algoritmo feito em \textit{javascript} por \cite{layoutGenerator}, o qual foi modificado para atender as necessidades deste projeto. O algoritmo funciona a partir de uma lista de palavras que são usadas para construir um tabuleiro. Além disso, o algoritmo também permite que o usuário escolha o tamanho do tabuleiro; caso uma palavra seja grande demais e não consiga ser inserida, ela é eliminada da lista e não segue para os próximos passos. A seguir serão explicitados os detalhes do algoritmo.
 
@@ -644,7 +644,7 @@ Como resultado final, o algoritmo exporta um \textit{array JSON} (Figura \ref{fi
 \end{figure}
 
 \subsection{Desenvolvimento MVP}
-Com o algoritmo descrito funcionando corretamente, foi possível construir um Produto Mínimo Viável (\textit{Minimum Viable Product} -- MVP), que consiste na tela de palavra-cruzada. Já que o desenvolvimento se deu utilizando o \cite{RN}, que permite a construção de aplicativos para Android e iOS, o processo foi facilitado, pois a implementação do algoritmo supracitado foi feita em \textit{javascript}, a qual é a linguagem de programação também utilizada no \cite{RN}. Dessa maneira, a arquitetura do \textit{framework} se encarrega do processo que permite que o algoritmo seja executado no dispositivo móvel.
+Uma vez que o protótipo inicial possuía apenas interfaces sem funcionalidades, foi necessário construir um Produto Mínimo Viável (\textit{Minimum Viable Product} -- MVP), que consistia na tela de palavra-cruzada.
 
 A tela de jogo foi desenvolvida da seguinte maneira: uma \textit{tag} \textit{<View>} comporta quatro \textit{tags} principais nativas do \textit{React Native}:
 
