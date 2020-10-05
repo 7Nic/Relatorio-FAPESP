@@ -1,11 +1,7 @@
 \chapter{Atividades Desenvolvidas}\label{sec:ativ_desenvolvidas}
 Nesta seção são descritas, em detalhes, as principais atividades realizadas para a condução deste projeto.
 
-%Ênfase foi dada ao estudo teórico que pudesse embasar o desenvolvimento do aplicativo em si; conceitos como aprendizagem móvel, acessibilidade e usabilidade foram abordados. Além desses, é apresentado o estudo das tecnologias utilizadas para a construção do código do aplicativo.
-
 \section{Estudo sobre usabilidade e acessibilidade}\label{sec:estudos_usab_acess} 
-
-%Como primeiro ponto, foram abordados os aspectos relacionados ao conceito de usabilidade bem como a definição de acessibilidade. 
 
 Segundo a Lei 10.098, de 19 de dezembro de 2000 da Legislação Brasileira\footnote{\url{https://www2.camara.leg.br/legin/fed/lei/2000/lei-10098-19-dezembro-2000-377651-publicacaooriginal-1-pl.html}}, a acessibilidade é a possibilidade e condição de alcance para utilização, com segurança e autonomia, dos
 espaços, mobiliários e equipamentos urbanos, das edificações, dos transportes e dos sistemas e meios de comunicação por pessoa portadora de deficiência ou com mobilidade reduzida. 
@@ -20,9 +16,7 @@ Atrelada à acessibilidade deve estar a usabilidade que, segundo \cite{nielsenPr
 é o atributo relacionado a quão fácil é usar algo. Mais especificamente, refere-se a quão rápido pessoas podem aprender a usar uma ferramenta, quão eficientes são enquanto a utilizam, quão memorável é, quão propenso a erros e o quanto as pessoas gostam de utilizar; deve-se tornar a utilização fluida. É interessante destacar que existe uma frase entre desenvolvedores que diz: ``não faça o usuário pensar'' baseada no livro \textit{Don't make me think} \citep{steveDont2005}. O objetivo é tornar o processo intuitivo o suficiente a ponto de ser considerado natural.
 Ainda, é essencial analisar fatores como capacidade de aprendizagem, a fim de que não seja necessário um aprendizado extra por parte do usuário para utilizar o sistema em questão.
 
-No contexto em que se insere este trabalho isso se torna ainda mais essencial, uma vez que o público idoso enfrenta vários problemas relacionados à usabilidade em \textit{smartphones} \citep{dificuldadesIdosos} e principalmente à acessibilidade. %Isso ocorre, principalmente, pois investidores da área de tecnologia consideram um grau de incerteza no que tange oportunidades de negócios relacionadas à área quando se trata de usuários idosos \citep{NBCelderly}.
-
-%Pelo exposto acima, foi decidido seguir recomendações de usabilidade e acessibilidade no desenvolvimento do projeto. 
+No contexto em que se insere este trabalho isso se torna ainda mais essencial, uma vez que o público idoso enfrenta vários problemas relacionados à usabilidade em \textit{smartphones} \citep{dificuldadesIdosos} e principalmente à acessibilidade.
 
 Ressalta-se que o objetivo principal do projeto é auxiliar o processo de ensino-aprendizagem de usuários idosos e o foco é no desenvolvimento de aplicações com base em requisitos pedagógicos e de acessibilidade.
 
@@ -30,7 +24,7 @@ Ressalta-se que o objetivo principal do projeto é auxiliar o processo de ensino
 Outra atividade realizada foi o estudo do conceito de aprendizagem móvel, bem como uma pesquisa sobre as principais funcionalidades presentes em aplicativos relacionados ao ensino de palavras cruzadas, tendo como público-alvo o usuário idoso.
 
 \subsection{Visão geral}
-Existem várias definições de \textit{m-learning}. %Assim, ao longo dos anos, pesquisadores se dispuseram a estudar o assunto e tentaram achar uma definição. 
+Existem várias definições de \textit{m-learning}.
 De acordo com \cite{Quinn2000}, \textit{m-learning} é um modelo de aprendizagem eletrônica (\textit{e-learning}) que utiliza equipamentos computadorizados: \textit{Palmtops}, dispositivos que rodam \textit{Windows Embedded Compact} e até um telefone celular.
 Em 2011, \cite{hwang2011research} argumentaram que uma definição amplamente aceita de \textit{m-learning} é simplesmente ``usar tecnologias móveis para facilitar o aprendizado''. Dentre outras definições, a adotada para esse projeto é a de \cite{traxler2005defining}: qualquer fornecimento educacional onde a tecnologia dominante é portátil ou dispositivos \textit{palmtop}.
 
@@ -60,92 +54,91 @@ Diversos são os aplicativos que visam apoiar o processo de ensino-aprendizagem 
 Dessa maneira, alguns aplicativos (para diferentes públicos) foram analisados, a fim de verificar suas funcionalidades e propostas de aprendizagem e acessibilidade, de modo que essas pudessem ser adaptadas ou utilizadas para aplicações com foco no idoso.
 
 \begin{description}
-% Ensina o que? Qual o publico alvo? Pessoas de quantos anos?
 
 \item[Engaging congress]\footnote{\url{https://play.google.com/store/apps/details?id=com.iu.engagingcongress&hl=en}, \url{https://apps.apple.com/us/app/engaging-congress/id1309161238?ls=1}} \hfill \\
 \textit{Enganging congress} (\autoref{fig:EngCong}) é um jogo interativo que visa explorar os princípios básicos de um governo representativo. Escolhe-se um tema e é exibido um vídeo. Jogos são incluídos no processo baseados no tema em questão. É importante destacar a atenção dos criadores em fazer o usuário compreender a tarefa; a todo momento é possível clicar no botão de dúvida. As principais funcionalidades são: (i) aprendizado por conteúdo em formato de áudio sobre o tema; (ii) perguntas relacionadas ao conteúdo passado; (iii) nota final após a conclusão dos exercícios; (iv) botões de dúvidas sempre presentes.
 
-% \begin{figure}[ht!]
-% \centering
-%     \caption{Telas do aplicativo \textit{Engaging Congress}}
-%     \label{fig:EngCong}
-%     \includegraphics[width=0.9\textwidth]{Figuras/engagingcongress.png}
+\begin{figure}[ht!]
+\centering
+    \caption{Telas do aplicativo \textit{Engaging Congress}}
+    \label{fig:EngCong}
+    \includegraphics[width=0.9\textwidth]{Figuras/engagingcongress.png}
     
-%     Fonte: Capturas de tela do aplicativo
-% \end{figure}
+    Fonte: Capturas de tela do aplicativo
+\end{figure}
 
 \item[Play PBS KIDS Games]\footnote{\url{https://apps.apple.com/us/app/pbs-kids-games/id1050773989}, \url{https://play.google.com/store/apps/details?id=org.pbskids.gamesapp&hl=pt_BR}} \hfill \\
 O aplicativo \textit{Play PBS KIDS Games} (\autoref{fig:pbs}) visa a promoção da educação para crianças na fase de alfabetização (2 a 8 anos), contendo mais de 100 mini-jogos voltados para tal. As crianças são encorajadas a resolver desafios e aprimorar suas habilidades em ciências, matemática, letras e criatividade. O objetivo é impactar positivamente a vida de crianças por meio de mídia baseada em um currículo onde quer que elas estejam. O aplicativo ganhou duas premiações no ano de 2017, a saber Melhor aplicativo de jogos para Pré-Escola (\textit{Kidscreen Award Winner}) e o \textit{Parents' Choice Recommended Mobile App}. Os principais recursos são: (i) funcionamento offline; (ii) possibilidade de gerenciar a quantidade de memória que será consumida; (iii) obtenção de detalhes sobre desenhos da TV PBS Kids, como idade recomendada e objetivos de aprendizado para as crianças.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Telas do aplicativo \textit{Play PBS KIDS Games}}
-%     \label{fig:pbs}
-%     \includegraphics[width=0.6\textwidth]{Figuras/pbsKids.jpg}
+\begin{figure}[H]
+\centering
+    \caption{Telas do aplicativo \textit{Play PBS KIDS Games}}
+    \label{fig:pbs}
+    \includegraphics[width=0.6\textwidth]{Figuras/pbsKids.jpg}
     
-%     Fonte: Capturas de tela do aplicativo
-% \end{figure}
+    Fonte: Capturas de tela do aplicativo
+\end{figure}
 
 \item[Human Anatomy Atlas]\footnote{\url{https://apps.apple.com/br/app/human-anatomy-atlas-2020/id1117998129}, \url{https://play.google.com/store/apps/details?id=com.argosy.vbandroid&hl=pt_BR}} \hfill \\
 O \textit{Human Anatomy Atlas} (\autoref{fig:humAtlas}) é um aplicativo criado por um time de especialistas em visualização biomédica. É direcionado ao ensino da anatomia do corpo humano com o foco em estudantes e professores, apesar de também ser utilizado em hospitais. Seus modelos em 3D promovem uma fidelidade às estruturas humanas reais, sendo possível rotacionar e dissecar órgãos e partes do corpo. Possui recursos como : (i) interatividade com estruturas 3D; (ii) mais de 1000 questões para testes em assuntos; (iii) visualização de anatomias complexas em realidade aumentada; (iv) conteúdo técnico explicado de maneira clara.
 
-% \begin{figure}[ht!]
-% \centering
-%     \caption{Telas do aplicativo \textit{Human Anatomy Atlas}}
-%     \label{fig:humAtlas}
-%     \includegraphics[width=0.6\textwidth]{Figuras/humanAtlas.png}
+\begin{figure}[ht!]
+\centering
+    \caption{Telas do aplicativo \textit{Human Anatomy Atlas}}
+    \label{fig:humAtlas}
+    \includegraphics[width=0.6\textwidth]{Figuras/humanAtlas.png}
     
-%     Fonte: \cite{HumanAnatomyAtlas}
-% \end{figure}
+    Fonte: \cite{HumanAnatomyAtlas}
+\end{figure}
 
 \item[Bini Super ABC]\footnote{\url{https://apps.apple.com/br/app/bini-abc-alfabeto-crianças-app/id1397966958}, \url{https://play.google.com/store/apps/details?id=com.binibambini.abc&hl=pt_BR}} \hfill \\
 Bini Super ABC (\autoref{fig:biniABC}) é um aplicativo voltado para crianças na faixa de 3 a 5 anos na fase de instrução educacional. O aplicativo promove o aprendizado das letras do alfabeto com diversos jogos infantis. O objetivo é tornar o ensino interessante e empolgante com desenhos coloridos, personagens e efeitos sonoros. A aplicação possui as funcionalidades de: (i) aprendizado das letras por conteúdo em formato de áudio; (ii) reforço do material aprendido; (iii) controle de responsáveis para os jogos, entre outras.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Telas do aplicativo \textit{Bini Super ABC}}
-%     \label{fig:biniABC}
-%     \includegraphics[width=0.6\textwidth]{Figuras/biniabc.png}
+\begin{figure}[H]
+\centering
+    \caption{Telas do aplicativo \textit{Bini Super ABC}}
+    \label{fig:biniABC}
+    \includegraphics[width=0.6\textwidth]{Figuras/biniabc.png}
     
-%     Fonte: Capturas de tela do aplicativo
-% \end{figure}
+    Fonte: Capturas de tela do aplicativo
+\end{figure}
 
 \item[Crossword Puzzle Free]\footnote{\url{https://play.google.com/store/apps/details?id=mobi.redstonegames.crossword.en&hl=pt_BR}} \hfill \\
 Crossword Puzzle Free (\autoref{fig:crossFree}) é um aplicativo de palavras cruzadas. É de fácil  uso por não exigir conhecimentos específicos do usuário. Possui quatro níveis de dificuldade a partir dos quais é possível buscar o desafio na medida certa além de motivar o usuário a continuar utilizando o aplicativo por não ser nem muito fácil nem muito difícil. As principais funcionalidades são: (i) teclado do próprio aplicativo; (ii) dicas aparecem acima do teclado; e (iii) botão de dica para a palavra, entre outras.
 
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Telas do aplicativo \textit{Crossword Puzzle Free}}
-%     \label{fig:crossFree}
-%     \includegraphics[width=0.7\textwidth]{Figuras/crosswordPuzzleFree.jpg}
+\begin{figure}[H]
+\centering
+    \caption{Telas do aplicativo \textit{Crossword Puzzle Free}}
+    \label{fig:crossFree}
+    \includegraphics[width=0.7\textwidth]{Figuras/crosswordPuzzleFree.jpg}
     
-%     Fonte: Capturas de tela do aplicativo
-% \end{figure}
+    Fonte: Capturas de tela do aplicativo
+\end{figure}
 
 \item[Crossword Quiz]\footnote{\url{https://play.google.com/store/apps/details?id=com.randomlogicgames.crossword&hl=pt_BR}} \hfill \\
 Crossword Quiz (\autoref{fig:crossQuiz}) é outro aplicativo de palavras cruzadas, porém com uma abordagem mais facilitada pelo fato de não se disponibilizarem todas as letras do teclado, tornando a resposta mais fácil para o usuário. Além disso, o aplicativo não conta apenas com dicas escritas, mas inclui imagens. As funcionalidades que se destacam são: (i) não mostrar todo o teclado, apenas algumas letras; (ii) mostra imagens como dicas, além de textos; e (iii) tutorial inicial intuitivo e completo.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Telas do aplicativo \textit{Crossword Quiz}}
-%     \label{fig:crossQuiz}
-%     \includegraphics[width=0.7\textwidth]{Figuras/crosswordQuiz.jpg}
+\begin{figure}[H]
+\centering
+    \caption{Telas do aplicativo \textit{Crossword Quiz}}
+    \label{fig:crossQuiz}
+    \includegraphics[width=0.7\textwidth]{Figuras/crosswordQuiz.jpg}
     
-%     Fonte: Capturas de tela do aplicativo
-% \end{figure}
+    Fonte: Capturas de tela do aplicativo
+\end{figure}
 
 
 \item[Não deixe a vovó cair]\footnote{\url{https://play.google.com/store/apps/details?id=com.GazGames.SalveVovo&hl=pt_BR}} \hfill \\
 Não deixe a vovó cair (\autoref{fig:nDeixeVovoCair}) é um aplicativo que visa reduzir os riscos do ambiente domiciliar. Produzido pelo Centro de Telessaúde do Hospital das Clínicas – UFMG (Universidade Federal de Minas Gerais) e pela Rede de Teleassistência de Minas Gerais, possui quatro níveis que representam áreas de uma casa: Banheiro, Quarto, Cozinha e Sala. Além disso, conta com a ajuda do cão Neca, que representa o cachorro da dona da casa, e guia o usuário nos passos do jogo.
-% \begin{figure}[H]
-% \centering
-%     \caption{Telas do aplicativo \textit{Crossword Quiz}}
-%     \label{fig:nDeixeVovoCair}
-%     \includegraphics[width=0.7\textwidth]{Figuras/nDeixeVovoCair.jpg}
+\begin{figure}[H]
+\centering
+    \caption{Telas do aplicativo \textit{Crossword Quiz}}
+    \label{fig:nDeixeVovoCair}
+    \includegraphics[width=0.7\textwidth]{Figuras/nDeixeVovoCair.jpg}
     
-%     Fonte: Capturas de tela do aplicativo
-% \end{figure}
+    Fonte: Capturas de tela do aplicativo
+\end{figure}
 
 % fim
 \end{description}
@@ -180,7 +173,6 @@ Fonte: Elaborada pelo autor
 
 \section{Estudo sobre ensino e aprendizagem de idosos}
 
-%Um dos objetivos do projeto é desenvolver uma aplicação educacional voltada para o público idoso. Portanto, faz-se necessário analisar o contexto relacionado ao ensino voltado ao público idoso, a fim de auxiliar no desenvolvimento do projeto. 
 Como já discutido anteriormente, a expectativa de vida no mundo subiu e, em países em desenvolvimento como o Brasil, esse cenário é intensificado com prospecções de quadruplicação de pessoas com 60 anos ou mais \citep{demografico2010disponivel}. Dessa maneira, surge um novo desafio: adequar as práticas educacionais a esse público. De acordo com \cite{rethinkingTeacherEducation}, a situação envolve aspectos que não podem ser trabalhados sem a reconstrução da atual abordagem na educação. É necessária a mudança da direção de pensamento sobre o público idoso aliada à construção de métodos que possam auxiliá-los ou enriquecer pedagogicamente as ofertas de ensino.
 
 Dentre as possibilidades de abordagem, há a educação continuada ou educação permanente, a qual objetiva capacitar um indivíduo após o período escolar ou ao longo da vida da pessoa. Assim, aplicada à área Gerontológica esse tipo de educação pode ser utilizada em iniciativas educacionais \citep{neri2001palavras}. 
@@ -218,7 +210,7 @@ Assim, foram utilizadas as diretrizes de acessibilidade WCAG 2.1 (\textit{Web Co
 
 \subsection{WCAG 2.1}
 A fim de proporcionar uma experiência de uso do aplicativo respeitando as limitações do usuário, foram analisadas as diretrizes de acessibilidade contidas na \textit{Web Content Accessibility Guidelines} \citep{wcag}. Ela é um conjunto de recomendações criadas pela
-\textit{World Wide Web Consortium} \citep{w3c} com o objetivo de tornar o conteúdo da Web mais acessível para pessoas com deficiências tais como: cegueira ou baixa visão, surdez ou indivíduos com perda de audição, pessoas com limitações de movimentação, deficiências de fala, fotossensibilidade e limitações cognitivas. As recomendações abrangem \textit{desktops}, \textit{notebooks}, \textit{tablets} e dispositivos móveis, os quais são o foco desse projeto. É importante destacar que a versão 2.1 foi construída respeitando a versão 2.0, publicada em dezembro de 2008. %O documento foi revisado pelos membros da W3C, desenvolvedores de software e por outros grupos interessados, os quais foram julgados capazes pela própria W3C. 
+\textit{World Wide Web Consortium} \citep{w3c} com o objetivo de tornar o conteúdo da Web mais acessível para pessoas com deficiências tais como: cegueira ou baixa visão, surdez ou indivíduos com perda de audição, pessoas com limitações de movimentação, deficiências de fala, fotossensibilidade e limitações cognitivas. As recomendações abrangem \textit{desktops}, \textit{notebooks}, \textit{tablets} e dispositivos móveis, os quais são o foco desse projeto. É importante destacar que a versão 2.1 foi construída respeitando a versão 2.0, publicada em dezembro de 2008.
 
 Os quatro princípios utilizados para a acessibilidade na Web são: perceptível, operável, compreensível e robusto.
 \begin{itemize}
@@ -258,14 +250,14 @@ O \textit{ReqML-Catalog}
 
 O \textit{ReqML-Catalog} possui uma estrutura hierárquica de três níveis: \textbf{Pedagógico}, \textbf{Social} e \textbf{Técnico}, como se pode ver na Figura \ref{fig:reqML}. Cada nível tem subníveis que possuem os requisitos concernentes à sua aplicação. É relevante observar que o nível Técnico possui o subnível \textbf{Usabilidade e Acessibilidade}, importante no contexto deste projeto pelo fato dos usuários-alvo serem idosos. A habilidade de uso e idade não podem ser fatores impeditivos para a utilização do aplicativo.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{ReqML-Catalog}
-%     \label{fig:reqML}
-%     \includegraphics[width=0.9\textwidth]{Figuras/reqML-catalog.png}
+\begin{figure}[H]
+\centering
+    \caption{ReqML-Catalog}
+    \label{fig:reqML}
+    \includegraphics[width=0.9\textwidth]{Figuras/reqML-catalog.png}
     
-%     Fonte: \cite{soad2017reqml}
-% \end{figure}
+    Fonte: \cite{soad2017reqml}
+\end{figure}
 
 Ademais, para embasar a elicitação de requisitos, foi utilizada uma linguagem de padrões pedagógicos. Padrões são um mecanismo para capturar a experiência e o conhecimento de um domínio para replicá-lo em situações futuras, enquanto que linguagens de Padrões agrupam diversos padrões de um domínio. Assim, linguagens de padrões são reconhecidas como método para descrever o conhecimento tácito e podem ser usadas como mecanismo de apoio na fase de elicitação de requisitos
 \citep{Pressman2014}. A Linguagem de Padrões utilizada neste projeto foi MLearning-PL \citep{Fioravanti2017_plop}, composta por 14 padrões (Figura \ref{fig:ml-pl}). 
@@ -331,152 +323,14 @@ Habilidade cognitiva (Processamento de informação, dificuldade de concentraç�
 \label{tab:requisitos}
 \end{table}
 
-% As áreas que mais aproveitadas foram a Técnica e Social. Houve um maior destaque da área Pedagógica por dois motivos principais: (i) forneceu um panorama mais aprofundado de elementos essenciais para a educação obtidos de especialistas e literaturas especializadas; (ii) uma vez que o foco do projeto é auxiliar a educação, mais atenção precisou ser voltada à esta área.
-
-
-% \section{Elicitação de requisitos}
-% A fim de estruturar o desenvolvimento do projeto, fez-se necessária a elicitação de requisitos. 
-% Esses, tiveram suas origens nos artefatos anteriormente discutidos na seção \ref{subsec:artefatos} (Estudo sobre artefatos) bem como no protótipo inicial abordado na subseção \ref{subsec:prototipoInicial} (Protótipo inicial).
-
-% Os requisitos foram elicitados contendo os seguintes campos:
-
-% \begin{itemize}
-%     \item \textbf{Prioridade}: Alta, média ou baixa;
-%     \item \textbf{Tipo de requisito}: Requisito funcional, não funcional ou de domínio;
-%     \item \textbf{Versão Resumida}: Que condensa o objetivo do requisito em poucas palavras;
-%     \item \textbf{História}: História do usuário, que conta com mais detalhes o objetivo que se deseja obter com o requisito;
-%     \item \textbf{Origem}: Se foi originado dos artefatos WCAG 2.1, do catálogo ReqML-Catalog ou se veio do protótipo juntamente com as pesquisas realizadas com ele;
-%     \item \textbf{Padrão/Categoria/Diretriz}: Se aplicando apenas aos artefatos WCAG 2.1 e ReqML-Catalog, determina de qual seção do artefato o requisito pertence.
-% \end{itemize}
-
-% A seguir, serão exibidos na Tabela \ref{tab:requisitos} alguns dos requisitos extraídos tidos como importantes para o projeto.
-
-% \begin{table}[!ht]
-% \centering
-% \caption{\textit{Requisitos elicitados}}
-% \centering
-% \footnotesize
-% \begin{tabular}{p{2cm} p{2cm} p{2cm} p{4.6cm} p{2cm} p{2.7cm}}
-% \toprule
-% \textbf{Prioridade} & \textbf{Tipo de requisito} & \textbf{Versão resumida}        
-% &
-% \textbf{História}
-% &
-% \textbf{Origem}
-% &
-% \textbf{Categoria/Diretriz}
-% \\ \midrule
-
-% Alta
-% & 
-% Não funcional
-% &
-% Encriptação da senha
-% & 
-% Gostaria que minha senha fosse encriptada e que nem os desenvolvedores que tivessem acesso ao banco de dados pudessem obter a minha senha
-% & 
-% Protótipo
-% \\ \midrule
-
-% Média
-% & 
-% Funcional
-% &
-% Sair e salvar
-% &
-% Gostaria de poder sair de uma partida de palavras cruzadas a qualquer momento, mesmo que não concluídas todas as palavras e pudesse retornar após ao mesmo estado em que parei
-% & 
-% Protótipo
-% \\ \midrule
-
-% Alta
-% & 
-% Não funcional
-% &
-% Motivação
-% &
-% Gostaria que o aplicativo me motivasse a continuar aprendendo por meio de notificações, rankings com amigos e barras de progresso que mostrassem o quanto estou evoluindo ao longo do tempo
-% &
-% ReqML-Catalog
-% &
-% Pedagógico - Aprendizado
-% \\ \midrule
-
-% Alta
-% &
-% Não funcional
-% &
-% Conteúdo da tela
-% &
-% Gostaria que a tela fosse o mais enxuta possível, contendo apenas o conteúdo necessário, para evitar a minha confusão por não ter uma grande familiaridade com aplicativos móveis
-% &
-% ReqML-Catalog
-% &
-% Técnico - Usabilidade \& Acessibilidade
-% \\ \midrule
-
-% Alta
-% &
-% Funcional
-% &
-% Alto contraste
-% &
-% Gostaria que o aplicativo tivesse uma diferença clara entre as cores com um alto contraste, pois possuo problemas relacionados à visão e preciso de um conteúdo muito claro
-% &
-% WCAG
-% &
-% 1.4.3
-
-% \\ \midrule
-
-% Média
-% &
-% Funcional
-% &
-% Transcrição dos áudios
-% &
-% Gostaria que houvesse a opção de ler a transcrição do áudio ao mesmo tempo que o ouço. Isso facilitaria a minha compreensão e absorção do conteúdo
-% &
-% WCAG
-% &
-% 1.2.2
-% \\ \bottomrule
-
-% \end{tabular}
-% \label{tab:requisitos}
-
-% Fonte: Elaborada pelo próprio autor
-% \end{table}
-
-
-\section{Estudos sobre métodos e tecnologias de desenvolvimento}
-
-%Com o objetivo de desenvolver um aplicativo que auxilie o processo de ensino-aprendizagem de idosos, foi necessário compreender conceitos de Engenharia de Software (Requisitos), bem como a aprendizagem de tecnologias que permitissem a construção do código do mesmo. Dessa forma, serão investigados 
-
 Esta atividade consistiu no estudo de métodos e tecnologias relacionadas ao desenvolvimento de aplicações móveis a saber: (i) Scrum; (ii) React Native; (iii) UI/UX; (iv) Docker; (v) NodeJS e (vi) MongoDB.
 
-% \begin{itemize}
-
-%     \item Scrum: refere-se à metodologia de desenvolvimento adotada neste projeto.
-  
-%     \item React Native: \textit{framework} que possibilita o desenvolvimento de aplicativos móveis para as plataformas Android e iOS.
-    
-%     \item UI/UX: refere-se aos conceitos relacionados à interface e experiência do usuário.
-    
-%     \item UI/UX: refere-se aos conceitos relacionados à interface e experiência do usuário.
-    
-%     \item UI/UX: refere-se aos conceitos relacionados à interface e experiência do usuário.
-    
-% \end{itemize}
-
-%Dessa forma, foi possível organizar o desenvolvimento técnico do projeto de maneira mais clara, permitindo um planejamento com mais clareza.
-
 \subsubsection{Scrum} 
-Para este projeto, decidiu-se adotar a metodologia de desenvolvimento ágil de software denominada \textit{Scrum}, uma vez que o produto final poderia sofrer com mudanças de requisitos por parte dos usuários. 
+Para este projeto, decidiu-se adotar a metodologia de desenvolvimento ágil de software denominada Scrum, uma vez que o produto final poderia sofrer com mudanças de requisitos por parte dos usuários. 
 
 Essa metodologia foi concebida em 2001, com um grupo de 17 pessoas que se reuniu para discutir a respeito de desenvolvimentos mais leves de software, pois acreditavam que os modelos em voga eram lentos e burocráticos. O resultado foi o Manifesto Ágil \citep{agileManifesto}, em que os participantes propuseram princípios a serem seguidos. Segundo os criadores, deveria haver a valorização de: (i) indivíduos e interações mais que processos e ferramentas; (ii) software em funcionamento mais que documentação abrangente; (iii) colaboração com o cliente mais que negociação de contratos; e (iv) respostas a mudanças mais que seguir um plano.
 
-Dentre os artefatos do \textit{Scrum}, devem ser citados o \textit{Product Backlog} e o \textit{Sprint Backlog}. O \textit{Product Backlog} possui todas as funcionalidades necessárias para o funcionamento do produto, as quais são ordenadas por prioridade. Já o \textit{Sprint Backlog} reúne as funcionalidades que serão desenvolvidas na atual \textit{Sprint} em execução.
+Dentre os artefatos do Scrum, devem ser citados o \textit{Product Backlog} e o \textit{Sprint Backlog}. O \textit{Product Backlog} possui todas as funcionalidades necessárias para o funcionamento do produto, as quais são ordenadas por prioridade. Já o \textit{Sprint Backlog} reúne as funcionalidades que serão desenvolvidas na atual \textit{Sprint} em execução.
 
 Os eventos do Scrum são: (i) Sprint; (ii) Reunião de Planejamento da Sprint; (iii) Reunião Diária; (iv) Revisão da Sprint; (v) Retrospectiva da Sprint.
 
@@ -554,33 +408,33 @@ Dessa maneira, pode-se concluir que a interface e experiência do usuário cumpr
 
 \subsection{Docker}
 Visando uma maior portabilidade, facilidade de instalação e possibilidade de escalar o \textit{backend}, decidiu-se usar o Docker.
-O programa citado se trata de um software que usa a virtualização em nível de sistema operacional para a criação de contêineres. Diferente de uma máquina virtual, que recria toda a estrutura de um sistema operacional para o uso de uma aplicação, o Docker utiliza imagens que são montadas em sequência para atingir um objetivo, não sendo necessário um kernel para cada contêiner.
+O programa citado se trata de um software que usa a virtualização em nível de sistema operacional para a criação de contêineres. Diferente de uma máquina virtual, que recria toda a estrutura de um sistema operacional, o Docker utiliza imagens que são montadas em sequência para construir uma aplicação, não sendo necessário um \textit{kernel} para cada contêiner.
 
 As principais vantagens são:
 
 \begin{itemize}
-    \item \textbf{Compatibilidade}: O único requerimento necessário para rodar as aplicações é a instalação do Docker. Não é necessário se preocupar com versões de \textit{software} ou com suas instalações, pois serão executados dentro de um contêiner.
+    \item \textbf{Compatibilidade}: O único requerimento necessário para rodar as aplicações é a instalação do Docker. Não é necessário se preocupar com versões de \textit{software} ou com suas instalações, pois serão executados dentro de um contêiner \citep{vase2015advantages}.
     
-    \item \textbf{Isolamento}: O Docker garante o isolamento das aplicações e seus recursos do sistema operacional principal da máquina, e além disso que os contêineres estejam isolados entre si. Assim, é possível evitar a propagação de problemas entre as partes componentes de todo o projeto.
+    \item \textbf{Isolamento}: O Docker garante o isolamento das aplicações e seus recursos do sistema operacional principal da máquina, e além disso que os contêineres estejam isolados entre si. Assim, é possível evitar a propagação de problemas entre as partes componentes de todo o projeto \citep{merkel2014docker}.
     
-    \item \textbf{Escalabilidade}: Caso seja necessário aumentar a estrutura da aplicação para sustentar uma quantidade maior de usuários no futuro, o Docker facilitaria imensamente. Bastaria replicar as imagens da API já construídas.
+    \item \textbf{Escalabilidade}: Caso seja necessário aumentar a estrutura da aplicação para sustentar uma quantidade maior de usuários no futuro, o Docker facilitaria imensamente. Bastaria replicar as imagens da API já construídas \citep{vase2015advantages}.
 \end{itemize}
 
 
 \subsection{NodeJS}
-Para o desenvolvimento da API que funcionaria como backend da aplicação decidiu-se utilizar o \textit{framework} em javascript NodeJS. 
+Para o desenvolvimento da API que funcionaria como \textit{backend} da aplicação decidiu-se utilizar o \textit{framework} em javascript NodeJS. 
 
 Sua principal vantagem é o \textit{non-blocking I/O}, que permite a concorrência
-de processamento em uma única thread, diferentemente de linguagens tradicionais de backend como PHP e Java. Dessa forma, obtém-se um melhor desempenho com requisições múltiplas e diminui-se a carga no processador por não ser necessário criar uma nova thread para cada requisição. Além disso, o NodeJS possui uma melhor escalabilidade,
-tornando mais prático o crescimento da plataforma para uma quantidade maior de usuários.
+de processamento em uma única thread, diferentemente de linguagens tradicionais de \textit{backend} como PHP e Java. Dessa forma, obtém-se um melhor desempenho com requisições múltiplas e diminui-se a carga no processador por não ser necessário criar uma nova thread para cada requisição. Além disso, o NodeJS possui uma melhor escalabilidade,
+tornando mais prático o crescimento da plataforma para uma quantidade maior de usuários \citep{node_benefits}.
 
-No projeto Crossword Learning, foram utilizadas majoritariamente a biblioteca Express para criar a API do aplicativo, a biblioteca bcrypt para criptografar as senhas e a biblioteca mongoose para fazer a ligação com o banco de dados.
+No projeto Crossword Learning, foram utilizadas majoritariamente a biblioteca Express para criar a API do aplicativo, a biblioteca \textit{bcrypt} para criptografar as senhas e a biblioteca \textit{mongoose} para fazer a ligação com o banco de dados.
 
 \subsection{MongoDB}
-O Scrum foi seguido como padrão de desenvolvimento de projeto, e dessa forma, o desenvolvimento rápido e ágil viria junto com mudanças constantes na aplicação.
-A fim de desenvolver rapidamente um banco de dados diante de tais circunstâncias, decidiu-se usar um banco de dados não relacional, pois proporcionaria maior agilidade se mudanças grandes fossem necessárias.
+O Scrum foi seguido como padrão de produção do projeto, e dessa forma, o desenvolvimento rápido e ágil viria junto com mudanças constantes na aplicação.
+A fim de desenvolver rapidamente um banco de dados diante de tais circunstâncias, decidiu-se usar um banco de dados não relacional, pois proporcionaria maior agilidade se modificações grandes fossem necessárias.
 
-De acordo com a pesquisa realizada pelo Stack Overflow \citep{stackoverflowmongo}, o MongoDB é o banco de dados relacional mais utilizado. Por esse motivo, decidiu-se usá-lo nesse projeto, já que uma maior comunidade daria mais apoio em fóruns na resolução de \textit{bugs}.
+De acordo com a pesquisa realizada pelo \textit{Stack Overflow}\footnote{\url{https://insights.stackoverflow.com/survey/2019}}, o MongoDB é o banco de dados relacional mais utilizado. Por esse motivo, decidiu-se usá-lo nesse projeto, já que uma maior comunidade daria mais apoio em fóruns na resolução de \textit{bugs}.
 
 A principal vantagem é a \textbf{flexibilidade}. Como dito anteriormente, seriam necessárias mudanças ao longo do tempo de desenvolvimento, tornando o MongoDB uma ótima escolha.
 
@@ -595,16 +449,14 @@ Para a construção do protótipo foi aplicado um questionário para verificar o
 
 A validação da interface do protótipo construído foi realizada com dez participantes e seus resultados têm servido como base para o atual desenvolvimento do aplicativo. 
 
-%Dessa forma, levando em conta as informações supracitadas do protótipo, foi iniciado o desenvolvimento do aplicativo deste projeto.
-
 \subsection{Estudo do algoritmo de geração de palavras cruzadas}
-Visando a construção de uma futura plataforma em que professores poderão incluir palavras cruzadas, foi estudado um algoritmo para facilitar essa criação, gerando tabuleiros de palavras cruzadas a partir de uma lista de palavras.
+Visando a construção de uma futura plataforma em que professores poderão incluir palavras cruzadas, foi estudado um algoritmo para facilitar essa criação, gerando tabuleiros a partir de uma lista de palavras.
 
 Assim, foi tomado como base o algoritmo feito em \textit{javascript} por \cite{layoutGenerator}, o qual foi modificado para atender as necessidades deste projeto. O algoritmo funciona a partir de uma lista de palavras que são usadas para construir um tabuleiro. Além disso, o algoritmo também permite que o usuário escolha o tamanho do tabuleiro; caso uma palavra seja grande demais e não consiga ser inserida, ela é eliminada da lista e não segue para os próximos passos. A seguir serão explicitados os detalhes do algoritmo.
 
 O procedimento inicia gerando uma tabela com o mesmo número de colunas e linhas. Essa quantidade é definida multiplicando-se o tamanho da maior palavra por um fator definido, esse projeto utiliza o valor inteiro 3. Exemplificando, caso a maior palavra tenha sete letras e o fator seja o mesmo três, será gerada uma tabela 21x21. Isso ocorre para aumentar a probabilidade de interseção entre palavras. 
 
-Na sequência, é iniciado o procedimento de inserção e, assim, é realizada uma tentativa de inserção para cada uma das palavras fornecidas em todas as posições possíveis do tabuleiro iniciando-se com a disposição horizontal e, em seguida, a vertical. Caso ocorra algum conflito da palavra inserida com outra que já esteja no tabuleiro, a posição será ignorada. 
+Na sequência, é iniciado o procedimento de inserção e, assim, é realizada uma tentativa de adicionar cada uma das palavras fornecidas em todas as posições possíveis do tabuleiro iniciando-se com a disposição horizontal e, em seguida, a vertical. Caso ocorra algum conflito da palavra inserida com outra que já esteja no tabuleiro, a posição será ignorada. 
 
 Uma vez terminada a tentativa de inserção de uma palavra em todas as posições, é feita a análise de pontuação entre elas. Apenas a posição que possuir a maior pontuação permanecerá. Para isso, são computados quatro tipos de pontuações, como mostrado na \autoref{fig:codeScores}. As avaliações possuem os seguintes pesos percentuais:
 
@@ -630,7 +482,7 @@ Uma vez que a palavra é inserida, armazena-se sua posição no tabuleiro, bem c
 
 É importante lembrar que o tabuleiro está em um tamanho maior do que o desejado pelo usuário, pois no início ocorreu uma expansão das linhas e colunas ao multiplicá-las por um fator que havia sido definido como 3. Dessa maneira, restam colunas e linhas que estão vazias e podem ser eliminadas. Logo, o último passo é reduzir o tabuleiro para seu tamanho ideal, respeitando o desejado pelo usuário. 
 
-Como resultado final, o algoritmo exporta um \textit{array JSON} (Figura \ref{fig:json}) contendo o tabuleiro de palavras cruzadas. Nele há as palavras, suas orientações e as coordenadas de suas posições no tabuleiro.
+Como resultado final, o algoritmo exporta um arquivo \textit{JSON} (Figura \ref{fig:json}) contendo o tabuleiro de palavras cruzadas. Nele há as palavras, suas orientações e as coordenadas de suas posições no tabuleiro.
 
 \begin{figure}[H]
 \centering
@@ -642,7 +494,7 @@ Como resultado final, o algoritmo exporta um \textit{array JSON} (Figura \ref{fi
 \end{figure}
 
 \subsection{Desenvolvimento MVP}
-Uma vez que o protótipo inicial possuía apenas interfaces sem funcionalidades, foi necessário construir um Produto Mínimo Viável (\textit{Minimum Viable Product} -- MVP), que consistia na tela de palavra-cruzada.
+Uma vez que o protótipo inicial possuía apenas interfaces sem funcionalidades, foi necessário construir um Produto Mínimo Viável (\textit{Minimum Viable Product} -- MVP), que consistia na tela de palavra cruzada.
 
 A tela de jogo foi desenvolvida da seguinte maneira: uma \textit{tag} \textit{<View>} comporta quatro \textit{tags} principais nativas do \textit{React Native}:
 
@@ -675,8 +527,7 @@ O teclado personalizado foi introduzido por questões de acessibilidade, já que
     Fonte: Elaborada pelo autor
 \end{figure}
 
-Para algumas mudanças de informação na tela de jogo, decidiu-se utilizar a \textbf{Manipulação Direta}, que evita a renderização de toda a tela para pequenas mudanças, o que poderia acarretar problemas de desempenho. Dessa maneira, o estado dos componentes é modificado por meio de referência, acarretando em uma maior fluidez. Os elementos que recebem a Manipulação Direta são \textit{<Tiles>}, que são componentes customizados que renderizam as células do tabuleiro. 
-% Ocorrem duas Manipulaçoes Diretas com esses componentes: alteração do foco e substituição da letra exibida.
+Para algumas mudanças de informação na tela de jogo, decidiu-se utilizar a \textbf{Manipulação Direta}, que evita a renderização de toda a tela para pequenas mudanças, o que poderia ocasionar problemas de desempenho. Dessa maneira, o estado dos componentes é modificado por meio de referência, acarretando em uma maior fluidez. Os elementos que recebem a Manipulação Direta são \textit{<Tiles>}, que são componentes customizados que renderizam as células do tabuleiro. 
 
 Na Figura \ref{fig:codeDirectManipulation} pode-se observar uma função que faz uso da Manipulação Direta. A \textit{arrow function inputLetter} recebe como argumento uma letra e promove a mudança do valor de uma propriedade no componente em que se faz a referência. Como cada célula do tabuleiro está armazenada em uma matriz, para acessá-la utiliza-se \textit{this.ref[posicaoI][posicaoJ]}. Nas linhas 208, 209 e 210 ocorre a mudança da propriedade \textit{text} usando a referência (\textit{.ref}) junto com o método \textit{setNativeProps}. Seu novo valor passará a ser o armazenado na variável \textit{letter}, a qual é recebida diretamente do teclado personalizado.
 
@@ -707,7 +558,7 @@ Abaixo, são exibidos na Figura \ref{fig:verdevermelho} dois exemplos do element
 \subsection{Teste piloto}
 Tendo em mente que o público alvo é composto por usuários idosos, é de extrema importância a execução de testes. Isso ocorre, pois o fator usabilidade e acessibilidade pode se tornar a causa do impedimento de uso.
 
-Antes de esclarecer os detalhes dos testes, é importante explicar a base que foi tomada para definir a quantidade de testes a serem feitos. De acordo com \cite{nielsenUsabilityMath}, não é necessário fazer testes muito complexos, o ideal é fazer uma série de pequenos testes com poucos usuários. Foi provado que o número de problemas de usabilidade achados em um teste com $n$ usuários segue a equação $y = 1-(1-L)^n$ em que $y$ é a porcentagem de erros achados, $n$ a quantidade de usuários e $L$ a proporção de problemas relacionados a usabilidade encontrados com um único usuário. Segundo os autores, a média encontrada para $L$ após uma grande quantidade de projetos estudados é $31\%$. Dessa maneira, é possível plotar o gráfico (Figura \ref{fig:graphnielsen}):
+Antes de esclarecer os detalhes, é importante explicar a base que foi tomada para definir a quantidade de avaliações a serem feitas. De acordo com \cite{nielsenUsabilityMath}, não é necessário fazer testes muito complexos, o ideal é fazer uma série de pequenos testes com poucos usuários. Foi provado que o número de problemas de usabilidade achados em um teste com $n$ usuários segue a equação $y = 1-(1-L)^n$ em que $y$ é a porcentagem de erros achados, $n$ a quantidade de usuários e $L$ a proporção de problemas relacionados a usabilidade encontrados com um único usuário. Segundo os autores, a média encontrada para $L$ após uma grande quantidade de projetos estudados é $31\%$. Dessa maneira, é possível plotar o gráfico (Figura \ref{fig:graphnielsen}):
 
 \begin{figure}[H]
 \centering
@@ -718,15 +569,15 @@ Antes de esclarecer os detalhes dos testes, é importante explicar a base que fo
     Fonte: Elaborada pelo autor
 \end{figure}
 
-Portanto, o testes desse projeto foram definidos usando essa lógica. Foi decidido fazer três testes:
+Portanto, o testes desse projeto foram definidos usando essa lógica. Foi decidido fazer três avaliações:
 
 \begin{enumerate}
-    \item Teste piloto: Teste feito apenas com o MVP contendo a tela do jogo de palavras cruzadas. O objetivo principal é obter \textit{feedback} sobre aspectos básicos.
-    \item Teste de usabilidade: Realizado com especialistas; pretende-se refinar todas as telas do aplicativo com um olhar mais detalhado em relação à heurísticas.
-    \item Teste final: Feito por uma especialista na área de usabilidade para idosos com o objetivo de ratificar as mudanças feitas.
+    \item \textbf{Teste piloto}: Feito apenas com o MVP contendo a tela do jogo de palavras cruzadas. O objetivo principal é obter \textit{feedback} sobre aspectos básicos.
+    \item \textbf{Teste de usabilidade}: Realizado com especialistas; pretende-se refinar todas as telas do aplicativo com um olhar mais detalhado em relação às heurísticas.
+    \item \textbf{Teste final}: Feito por uma especialista na área de usabilidade para idosos com o objetivo de ratificar as mudanças feitas.
 \end{enumerate}
 
-Concluída a definição das estruturas dos testes, foi possível realizar um teste inicial com usuários idosos para confirmar ou refutar as hipóteses iniciais relacionadas à interface, usabilidade e acessibilidade do MVP.
+    Concluída a definição das estruturas das análises a serem feitas, foi possível realizar um teste inicial com usuários idosos para confirmar ou refutar as hipóteses iniciais pré-concebidas relacionadas à interface, usabilidade e acessibilidade do MVP.
 
 Para facilitar o uso da interface de palavras cruzadas, foi feito um tutorial que mostrava o passo a passo de como utilizá-la (Figura \ref{fig:tutorial}). 
 
@@ -770,7 +621,7 @@ conteúdo pela falta de contraste das cores, é necessário inserir a opção de
 & 
 Perguntou-se ao usuário se havia dificuldade de enxergar pela escolha de cores. Foi afirmado que não havia nenhuma dificuldade.
 &
-As escolha de cores funciona; adicionar a possibilidade de troca de tema pode dar opções em excesso e
+A escolha de cores funciona; adicionar a possibilidade de troca de tema pode dar opções em excesso e
  confundir o usuário.
 \\ \midrule
 O tutorial está claro o suficiente para entendimento de como usar o aplicativo.
@@ -787,7 +638,7 @@ O tutorial deve ser refeito com uma distinção clara entre imagem ilustrativa e
 \end{table}
 
 Finalmente, a principal observação foi a necessidade de não dar muitas opções ao usuário. Levando em conta a dificuldade de uso do aplicativo já simplificado, seria mais vantajoso oferecer um produto limpo funcionalmente e de simples utilização. Dessa forma, foi decidido não incluir as \textit{features} de gráficos com 
-dados estatísticos de evolução do usuário e rede social interna
+dados estatísticos de evolução e rede social interna
 com envio de mensagens. O primeiro motivo é que dificilmente
 usuários idosos que estejam desfrutando do aplicativo e 
 aprendendo conceitos básicos de história, geografia e
@@ -796,7 +647,7 @@ O segundo motivo diz respeito ao foco nas atividades principais do aplicativo, d
 
 De forma complementar, é importante salientar que as conclusões relacionadas à usabilidade e acessibilidade não foram finais, pois seriam dadas por especialistas por meio do teste de avaliação heurística, como descrito na seção \ref{sec:avaliacao-heuristica}.
 
-\subsection{Desenvolvimento do aplicativo completo}
+\subsection{Desenvolvimento da infraestrutura do aplicativo}
 Uma vez concluídos o desenvolvimento da tela de palavras cruzadas e feito o teste piloto, iniciou-se a construção da infraestrutura do aplicativo.
 
 Seria necessário:
@@ -815,7 +666,7 @@ O funcionamento básico ocorre da seguinte maneira (Figura \ref{fig:arquitetura}
     
     \item O servidor faz uma requisição para o banco de dados, as quais podem ser de leitura, escrita, edição ou deleção.
     
-    \item O banco de dados retorna uma resposta para o servidor, seja ela contendo os dados requisitados ou com uma mensagem de a operação foi bem sucedida.
+    \item O banco de dados retorna uma resposta para o servidor, seja ela contendo os dados requisitados ou com uma mensagem de que a operação foi bem sucedida.
     
     \item O servidor retorna uma resposta para a requisição inicial do aplicativo, a qual depende do tipo de pedido. Por exemplo, se a requisição inicial for de Login, a resposta recebida será se o Login está correto ou não.
 \end{enumerate}
@@ -831,14 +682,14 @@ O funcionamento básico ocorre da seguinte maneira (Figura \ref{fig:arquitetura}
 
 Vale destacar duas importantes funções de segurança exercidas pelo servidor:
 \begin{itemize}
-    \item Encriptação das senhas: É extremamente perigoso armazenar senhas de usuários em bancos de dados sem encriptação. Isso ocorre, pois ficam suscetíveis a ataques, caso ocorra uma invasão, as senhas seriam acessadas. Para evitar esse problema, utiliza-se a encriptação das senhas. Dessa forma, não é possível ter acesso à senha do usuário, apenas verificar se ela está correta ou incorreta para o login.
+    \item Encriptação das senhas: É extremamente perigoso armazenar senhas de usuários em bancos de dados sem encriptação. Isso ocorre, pois ficam suscetíveis a ataques, caso ocorra uma invasão, elas seriam acessadas. Para evitar esse problema, utiliza-se a encriptação. Dessa forma, não é possível ter acesso à senha do usuário, apenas verificar se ela está correta ou incorreta.
     
     \item Proteção de rotas com \textit{JSON Web Token}: Para isolamento da API que se comunica com o banco de dados, foi adicionada uma camada de proteção. Assim, toda requisição sensível e que modifica ou acessa o banco de dados necessitará de um \textit{token}, cujo tempo de expiração é limitado.
 \end{itemize}
 
-A API criada é de extrema importância, visto que trabalhos futuros terão ela como base, como será visto na Seção \ref{sec:atividades_futuras}. Assim, foi necessário escrever uma documentação com as rotas das requisições, seus tipos e o \textit{payload} esperado. O objetivo é a integração da aplicação e seu \textit{backend} com outras plataformas.
+A API criada é de extrema importância, visto que trabalhos futuros a terão como base, como será visto na Seção \ref{sec:conclusao}. Assim, foi necessário escrever uma documentação com as rotas das requisições, seus tipos e o \textit{payload} esperado. O objetivo é a integração da aplicação e seu \textit{backend} com outras plataformas.
 
-Além da infraestrutura, foram adicionadas telas ao aplicativo. O primeiro conjunto de adições foi relacionado às telas de seleção de disciplina e escolha de aulas, que mostra quais aulas já foram feitas. O usuário passa tem a opção de escolher o assunto de maior interesse (História - Capitanias Hereditárias), conforme apresentado na Figura \ref{fig:telas-selecao}.
+Além da infraestrutura, foram adicionadas telas ao aplicativo. O primeiro conjunto de adições foi relacionado às telas de seleção de disciplina e escolha de aulas, que mostra quais aulas já foram feitas. O utilizados tem a opção de escolher o assunto de maior interesse (História - Capitanias Hereditárias), conforme apresentado na Figura \ref{fig:telas-selecao}.
 
 \begin{figure}[H]
 \centering
@@ -878,7 +729,7 @@ Outra tela adicionada foi a de perfil. Foi decidido mantê-la o mais simples pos
     Fonte: Elaborada pelo autor
 \end{figure}
 
-E finalmente, foram adicionadas as essenciais telas de aprendizado por texto, áudio e vídeo.
+E finalmente, foram adicionadas as telas de aprendizado por texto, áudio e vídeo.
 Na tela de conteúdo textual, são usadas letras de cor preta em um fundo branco, para máximo contraste. Ainda, é possível alterar o tamanho da fonte com dois botões localizados no canto superior direito.
 A tela de conteúdo por áudio é também simplificada. O \textit{player} de áudio fica localizado acima do botão de prosseguir para a próxima página.
 Já a tela de vídeo, possui um botão extra, usado para expandir o texto para o modo de tela cheia, além do botão de próxima página. 
@@ -917,206 +768,206 @@ Abaixo, estão listados os parâmetros usados na avaliação.
     \end{enumerate}
 \end{itemize}
 
-Ao terminar a avaliação, cada um dos especialistas preencheu uma tabela indicando os problemas encontrados com: (i) a Heurística de Nielsen, (ii) Grau de severidade, (iii) tela em que ocorreu o problema, (iv) descrição do problema. O compilado das anotações pode ser visto na Tabela \ref{tab:avaliacaonielsen}.
+Ao terminar a avaliação, cada um dos especialistas preencheu uma tabela indicando os problemas encontrados com: (i) a Heurística de Nielsen, (ii) Grau de severidade, (iii) tela em que ocorreu o problema, (iv) descrição do problema. O compilado das anotações pode ser visto no Apêndice \ref{sec:tabela_av_heuristica}.
 
-\begin{table}[H]
-\centering
-\caption{\textit{Problemas encontrados na avaliação heurística}}
-\centering
-\footnotesize
-\begin{tabular}{p{1.5cm} p{2cm} p{4cm} p{8.5cm}}
-\toprule
-\textbf{Heurística} & \textbf{Grau de severidade} & \textbf{Tela(s)} & \textbf{Descrição do problema}       
-\\ \midrule
-5
-& 
-2
-&
-Login
-&
-Primeira letra é sempre maiúscula, gerando erro ano tentar fazer o login.
-\\ \midrule
-7
-& 
-1
-&
-Login
-&
-Letras pequenas dificultam a leitura para usuários com problema de visão.
-\\ \midrule
-4
-& 
-2
-&
-Login
-&
-O logo do aplicativo está pequeno.
-\\ \midrule
+% \begin{table}[H]
+% \centering
+% \caption{\textit{Problemas encontrados na avaliação heurística}}
+% \centering
+% \footnotesize
+% \begin{tabular}{p{1.5cm} p{2cm} p{4cm} p{8.5cm}}
+% \toprule
+% \textbf{Heurística} & \textbf{Grau de severidade} & \textbf{Tela(s)} & \textbf{Descrição do problema}       
+% \\ \midrule
+% 5
+% & 
+% 2
+% &
+% Login
+% &
+% Primeira letra é sempre maiúscula, gerando erro ano tentar fazer o login.
+% \\ \midrule
+% 7
+% & 
+% 1
+% &
+% Login
+% &
+% Letras pequenas dificultam a leitura para usuários com problema de visão.
+% \\ \midrule
+% 4
+% & 
+% 2
+% &
+% Login
+% &
+% O logo do aplicativo está pequeno.
+% \\ \midrule
 
-1
-& 
-2
-&
-Login
-&
-Não há \textit{feedback} para a ação efetuada
-\\ \midrule
-9
-& 
-2
-&
-Login
-&
-A mensagem de erro não é precisa, se os campos estiverem em branco, a mensagem indica email incorreto.
-\\ \midrule
-2
-& 
-2
-&
-Perfil
-&
-O ícone do nome é pouco usual.
-\\ \midrule
-2, 4
-& 
-1
-&
-Perfil
-&
-Se há apenas uma aula concluída, a escrita continua no plural.
-\\ \midrule
-4, 8
-& 
-1
-&
-Perfil
-&
-Ícone e texto de nome estão desalinhados do restante dos dados.
-\\ \midrule
-8
-& 
-1
-&
-Conteúdo textual
-&
-O texto apresentado não está justificado.
-\\ \midrule
-4
-& 
-1
-&
-Conteúdo textual
-&
-Seria interessante ter uma tamanho máximo e mínimo para a fonte do texto.
-\\ \midrule
-4
-& 
-2
-&
-Conteúdo em áudio
-&
-Há dois botões para controle de execução, usuários podem ficar confusos.
-\\ \midrule
-4
-& 
-3
-&
-Conteúdo em texto, Conteúdo em áudio e Conteúdo em vídeo
-&
-O botão de próxima tela deveria ficar em uma posição fixa.
-\\ \midrule
-4
-& 
-3
-&
-Conteúdo em áudio
-&
-Os botões de avançar e retroceder não tem finalidade.
-\\ \midrule
-4
-& 
-4
-&
-Conteúdo em vídeo
-&
-O vídeo continua sendo reproduzido após o botão de próxima tela ser clicado.
-\\ \midrule
-8
-& 
-3
-&
-Conteúdo em vídeo
-&
-Há dois botões para reprodução em tela cheia, usuários podem ficar confusos.
-\\ \midrule
-10
-& 
-3
-&
-Tutorial
-&
-Fica confuso se o que está sendo exibido é um tutorial ou se o jogo já iniciou. Seria interessante deixar explícito em todo o tempo de que se trata de um tutorial.
-\\ \midrule
-4
-& 
-2
-&
-Tutorial
-&
-A fonte utilizada não é a mesma da etapas anteriores.
-\\ \midrule
-6
-& 
-4
-&
-Palavra cruzada
-&
-O mecanismo de preenchimento é confuso: não há botões para apagar.
-\\ \midrule
-6
-& 
-4
-&
-Palavra cruzada
-&
-Letras pertencentes a palavras já preenchidas corretamente em "cruzamentos" precisam ser redigitadas.
-\\ \midrule
-3, 7
-& 
-4
-&
-Palavra cruzada
-&
-Quando o celular fica na horizontal, não é possível preencher as palavras cruzadas.
-\\ \midrule
-3
-& 
-4
-&
-Palavra cruzada
-&
-Não há botão para retornar, é necessário terminar o jogo para sair da tela de palavra cruzada.
-\\ \midrule
-7
-& 
-1
-&
-Palavra cruzada
-&
-As sombras dos botões de teclado virtual podem deixar a vista do usuário cansada.
-\\ \bottomrule
+% 1
+% & 
+% 2
+% &
+% Login
+% &
+% Não há \textit{feedback} para a ação efetuada
+% \\ \midrule
+% 9
+% & 
+% 2
+% &
+% Login
+% &
+% A mensagem de erro não é precisa, se os campos estiverem em branco, a mensagem indica email incorreto.
+% \\ \midrule
+% 2
+% & 
+% 2
+% &
+% Perfil
+% &
+% O ícone do nome é pouco usual.
+% \\ \midrule
+% 2, 4
+% & 
+% 1
+% &
+% Perfil
+% &
+% Se há apenas uma aula concluída, a escrita continua no plural.
+% \\ \midrule
+% 4, 8
+% & 
+% 1
+% &
+% Perfil
+% &
+% Ícone e texto de nome estão desalinhados do restante dos dados.
+% \\ \midrule
+% 8
+% & 
+% 1
+% &
+% Conteúdo textual
+% &
+% O texto apresentado não está justificado.
+% \\ \midrule
+% 4
+% & 
+% 1
+% &
+% Conteúdo textual
+% &
+% Seria interessante ter uma tamanho máximo e mínimo para a fonte do texto.
+% \\ \midrule
+% 4
+% & 
+% 2
+% &
+% Conteúdo em áudio
+% &
+% Há dois botões para controle de execução, usuários podem ficar confusos.
+% \\ \midrule
+% 4
+% & 
+% 3
+% &
+% Conteúdo em texto, Conteúdo em áudio e Conteúdo em vídeo
+% &
+% O botão de próxima tela deveria ficar em uma posição fixa.
+% \\ \midrule
+% 4
+% & 
+% 3
+% &
+% Conteúdo em áudio
+% &
+% Os botões de avançar e retroceder não tem finalidade.
+% \\ \midrule
+% 4
+% & 
+% 4
+% &
+% Conteúdo em vídeo
+% &
+% O vídeo continua sendo reproduzido após o botão de próxima tela ser clicado.
+% \\ \midrule
+% 8
+% & 
+% 3
+% &
+% Conteúdo em vídeo
+% &
+% Há dois botões para reprodução em tela cheia, usuários podem ficar confusos.
+% \\ \midrule
+% 10
+% & 
+% 3
+% &
+% Tutorial
+% &
+% Fica confuso se o que está sendo exibido é um tutorial ou se o jogo já iniciou. Seria interessante deixar explícito em todo o tempo de que se trata de um tutorial.
+% \\ \midrule
+% 4
+% & 
+% 2
+% &
+% Tutorial
+% &
+% A fonte utilizada não é a mesma da etapas anteriores.
+% \\ \midrule
+% 6
+% & 
+% 4
+% &
+% Palavra cruzada
+% &
+% O mecanismo de preenchimento é confuso: não há botões para apagar.
+% \\ \midrule
+% 6
+% & 
+% 4
+% &
+% Palavra cruzada
+% &
+% Letras pertencentes a palavras já preenchidas corretamente em "cruzamentos" precisam ser redigitadas.
+% \\ \midrule
+% 3, 7
+% & 
+% 4
+% &
+% Palavra cruzada
+% &
+% Quando o celular fica na horizontal, não é possível preencher as palavras cruzadas.
+% \\ \midrule
+% 3
+% & 
+% 4
+% &
+% Palavra cruzada
+% &
+% Não há botão para retornar, é necessário terminar o jogo para sair da tela de palavra cruzada.
+% \\ \midrule
+% 7
+% & 
+% 1
+% &
+% Palavra cruzada
+% &
+% As sombras dos botões de teclado virtual podem deixar a vista do usuário cansada.
+% \\ \bottomrule
 
-\end{tabular}
-\label{tab:avaliacaonielsen}
-\end{table}
+% \end{tabular}
+% \label{tab:avaliacaonielsen}
+% \end{table}
 
 Com a agregação dos problemas encontrados pelos especialistas, foi possível diagnosticar as fraquezas da aplicação. O gráfico em barras exibido na Figura \ref{fig:barra-media-heuristica} mostra a média do grau de severidade por heurística.
 
-Como se pode observar, os pontos fracos da aplicação são as heurísticas 3 e 6, as quais atingiram a média máxima para severidade. Elas representam respectivamente: Liberdade de controle fácil para o usuário e Reconhecimento em vez de memorização. Além disso, todas as ocorrências dessas heurísticas são relacionadas a tela com a palavra-cruzada. Uma hipótese para o motivo desse padrão, é a falta de experiência na elaboração de interfaces complexas, que possuem muitas funcionalidades e botões. Ainda, o fato da avaliação ter sido feita visando o público idoso agravou mais a severidade desses aspectos. 
+Como se pode observar, os pontos fracos da aplicação são as heurísticas 3 e 6, as quais atingiram a média máxima para severidade. Elas representam respectivamente: Liberdade de controle fácil para o usuário e Reconhecimento em vez de memorização. Além disso, todas as ocorrências dessas heurísticas são relacionadas a tela com a palavra cruzada. Uma hipótese para o motivo desse padrão, é a falta de experiência na elaboração de interfaces complexas, que possuem muitas funcionalidades e botões. Ainda, o fato da avaliação ter sido feita visando o público idoso agravou mais a severidade desses aspectos. 
 
 Já a heurística 2 foi a menos significativamente violada, com uma média de 1.5 no grau de severidade.
 
-Em suma, pode-se concluir que o teste avaliativo foi bem sucedido. Diversos equívocos foram identificados antes da distribuição ao público alvo. Dessa maneira, como se pode observar na seção seguinte, foi possível corrigir os erros a fim de obter um produto com uma versão final mais eficiente e de fácil uso ao idoso.
+Em suma, pode-se concluir que o teste avaliativo foi bem sucedido. Diversos equívocos foram identificados antes da distribuição ao público alvo. Dessa maneira, como se poderá observar na seção seguinte, foi possível corrigir os erros a fim de obter um produto com uma versão final mais eficiente e de fácil uso para o idoso.
 
 \begin{figure}[H]
 \centering
@@ -1130,7 +981,9 @@ Em suma, pode-se concluir que o teste avaliativo foi bem sucedido. Diversos equ�
 \subsection{Evolução da \textit{Crossword Learning}}
 Uma vez concluída a avaliação heurística com a ajuda dos especialistas, foi necessário corrigir os problemas identificados. Todos os erros listados foram retificados e alguns deles serão melhor explanados abaixo.
 
-O problema com a maior complexidade necessária ao reparo é relacionado à tela de palavra-cruzada. As letras preenchidas que estivessem em uma palavra já escrita corretamente precisavam ser redigitadas. A lógica de preenchimento no código da aplicação trocava o foco para a próxima posição sem verificar se a posição era de uma palavra já completa. Foi necessário criar a função \textit{nextCellPositions()} para retornar a posição (i, j) no tabuleiro da próxima célula e após verificar com a função \textit{isCellFromCompletedWord()} se a célula era pertencente a uma palavra já completa pelo usuário. Na Figura \ref{fig:nextcell} é possível observar a função \textit{nextCell()}. Primeiramente, na linha 316 é obtida a posição das próximas células, na linha 322 ocorre finalmente a verificação se a letra está em outra palavra completa. Caso isso ocorra, a próxima é verificada usando-se a mesma lógica nas linhas 323 a 325. Esse \textit{while loop} ocorre até que se encontre uma posição válida ou o limite de \textit{loops} determinado seja alcançado.
+O problema com a maior complexidade necessária ao reparo é relacionado à tela de palavra cruzada. 
+
+As letras preenchidas que estivessem em uma palavra já escrita corretamente precisavam ser redigitadas. A lógica de preenchimento no código da aplicação trocava o foco para a próxima posição sem verificar se era de uma palavra já completa. Foi necessário criar a função \textit{nextCellPositions()} para retornar a posição (i, j) no tabuleiro da próxima célula e após verificar com a função \textit{isCellFromCompletedWord()} se a célula era pertencente a uma palavra já completa pelo usuário. Na Figura \ref{fig:nextcell} é possível observar a função \textit{nextCell()}. Primeiramente, na linha 316 é obtida a posição das próximas células, na linha 322 ocorre finalmente a verificação se a letra está em outra palavra completa. Caso isso ocorra, a próxima é verificada usando-se a mesma lógica nas linhas 323 a 325. O \textit{while loop} ocorre até que se encontre uma posição válida ou o limite de \textit{loops} determinado seja alcançado.
 
 \begin{figure}[H]
 \centering
@@ -1145,7 +998,7 @@ O problema com a maior complexidade necessária ao reparo é relacionado à tela
 % Mostrar códigos (antes e depois é no proximo problema)
 
 Superado o tópico do problema mais complexo, é importante esclarecer o de maior impacto, também relacionado à escrita das palavras-cruzadas.
-Um dos avaliadores escreveu: ``Achei confuso o mecanismo de preenchimento da palavra-cruzada". Isso acontecia, pois não havia a possibilidade de correção de uma letra errada. Uma vez digitada, a única maneira de trocá-la seria a sobrescrevendo quando o cursor retornasse para aquela posição. Outra possibilidade seria o usuário clicar diretamente na célula do tabuleiro que desejasse corrigir e digitar outra letra. Escolhendo-se uma ou outra, o usuário deveria percorrer uma série de ações não intuitivas para reparar a letra anteriormente digitada. A simples solução foi inserir um botão que permitisse apagar uma letra e executasse a função \textit{backspace()} (Figura \ref{fig:backspace}). Há três possibilidades de ocorrência com ações diferentes para cada uma, dependendo da situação do cursor:
+Um dos avaliadores escreveu: ``Achei confuso o mecanismo de preenchimento da palavra cruzada". Isso acontecia, pois não havia a possibilidade de correção de uma letra errada. Uma vez digitada, a única maneira de trocá-la seria a sobrescrevendo quando o cursor retornasse para aquela posição. Outra possibilidade seria o usuário clicar diretamente na célula do tabuleiro que desejasse corrigir e digitar outra letra. Escolhendo-se uma ou outra, o usuário deveria percorrer uma série de ações não intuitivas para reparar o equívoco. A simples solução foi inserir um botão que permitisse apagar uma letra e executasse a função \textit{backspace()} (Figura \ref{fig:backspace}). Há três possibilidades de ocorrência com ações diferentes para cada uma, dependendo da situação do cursor:
 \begin{enumerate}
     \item Linhas 255 e 256: É a primeira posição da palavra, apaga a primeira letra e o cursor não muda de local.
     \item Linhas 257 e 258: Se há uma letra no foco, apaga a letra e o cursor não muda de posição.
@@ -1154,7 +1007,7 @@ Um dos avaliadores escreveu: ``Achei confuso o mecanismo de preenchimento da pal
 
 \begin{figure}[H]
 \centering
-    \caption{Função backspace()}
+    \caption{Função \textit{backspace()}}
     \label{fig:backspace}
     \includegraphics[width=0.9\textwidth]{Figuras/codeBackspace.png}
     
@@ -1173,16 +1026,16 @@ Além disso, foi adicionado um botão que permitisse o usuário retornar à tela
     Fonte: Elaborada pelo autor
 \end{figure}
 
-A tela de Login também sofreu algumas modificações. A fonte das letras se tornou maior, possibilitando que usuários com possíveis problemas de visão pudessem ler o conteúdo. Outra diferença é o \textit{feedback} após o botão de Login ser pressionado. Depois de clicar no botão a tela permanecia estática, esperando a resposta do servidor para exibir a mensagem de erro ou levar o usuário à tela de Perfil. Se o servidor demorasse a responder o usuário poderia achar que o aplicativo travou por mau funcionamento. Na Figura \ref{fig:login-old-new} é possível observar o ícone de carregamento na tela de Login, bem como a mudança no tamanho da fonte e do logo.
+A tela de Login também sofreu algumas modificações. A fonte das letras se tornou maior, possibilitando que usuários com possíveis problemas de visão pudessem ler o conteúdo. Outra diferença é o \textit{feedback} após o botão de Login ser pressionado. Depois de clicar a tela permanecia estática, esperando a resposta do servidor para exibir a mensagem de erro ou levar o usuário à tela de Perfil. Se o servidor demorasse a responder o usuário poderia achar que o aplicativo travou por mau funcionamento. Na Figura \ref{fig:login-old-new} é possível observar o ícone de carregamento na tela de Login, bem como a mudança no tamanho da fonte e do logo.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Aumento da fonte e ícone de carregamento}
-%     \label{fig:login-old-new}
-%     \includegraphics[width=0.55\textwidth]{Figuras/login-old-new.jpg}
+\begin{figure}[H]
+\centering
+    \caption{Aumento da fonte e ícone de carregamento}
+    \label{fig:login-old-new}
+    \includegraphics[width=0.55\textwidth]{Figuras/login-old-new.jpg}
     
-%     Fonte: Elaborada pelo autor
-% \end{figure}
+    Fonte: Elaborada pelo autor
+\end{figure}
 
 Por fim, achou-se necessário incluir um tutorial em vídeo, o qual foi criado com auxílio da plataforma Typito\footnote{\url{https://typito.com/}}. Assim, foi inserido na tela de perfil um botão que levasse o usuário aos tutoriais a fim de que pudesse revisitá-los sempre que achasse necessário.
 
@@ -1206,19 +1059,19 @@ Após o erro ser mostrado ao usuário, a mensagem não desaparece até que se cl
 \\ \midrule
 Login
 &
-A mensagem de erro na tela de login poderia vir acima dos campos de texto.
+A mensagem de erro na tela de login poderia vir acima dos campos de texto, pois o teclado de digitação pode encobri-lo.
 \\ \midrule
 Tutorial
 &
-Seria interessante uma opção de pular tutorial e ir direto para a página inicial.
-% \\ \midrule
-% Perfil
-% &
-% Seria interessante a opção de enviar uma foto para o perfil, pois o ícone não está bom.
+Seria interessante uma opção de pular tutorial e ir direto para a página inicial, caso o utilizador se sinta confiante para usar o aplicativo.
 \\ \midrule
 Conteúdo em áudio
 &
-Retirar a mensagem de Pausado e Tocando e aumentar o tamanho do \textit{player}.
+Retirar a mensagem de Pausado e Tocando, pois pode confundir o usuário com excesso de informação.
+\\ \midrule
+Conteúdo em áudio
+&
+Aumentar o tamanho do \textit{player}, pois o está pequeno.
 \\ \midrule
 Aplicativo em geral
 &
@@ -1237,50 +1090,50 @@ As cores estão em tons muito intensos, pode gerar desconforto ao usuário.
 \label{tab:avaliacao_final}
 \end{table}
 
-Observando a tabela, pode-se concluir que a maioria dos erros foi relacionado à usabilidade. Houve a requisição para troca de posição de botões, inserção de botões e mudança de cores. Abaixo serão explicitadas algumas delas.
+Observando a tabela, pode-se concluir que a maioria dos erros foi relacionado à usabilidade. Houve requisição para troca de posição de botões, inserção de botões e mudança de cores. Abaixo serão explicitadas algumas delas.
 
 As cores foram reavaliadas e trocadas. Segundo a especialista, estavam muito intensas e poderiam causar desconforto ao usuários. Além disso, o novo tom de azul foi pensado em usuários daltônicos, a fim de que não ocorra uma confusão de cores.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Novos tons de cor}
-%     \label{fig:novascores}
-%     \includegraphics[width=0.9\textwidth]{Figuras/novascores.png}
+\begin{figure}[H]
+\centering
+    \caption{Novos tons de cor}
+    \label{fig:novascores}
+    \includegraphics[width=0.9\textwidth]{Figuras/novascores.png}
     
-%     Fonte: Elaborada pelo autor
-% \end{figure}
+    Fonte: Elaborada pelo autor
+\end{figure}
 
 Outra mudança foi a inserção do botão \textit{Home} no cabeçalho das telas. Dessa maneira é possível retornar à tela inicial a qualquer momento.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Novo cabeçalho com botão de voltar à tela inicial}
-%     \label{fig:botaohome}
-%     \includegraphics[width=0.9\textwidth]{Figuras/botaohome.png}
+\begin{figure}[H]
+\centering
+    \caption{Novo cabeçalho com botão de voltar à tela inicial}
+    \label{fig:botaohome}
+    \includegraphics[width=0.9\textwidth]{Figuras/botaohome.png}
     
-%     Fonte: Elaborada pelo autor
-% \end{figure}
+    Fonte: Elaborada pelo autor
+\end{figure}
 
 Foi criada uma tela para seleção de qual tipo de conteúdo o usuário aprenderá (Figura \ref{fig:selecaoconteudo}), não sendo mais obrigatório passar pelos três tipos.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Nova tela de seleção de tipo de conteúdo}
-%     \label{fig:selecaoconteudo}
-%     \includegraphics[width=0.4\textwidth]{Figuras/selecaoconteudo.png}
+\begin{figure}[H]
+\centering
+    \caption{Nova tela de seleção de tipo de conteúdo}
+    \label{fig:selecaoconteudo}
+    \includegraphics[width=0.4\textwidth]{Figuras/selecaoconteudo.png}
     
-%     Fonte: Elaborada pelo autor
-% \end{figure}
+    Fonte: Elaborada pelo autor
+\end{figure}
 
 O formulário para registro de nova conta apresentava um problema que poderia confundir os usuários. Ao tentar criar uma conta com informação errada, por exemplo um email inválido, a caixa de inserção ficava vermelha. Todavia, ao tentar redigitar com um conteúdo válido a cor vermelha não desaparecia, somente ao clicar no botão de Registro. Isso poderia levar a entender que mesmo com a correção feita o conteúdo estivesse errado. Portanto, foi necessário verificar se o valor inserido estava vazio. Nas linhas 48 e 49 da Figura \ref{fig:onchangeemail}, é possível observar a análise: se o valor inserido for diferente de uma \textit{String} vazia, o estado de erro no email deve ser mudado para falso.
 
-% \begin{figure}[H]
-% \centering
-%     \caption{Função \textit{onChangeEmail(value)}}
-%     \label{fig:onchangeemail}
-%     \includegraphics[width=0.9\textwidth]{Figuras/onchangeemail.png}
+\begin{figure}[H]
+\centering
+    \caption{Função \textit{onChangeEmail(value)}}
+    \label{fig:onchangeemail}
+    \includegraphics[width=0.9\textwidth]{Figuras/onchangeemail.png}
     
-%     Fonte: Elaborada pelo autor
-% \end{figure}
+    Fonte: Elaborada pelo autor
+\end{figure}
 
 Por fim, pode-se dizer que foi alcançado o objetivo final de aplicar as funcionalidades desejadas e estudadas na Seção \ref{sec:estudo_funcionalidades_apps} e exibidas na Tabela \ref{tab:funcionalidade}; com destaque para o aprendizado por áudio, teclado personalizado e conteúdo explicado por tutoriais.
